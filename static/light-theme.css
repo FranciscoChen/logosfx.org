@@ -1,0 +1,8 @@
+:root{
+  --main-text-color: #000;
+  --main-background-color: #fff;
+  --main-highlight-color: #1b66c9;
+  --main-link-color: #1a73e8;
+  --menu-cover: rgba(0,0,0,.5);
+  --main-hover-color: rgba(32,33,36,.1);
+}
