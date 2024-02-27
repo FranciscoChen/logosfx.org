@@ -25,9 +25,15 @@ header{
   display: none;
   max-height: var(--header-height);
 }
+
+.logo-wrap{
+  height: var(--header-height);
+}
+
 .logo img {
   height:100%;
 }
+
 nav{
   display:flex;
   background:var(--main-background-color);
@@ -122,10 +128,6 @@ nav{
 
   .logo {
     margin-left: 80px;
-  }
-
-  .logo img{
-    position:absolute;
   }
 
   .menu-bars,.menu-bars::after,.menu-bars::before {
