@@ -80,7 +80,7 @@ nav{
   color: #fff;
   background: var(--main-highlight-color);
 }
-@media (max-width: 960px) {
+@media (max-width: 980px) {
   nav {
     display:none;
     position: fixed;
