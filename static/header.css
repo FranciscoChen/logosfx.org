@@ -38,7 +38,7 @@ nav{
 }
 .menu-item a{
   display: block;
-  padding: 17.5px;
+  padding: 26.37px;
   font-size: 20px;
 }
 .menu-item a:hover {
@@ -132,8 +132,8 @@ nav{
   }
 
   .menu-bars {
-    left: 10px;
-    top: 48%
+    left: 20px;
+    top: 50%
   }
 
   .menu-bars::after,.menu-bars::before {
