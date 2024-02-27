@@ -122,7 +122,10 @@ nav{
 
   .logo {
     margin-left: 80px;
-    position:absolute
+  }
+
+  .logo img{
+    position:absolute;
   }
 
   .menu-bars,.menu-bars::after,.menu-bars::before {
