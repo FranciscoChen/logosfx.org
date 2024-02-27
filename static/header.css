@@ -121,7 +121,8 @@ nav{
   }
 
   .logo {
-    margin-left: 80px
+    margin-left: 80px;
+    position:absolute
   }
 
   .menu-bars,.menu-bars::after,.menu-bars::before {
@@ -163,7 +164,7 @@ nav{
     bottom: 0
   }
 }
-@media (min-width: 499.3px){
+@media (min-width: 270px){
   .logo{
     display: block;
   }
