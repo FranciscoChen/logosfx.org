@@ -1,3 +1,7 @@
+
+:root{
+  --header-height: 80px;
+}
 header{
   display:flex;
   justify-content:space-between;
@@ -17,11 +21,12 @@ header{
 }
 .logo{
   font-size:30px;
-  margin: 12px 20px;
+  margin: 0px 20px;
   display: none;
+  max-height: var(--header-height);
 }
-.logo a {
-  color:var(--main-text-color);
+.logo img {
+  height:100%;
 }
 nav{
   display:flex;
@@ -42,7 +47,7 @@ nav{
 .site-buttons {
   display: flex;
   flex-flow: row nowrap;
-  height: 60px;
+  height: var(--header-height);
   align-items: center
 }
 .button {
@@ -73,7 +78,7 @@ nav{
   nav {
     display:none;
     position: fixed;
-    top: 60px;
+    top: var(--header-height);
     left: 0;
     bottom: 0;
     z-index: 9;
@@ -109,8 +114,8 @@ nav{
     position: absolute;
     top: 0;
     left: 0;
-    width: 60px;
-    height: 60px;
+    width: var(--header-height);
+    height: var(--header-height);
     cursor: pointer;
     z-index: 9
   }
