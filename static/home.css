@@ -42,14 +42,42 @@
 }
 .news-grid{
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "headlines image";
+    grid-template-areas: "headlines" "image" "title" "title";
+    grid-gap: 2vmin
+}
+@media(min-width: 499.3px) {
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto repeat(3, fit-content(0));
+        grid-template-areas: "headlines headlines" "title image" "title image";
+    }
+
+}
+
+@media(min-width: 799.3px) {
+    .news-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 12em repeat(2, fit-content(0)) auto auto fit-content(0);
+        grid-template-areas: "headlines headlines image" "title title image" "title title image";
+    }
+
+}
+
+@media(min-width: 1259.3px) {
+    .news-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
+        grid-template-areas: "headlines headlines image image" "title title image image" "title title image image";
+    }
 }
 .news-grid-headlines{
     grid-area:headlines;
 }
 .news-grid-image{
     grid-area:image;
+}
+.news-grid-title{
+    grid-area:title;
 }
 
 .courses{
