@@ -6,7 +6,6 @@
 }
 
 .home {
-    --cols: 1;
     grid-area: main;
     display: grid;
     grid-template-areas: "news" "courses" "contact" "support" "about";
@@ -15,7 +14,6 @@
 
 @media(min-width: 499.3px) {
     .home {
-        --cols: 2;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto repeat(3, fit-content(0));
         grid-template-areas: "news news" "courses courses" "contact support" "about about";
@@ -25,7 +23,6 @@
 
 @media(min-width: 799.3px) {
     .home {
-        --cols: 3;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 12em repeat(2, fit-content(0)) auto auto fit-content(0);
         grid-template-areas: ". news ." ". courses ." ". contact ." ". support ." "about about about";
@@ -35,7 +32,6 @@
 
 @media(min-width: 1259.3px) {
     .home {
-        --cols: 4;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
         grid-template-areas: ". news news ." ". courses courses ." ". contact contact ." ". support support ." ". about about .";
@@ -44,6 +40,18 @@
 .news{
     grid-area:news;
 }
+.news-grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "headlines image";
+}
+.news-grid-headlines{
+    grid-area:headlines;
+}
+.news-grid-image{
+    grid-area:image;
+}
+
 .courses{
     grid-area:courses;
 }
