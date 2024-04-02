@@ -71,6 +71,26 @@
     position: relative;
     aspect-ratio: 1.6;
 }
+.course-card-top-image-overlay time{
+    left: 0;
+    border-radius: 0 0 5px 0;
+    font-size: 90%;
+}
+.course-card-top-image-overlay {
+    position: absolute;
+    top: 0;
+    line-height: 1.3em;
+    padding: .2em .5em .3em .5em;
+    background:var(--text-over-image-background-color);
+    color: var(--main-text-color);
+    opacity: 1;
+}
+.name{
+    right: 0;
+    border-radius: 0 0 0 5px;
+    top: unset;
+    bottom: 0;
+}
 .course-card-content{
     padding: 3% 3% 4% 6%;
     display: block;
