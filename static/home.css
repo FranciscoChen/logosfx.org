@@ -49,7 +49,7 @@
     .news-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
-        grid-template-areas: "headlines headlines" "title image" "title image";
+        grid-template-areas: "headlines headlines" "title title" "image image";
     }
 
 }
@@ -58,7 +58,7 @@
     .news-grid {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto auto auto;
-        grid-template-areas: "headlines headlines image" "title title image" "title title image";
+        grid-template-areas: "headlines headlines headlines" "title title title" "image image image";
     }
 
 }
@@ -67,7 +67,7 @@
     .news-grid {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto auto auto;
-        grid-template-areas: "headlines headlines image image" "title title image image" "title title image image";
+        grid-template-areas: "headlines headlines headlines headlines" "title title title title" "image image image image";
     }
 }
 .news-grid-headlines{
