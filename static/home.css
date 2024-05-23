@@ -76,6 +76,10 @@
 .news-grid-image{
     grid-area:image;
 }
+.news-image{
+    width:100%;
+    height:auto;
+}
 .news-grid-title{
     grid-area:title;
 }
