@@ -127,7 +127,7 @@ nav{
   }
 
   .logo {
-    margin-left: 80px;
+    margin-left: calc(100vw/2 - 55px);
   }
 
   .menu-bars,.menu-bars::after,.menu-bars::before {
