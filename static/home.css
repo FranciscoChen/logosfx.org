@@ -24,7 +24,7 @@
 @media(min-width: 799.3px) {
     .home {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 12em repeat(2, fit-content(0)) auto auto fit-content(0);
+        grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
         grid-template-areas: ". news ." ". courses ." ". contact ." ". support ." "about about about";
     }
 
