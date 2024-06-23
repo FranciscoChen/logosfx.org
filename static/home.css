@@ -44,7 +44,9 @@
     width:100%;
     height:auto;
 }
-
+.courses{
+    grid-area:courses;
+}
 .testimonies{
     grid-area:testimonies;
 }
