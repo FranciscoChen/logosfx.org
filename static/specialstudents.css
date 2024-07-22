@@ -1,0 +1,57 @@
+#main-wrap {
+    display: grid;
+    grid-template-areas: ". . main . .";
+    grid-template-columns: var(--main-margin) 1fr minmax(auto, var(--main-max-width)) 1fr var(--main-margin);
+    margin-top: var(--site-header-margin);
+}
+
+.specialstudents {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "purpose" "qualifications" "requirements" "ratio" "about";
+    grid-gap: 2vmin
+}
+
+@media(min-width: 499.3px) {
+    .specialstudents {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto repeat(3, fit-content(0));
+        grid-template-areas: "purpose purpose" "qualifications qualifications" "requirements requirements" "ratio ratio" "about about";
+    }
+
+}
+
+@media(min-width: 799.3px) {
+    .specialstudents {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
+        grid-template-areas: ". purpose ." ". qualifications ." ". requirements ." ". ratio ." "about about about";
+    }
+
+}
+
+@media(min-width: 1259.3px) {
+    .specialstudents {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
+        grid-template-areas: ". purpose purpose ." ". qualifications qualifications ." ". requirements requirements ." ". ratio ratio ." ". about about .";
+    }
+}
+.purpose{
+    grid-area:purpose;
+}
+.qualifications{
+    grid-area:qualifications;
+}
+.testimonies{
+    grid-area:testimonies;
+}
+.requirements{
+    grid-area:requirements;
+}
+.ratio{
+    grid-area:ratio;
+}
+.about{
+    grid-area:about;
+}
