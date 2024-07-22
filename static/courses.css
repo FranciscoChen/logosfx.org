@@ -5,55 +5,55 @@
     margin-top: var(--site-header-margin);
 }
 
-.course {
+.courses {
     grid-area: main;
     display: grid;
-    grid-template-areas: "purpose" "qualifications" "application" "graduation" "scope" "about";
+    grid-template-areas: "title" "bacheloroftheology" "bachelorofministry" "churchleadershipcertificate" "specialstudents" "about";
     grid-gap: 2vmin
 }
 
 @media(min-width: 499.3px) {
-    .course {
+    .courses {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto repeat(3, fit-content(0));
-        grid-template-areas: "purpose purpose" "qualifications qualifications" "application application" "graduation graduation" "scope scope" "about about";
+        grid-template-areas: "title title" "bacheloroftheology bacheloroftheology" "bachelorofministry bachelorofministry" "churchleadershipcertificate churchleadershipcertificate" "specialstudents specialstudents" "about about";
     }
 
 }
 
 @media(min-width: 799.3px) {
-    .course {
+    .courses {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: ". purpose ." ". qualifications ." ". application ." ". graduation ." ". scope ." "about about about";
+        grid-template-areas: ". title ." ". bacheloroftheology ." ". bachelorofministry ." ". churchleadershipcertificate ." ". specialstudents ." "about about about";
     }
 
 }
 
 @media(min-width: 1259.3px) {
-    .course {
+    .courses {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: ". purpose purpose ." ". qualifications qualifications ." ". application application ." ". graduation graduation ." ". scope scope ." ". about about .";
+        grid-template-areas: ". title title ." ". bacheloroftheology bacheloroftheology ." ". bachelorofministry bachelorofministry ." ". churchleadershipcertificate churchleadershipcertificate ." ". specialstudents specialstudents ." ". about about .";
     }
 }
-.purpose{
-    grid-area:purpose;
+.title{
+    grid-area:title;
 }
-.qualifications{
-    grid-area:qualifications;
+.bacheloroftheology{
+    grid-area:bacheloroftheology;
 }
 .testimonies{
     grid-area:testimonies;
 }
-.application{
-    grid-area:application;
+.bachelorofministry{
+    grid-area:bachelorofministry;
 }
-.graduation{
-    grid-area:graduation;
+.churchleadershipcertificate{
+    grid-area:churchleadershipcertificate;
 }
-.scope{
-    grid-area:scope;
+.specialstudents{
+    grid-area:specialstudents;
 }
 .about{
     grid-area:about;
