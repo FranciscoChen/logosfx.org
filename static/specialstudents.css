@@ -54,4 +54,5 @@
 }
 .about{
     grid-area:about;
+    margin-top:7em;
 }
