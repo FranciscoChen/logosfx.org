@@ -40,6 +40,9 @@
 .title{
     grid-area:title;
 }
+.description{
+    grid-area:description;
+}
 .form{
     grid-area:form;
     padding:3vh;
