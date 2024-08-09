@@ -39,6 +39,7 @@
 }
 .news{
     grid-area:news;
+    padding:3vh;
 }
 .news-image{
     width:100%;
