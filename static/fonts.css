@@ -1,6 +1,6 @@
 :root{
   --main-text-font: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif;
-  --main-text-font-size: 12px;
+  --main-text-font-size: 16px;
 }
 html{
   font-weight:400;
