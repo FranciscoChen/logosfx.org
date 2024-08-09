@@ -42,6 +42,7 @@
 }
 .description{
     grid-area:description;
+    padding:1vh 3vh;
 }
 .form{
     grid-area:form;
@@ -56,13 +57,15 @@
 }
 .form-label {
     font-weight: 700;
-    display: inline-block;
-    cursor: text
+    cursor: text;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
 }
 .form-control {
     display: block;
     width: 100%;
-    height: calc(1.4em + 2px);
+    height: calc(2.7em + 2px);
     background-clip: padding-box
 }
 .form-control:invalid, {
