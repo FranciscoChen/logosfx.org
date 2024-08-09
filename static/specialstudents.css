@@ -56,3 +56,7 @@
     grid-area:about;
     margin-top:7em;
 }
+.title{
+    grid-area:title;
+    padding:3vh;
+}
