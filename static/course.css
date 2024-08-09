@@ -39,21 +39,27 @@
 }
 .purpose{
     grid-area:purpose;
+    padding:3vh;
 }
 .qualifications{
     grid-area:qualifications;
+    padding:3vh;
 }
 .testimonies{
     grid-area:testimonies;
+    padding:3vh;
 }
 .application{
     grid-area:application;
+    padding:3vh;
 }
 .graduation{
     grid-area:graduation;
+    padding:3vh;
 }
 .scope{
     grid-area:scope;
+    padding:3vh;
 }
 .about{
     grid-area:about;

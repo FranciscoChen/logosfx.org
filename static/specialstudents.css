@@ -39,18 +39,23 @@
 }
 .purpose{
     grid-area:purpose;
+    padding:3vh;
 }
 .qualifications{
     grid-area:qualifications;
+    padding:3vh;
 }
 .testimonies{
     grid-area:testimonies;
+    padding:3vh;
 }
 .requirements{
     grid-area:requirements;
+    padding:3vh;
 }
 .ratio{
     grid-area:ratio;
+    padding:3vh;
 }
 .about{
     grid-area:about;
