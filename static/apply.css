@@ -57,13 +57,12 @@
 .form-label {
     font-weight: 700;
     display: inline-block;
-    margin-bottom: .5rem;
     cursor: text
 }
 .form-control {
     display: block;
     width: 100%;
-    height: calc(2.7em + 2px);
+    height: calc(1.4em + 2px);
     background-clip: padding-box
 }
 .form-control:invalid, {
@@ -71,4 +70,7 @@
 }
 .form-check div {
     display: flex;
+}
+.form-check-input {
+    margin-right: .5rem;
 }
