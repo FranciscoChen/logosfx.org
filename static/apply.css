@@ -39,6 +39,7 @@
 }
 .title{
     grid-area:title;
+    padding:3vh;
 }
 .description{
     grid-area:description;
