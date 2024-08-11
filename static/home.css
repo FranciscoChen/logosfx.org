@@ -8,7 +8,7 @@
 .home {
     grid-area: main;
     display: grid;
-    grid-template-areas: "logos" "seminary" "call" "apply";
+    grid-template-areas: "logos" "seminary" "call" "apply" "about";
     grid-gap: 2vmin
 }
 
