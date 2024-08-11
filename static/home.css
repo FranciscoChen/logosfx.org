@@ -32,7 +32,7 @@
     .home {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: ". news news ." ". about about .";
+        grid-template-areas: ". logos logos ." ". seminary seminary ." "call call . ." ". . . apply" "about about about about";
     }
 }
 .logos {
