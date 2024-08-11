@@ -60,7 +60,7 @@
     grid-area: seminary;
     display: flex;
     justify-content: center;
-    font-family: kaiti;
+    font-family: var(--header-text-font);
     font-weight: bold;
     font-size: 43px;
     padding-bottom:20vh;
@@ -75,7 +75,7 @@
     font-weight: bold;
     display: flex;
     justify-content: center;
-    font-family: kaiti;
+    font-family: var(--header-text-font);
     padding-bottom:12vh;
     opacity:0;
     animation: fadein ease-in-out 1s;

@@ -1,7 +1,11 @@
 :root{
   --main-text-font: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif;
   --main-text-font-size: 16px;
-  --header-text-font: "宋体";
+  --header-text-font: FZKai,"宋体";
+}
+@font-face{
+  font-family: 'FZKai';
+  src: url('https://static.logosfx.org/FZKai-Z03S.woff2');
 }
 html{
   font-weight:400;
@@ -34,12 +38,6 @@ h1{
 h2{
   font-family:var(--header-text-font);
   font-size:1.5em;
-  margin-top:1em;
-  margin-bottom:1em;
-}
-h3{
-  font-family:var(--header-text-font);
-  font-size:1.2em;
   margin-top:1em;
   margin-bottom:1em;
 }
