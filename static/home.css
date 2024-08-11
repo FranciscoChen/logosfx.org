@@ -15,7 +15,7 @@
     .home {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto repeat(3, fit-content(0));
-        grid-template-areas: "logos logos" "about about";
+        grid-template-areas: "logos logos" "seminary seminary" "call call" "apply apply" "about about";
     }
 
 }
