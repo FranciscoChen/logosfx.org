@@ -47,7 +47,7 @@
 }
 .about{
     grid-area:about;
-    margin-top:7em;
+    margin-top:50vh;
 }
 .form-group{
     margin-bottom:3rem;
