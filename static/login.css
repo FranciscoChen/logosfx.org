@@ -1,0 +1,76 @@
+#main-wrap {
+    display: grid;
+    grid-template-areas: ". . main . .";
+    grid-template-columns: var(--main-margin) 1fr minmax(auto, var(--main-max-width)) 1fr var(--main-margin);
+    margin-top: var(--site-header-margin);
+}
+
+.login {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "title" "form" "about";
+    grid-gap: 2vmin
+}
+
+@media(min-width: 499.3px) {
+    .login {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto repeat(3, fit-content(0));
+        grid-template-areas: "title title" "form form" "about about";
+    }
+
+}
+
+@media(min-width: 799.3px) {
+    .login {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
+        grid-template-areas: ". title ." ". form ." "about about about";
+    }
+
+}
+
+@media(min-width: 1259.3px) {
+    .login {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
+        grid-template-areas: ". title title ." ". form form ." ". about about .";
+    }
+}
+.title{
+    grid-area:title;
+    padding:3vh;
+}
+.form{
+    grid-area:form;
+    padding:3vh;
+}
+.about{
+    grid-area:about;
+    margin-top:7em;
+}
+.form-group{
+    margin-bottom:3rem;
+}
+.form-label {
+    font-weight: 700;
+    cursor: text;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.7em + 2px);
+    background-clip: padding-box
+}
+.form-control:invalid, {
+    border-color: #fc0;
+}
+.form-check div {
+    display: flex;
+}
+.form-check-input {
+    margin-right: .5rem;
+}
