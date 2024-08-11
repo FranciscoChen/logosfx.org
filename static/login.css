@@ -53,7 +53,7 @@
     margin-bottom:3rem;
 }
 .form-label {
-    font-weight: 700;
+    margin-bottom: 1em;
     cursor: text;
     display: flex;
     flex-direction:column;
@@ -109,4 +109,6 @@
 }
 .submit{
     width:100%;
+    font-size:1em;
+    font-weight:400;
 }
