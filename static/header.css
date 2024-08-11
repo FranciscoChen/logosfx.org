@@ -46,7 +46,6 @@ nav{
 .menu-item a{
   display: block;
   padding: 29.1px;
-  font-size: 18px;
 }
 .menu-item a:hover {
   background:var(--main-hover-color);
