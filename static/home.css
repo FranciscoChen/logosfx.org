@@ -8,7 +8,7 @@
 .home {
     grid-area: main;
     display: grid;
-    grid-template-areas: "news" "courses" "contact" "support" "about";
+    grid-template-areas: "news" "about";
     grid-gap: 2vmin
 }
 
@@ -16,7 +16,7 @@
     .home {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto repeat(3, fit-content(0));
-        grid-template-areas: "news news" "courses courses" "contact support" "about about";
+        grid-template-areas: "news news" "about about";
     }
 
 }
@@ -25,7 +25,7 @@
     .home {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: ". news ." ". courses ." ". contact ." ". support ." "about about about";
+        grid-template-areas: "news news news" "about about about";
     }
 
 }
@@ -34,7 +34,7 @@
     .home {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: ". news news ." ". courses courses ." ". contact contact ." ". support support ." ". about about .";
+        grid-template-areas: ". news news ." ". about about .";
     }
 }
 .news{
@@ -44,21 +44,6 @@
 .news-image{
     width:100%;
     height:auto;
-}
-.courses{
-    grid-area:courses;
-}
-.testimonies{
-    grid-area:testimonies;
-}
-.contact{
-    grid-area:contact;
-}
-.support{
-    grid-area:support;
-}
-.timeline{
-    grid-area:timeline;
 }
 .about{
     grid-area:about;
