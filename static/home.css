@@ -26,13 +26,6 @@
         grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
         grid-template-areas: "logos logos logos" "seminary seminary seminary" "call call ." ". . apply" "about about about";
     }
-    .call {
-        padding-bottom:2vh;
-    }
-    .seminary {
-        padding-bottom:40vh;
-    }
-
 }
 
 @media(min-width: 1259.3px) {
@@ -68,6 +61,14 @@
     justify-content: center;
     font-family: kaiti;
     padding-bottom:12vh;
+}
+@media(min-width: 799.3px) {
+    .call {
+        padding-bottom:2vh;
+    }
+    .seminary {
+        padding-bottom:40vh;
+    }
 }
 .apply {
     grid-area: apply;
