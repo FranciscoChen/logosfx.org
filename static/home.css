@@ -78,9 +78,6 @@
     font-size: 26px;
     font-weight: bold;
 }
-.submit{
-    color:#fff;
-}
 .about{
     grid-area:about;
     margin-top:50vh;
