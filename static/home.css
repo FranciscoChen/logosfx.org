@@ -24,7 +24,13 @@
     .home {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: "news news news" "about about about";
+        grid-template-areas: "logos logos logos" "seminary seminary seminary" "call call ." ". . apply" "about about about";
+    }
+    .call {
+        padding-bottom:2vh;
+    }
+    .seminary {
+        padding-bottom:40vh;
     }
 
 }
