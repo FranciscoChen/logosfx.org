@@ -65,6 +65,7 @@
 @media(min-width: 799.3px) {
     .call {
         padding-bottom:2vh;
+        font-size:50px;
     }
     .seminary {
         padding-bottom:40vh;
