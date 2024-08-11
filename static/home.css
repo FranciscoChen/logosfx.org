@@ -51,6 +51,7 @@
     font-family: kaiti;
     font-weight: 900;
     font-size: 43px;
+    padding-bottom:12vh;
 }
 .call{
     grid-area:call;
