@@ -22,6 +22,13 @@
 }
 .form-check div {
     display: flex;
+    cursor: pointer;
+} 
+.form-check input {
+    cursor: pointer;
+}
+.form-check label {
+    cursor: pointer;
 }
 .form-check-input {
     margin-right: .5rem;
