@@ -52,6 +52,7 @@ nav{
   border-bottom: 3px var(--main-link-color) solid;
 }
 .menu-item a::after{
+  content:"";
   background-color:var(--main-link-color);
   width: 0px;
   height: 3px;
