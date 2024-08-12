@@ -51,14 +51,14 @@ nav{
 .activepage {
   border-bottom: 3px var(--main-link-color) solid;
 }
-.menu-item a::after{
+.menu-item::after{
   content:"";
   background-color:var(--main-link-color);
   width: 0px;
   height: 3px;
   transition: 1s width ease-out;
 }
-.menu-item a:hover:after {
+.menu-item:hover:after {
   width:100%;
 }
 .site-buttons {
