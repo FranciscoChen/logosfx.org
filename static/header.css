@@ -142,7 +142,8 @@ nav{
 
   .menu-bars {
     left: 20px;
-    top: 50%
+    top: 50%;
+    transition: transform 1s ease-out;
   }
 
   .menu-bars::after,.menu-bars::before {
