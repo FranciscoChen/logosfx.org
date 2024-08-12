@@ -8,8 +8,8 @@
     justify-content:center;
     margin-bottom:1em;
 }
-.form-label.form-check{
-    margin-bottom:0;
+.form-check label {
+    margin-bottom: 0;
 }
 .form-control {
     display: block;
