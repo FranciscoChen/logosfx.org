@@ -88,8 +88,12 @@
         padding-bottom:2vh;
         font-size:50px;
     }
+    .logos {
+        font-size:49px;
+    }
     .seminary {
         padding-bottom:40vh;
+        font-size:70px;
     }
 }
 .apply {
