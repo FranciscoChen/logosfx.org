@@ -53,10 +53,11 @@ nav{
 }
 .menu-item::after{
   content:"";
+  display:block;
   background-color:var(--main-link-color);
   width: 0px;
   height: 3px;
-  transition: 1s width ease-out;
+  transition: 0.5s width ease-out;
 }
 .menu-item:hover:after {
   width:100%;
