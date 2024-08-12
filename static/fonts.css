@@ -1,7 +1,7 @@
 :root{
-  --main-text-font: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif;
+  --main-text-font: "宋体",SimSun,serif;
   --main-text-font-size: 16px;
-  --header-text-font: FZKai,"宋体";
+  --header-text-font: FZKai,FangSong,serif;
 }
 @font-face{
   font-family: 'FZKai';
