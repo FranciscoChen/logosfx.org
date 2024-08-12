@@ -46,9 +46,19 @@ nav{
 .menu-item a{
   display: block;
   padding: 29.1px;
+  transition: 1s border-bottom ease-out;
 }
-.menu-item a:hover {
-  background:var(--main-hover-color);
+.activepage {
+  border-bottom: 3px var(--main-link-color) solid;
+}
+.menu-item a::after{
+  background-color:var(--main-link-color);
+  width: 0px;
+  height: 3px;
+  transition: 1s width ease-out;
+}
+.menu-item a:hover:after {
+  width:100%;
 }
 .site-buttons {
   display: flex;
