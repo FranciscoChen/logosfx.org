@@ -22,7 +22,7 @@ a {
   cursor: pointer;
   color:var(--main-link-color);
 }
-a::hover{
+a:hover{
   color:var(--main-highlight-color);
 }
 @media (min-width: 320px) {
