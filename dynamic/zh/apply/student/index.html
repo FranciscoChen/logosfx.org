@@ -66,9 +66,9 @@
       </div>
       <div class="description">
           <h2>
-              除了注册神学院所需的信息外，我们还想更好地了解您。不用担心，您的数据不会与第三方共享。
+              欢迎来到申请流程！ 首先，我们需要您的个人信息来创建您的帐户并将您注册为神学院的学生。
 	  </h2>
-	  <p>请参阅我们的<a href="/privacy">隐私政策</a></p>
+	  <p>请放心，您的数据不会与第三方共享。此外请参阅我们的<a href="/privacy">隐私政策</a></p>
       </div>
       <div class="form">
 	  <form method="post" id="apply-form" action="/applystudent">
@@ -100,10 +100,6 @@
 		  <input class="form-control" id="form-postalcode" type="text" minlength="1" maxlength="20" required="required">
               </div>
               <div class="form-group">
-                  <label class="form-label" for="form-photo">照片</label>
-		  <input class="form-control" id="form-photo" type="file" name="photo" required="required">
-              </div>
-              <div class="form-group">
                   <label class="form-label" for="form-phone">住宅电话</label>
 		  <input class="form-control" id="form-phone" type="text" minlength="1" maxlength="20" required="required">
               </div>
@@ -119,141 +115,7 @@
                   <label class="form-label" for="form-email">电子邮件</label>
 		  <input class="form-control" id="form-email" type="email" minlength="1" maxlength="20" required="required">
               </div>
-              <div class="form-group">
-                  <label class="form-label">紧急联络人</label>
-                  <label class="form-label" for="form-emergencycontact">姓名</label>
-		  <input class="form-control" id="form-emergencycontact" type="text" minlength="1" maxlength="20" required="required">
-                  <label class="form-label" for="form-emergencyphone">电话</label>
-		  <input class="form-control" id="form-emergencyphone" type="text" minlength="1" maxlength="20" required="required">
-              </div>
-	      <div class="hobbies">
-                  <label class="form-label">兴趣特长</label>
-		  <div class="form-check form-group">
-                      <div>
-	                  <span class="form-check-input">
-		              <input id="form-computers" value="true" name="computers" type="checkbox" class="form-control cmn-toggle">
-			  </span>
-			  <label class="form-label" for="form-computers">电脑</label>
-		      </div>
-		  </div>
-		  <div class="form-check form-group">
-                      <div>
-	                  <span class="form-check-input">
-		              <input id="form-english" value="true" name="english" type="checkbox" class="form-control cmn-toggle">
-			  </span>
-			  <label class="form-label" for="form-english">英语</label>
-		      </div>
-		  </div>
-		  <div class="form-check form-group">
-                      <div>
-	                  <span class="form-check-input">
-		              <input id="form-calligraphy" value="true" name="calligraphy" type="checkbox" class="form-control cmn-toggle">
-			  </span>
-			  <label class="form-label" for="form-calligraphy">书法</label>
-		      </div>
-		  </div>
-		  <div class="form-check form-group">
-                      <div>
-	                  <span class="form-check-input">
-		              <input id="form-music" value="true" name="music" type="checkbox" class="form-control cmn-toggle">
-			  </span>
-			  <label class="form-label" for="form-music">音乐</label>
-		      </div>
-		  </div>
-		  <div class="form-check form-group">
-                      <div>
-	                  <span class="form-check-input">
-		              <input id="form-dance" value="true" name="dance" type="checkbox" class="form-control cmn-toggle">
-			  </span>
-			  <label class="form-label" for="form-dance">舞蹈</label>
-		      </div>
-		  </div>
-		  <div class="form-check form-group">
-                      <div>
-	                  <span class="form-check-input">
-		              <input id="form-other" value="true" name="other" type="checkbox" class="form-control cmn-toggle">
-			  </span>
-			  <label class="form-label" for="form-other">其他</label>
-		          <input class="form-control" id="form-othertext" type="text" minlength="1" maxlength="20">
-		      </div>
-		  </div>
-              </div>
-              <div class="form-group">
-                  <label class="form-label">职业</label>
-                  <label class="form-label" for="form-currentjob">当前职业</label>
-		  <input class="form-control" id="form-currentjob" type="text" minlength="1" maxlength="20" required="required">
-                  <label class="form-label" for="form-currentjobstart">何年开始</label>
-		  <input class="form-control" id="form-currentjobstart" type="text" minlength="1" maxlength="20" required="required">
-              </div>
-	      <div class="maritalstatus">
-                  <label class="form-label">婚姻状况</label>
-		  <div class="form-check form-group">
-                      <div>
-	                  <span class="form-check-input">
-		              <input id="form-single" name="martialstatus" value="single" type="radio" class="form-control cmn-toggle">
-			  </span>
-			  <label class="form-label" for="form-single">单身</label>
-		      </div>
-		  </div>
-		  <div class="form-check form-group">
-                      <div>
-	                  <span class="form-check-input">
-		              <input id="form-engaged" name="martialstatus" value="engaged" type="radio" class="form-control cmn-toggle">
-			  </span>
-			  <label class="form-label" for="form-engaged">订婚</label>
-		      </div>
-		  </div>
-		  <div class="form-check form-group">
-                      <div>
-	                  <span class="form-check-input">
-		              <input id="form-married" name="martialstatus" value="married" type="radio" class="form-control cmn-toggle">
-			  </span>
-			  <label class="form-label" for="form-married">已婚</label>
-		      </div>
-		  </div>
-		  <div class="form-check form-group">
-                      <div>
-	                  <span class="form-check-input">
-		              <input id="form-widow" name="martialstatus" value="widow" type="radio" class="form-control cmn-toggle">
-			  </span>
-			  <label class="form-label" for="form-widow">寡居</label>
-		      </div>
-		  </div>
-		  <div class="form-check form-group">
-                      <div>
-	                  <span class="form-check-input">
-		              <input id="form-separated" name="martialstatus" value="separated" type="radio" class="form-control cmn-toggle">
-			  </span>
-			  <label class="form-label" for="form-separated">分居</label>
-		      </div>
-		  </div>
-		  <div class="form-check form-group">
-                      <div>
-	                  <span class="form-check-input">
-		              <input id="form-divorced" name="martialstatus" value="divorced" type="radio" class="form-control cmn-toggle">
-			  </span>
-			  <label class="form-label" for="form-divorced">离婚</label>
-		      </div>
-		  </div>
-		  <div class="form-check form-group">
-                      <div>
-	                  <span class="form-check-input">
-		              <input id="form-divorcedandremarried" name="martialstatus" value="divorcedandremarried" type="radio" class="form-control cmn-toggle">
-			  </span>
-			  <label class="form-label" for="form-divorcedandremarried">离婚又再婚</label>
-		      </div>
-		  </div>
-                  <div class="form-group">
-                      <label class="form-label">若是已婚〔有配偶〕，请填写以下:</label>
-                      <label class="form-label" for="form-partnername">配偶姓名</label>
-		      <input class="form-control" id="form-partnername" type="text" minlength="1" maxlength="20" required="required">
-                      <label class="form-label" for="form-partnerjob">配偶职业</label>
-		      <input class="form-control" id="form-partnerjob" type="text" minlength="1" maxlength="20" required="required">
-                      <label class="form-label" for="form-children">若是有儿女，请列出儿女的姓名和年龄:</label>
-		      <input class="form-control" id="form-children" type="text" minlength="1" maxlength="20" required="required">
-                  </div>
-              </div>
-	      <button class="submit colorbutton button text big disabled" disabled="">发送</button>
+	      <button class="submit colorbutton button text big">发送</button>
 	  </form>
       </div>
       <div class="about">
