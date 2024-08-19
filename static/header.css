@@ -91,7 +91,7 @@ nav{
   background: 0 0;
   box-shadow: none;
   opacity:0;
-  transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
 }
 .site-buttons .opaque {
   opacity:1;
