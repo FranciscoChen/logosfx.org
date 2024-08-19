@@ -1,0 +1,114 @@
+#main-wrap {
+    display: grid;
+    grid-template-areas: ". . main . .";
+    grid-template-columns: var(--main-margin) 1fr minmax(auto, var(--main-max-width)) 1fr var(--main-margin);
+    margin-top: var(--site-header-margin);
+}
+
+.home {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "logos" "seminary" "call" "apply" "about";
+}
+
+@media(min-width: 499.3px) {
+    .home {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto repeat(3, fit-content(0));
+        grid-template-areas: "logos logos" "seminary seminary" "call call" "apply apply" "about about";
+    }
+
+}
+
+@media(min-width: 799.3px) {
+    .home {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
+        grid-template-areas: "logos logos logos" "seminary seminary seminary" "call call ." ". . apply" "about about about";
+    }
+}
+
+@media(min-width: 1259.3px) {
+    .home {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
+        grid-template-areas: ". logos logos ." ". seminary seminary ." "call call . ." ". . . apply" "about about about about";
+    }
+}
+.logos {
+    grid-area: logos;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: normal;
+    font-family: times new roman;
+    padding-top:12vh;
+    opacity:0;
+    animation: fadein ease-in-out 1s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+@keyframes fadein{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.seminary {
+    grid-area: seminary;
+    display: flex;
+    justify-content: center;
+    font-family: var(--header-text-font);
+    font-weight: bold;
+    font-size: 43px;
+    padding-bottom:20vh;
+    opacity:0;
+    animation: fadein ease-in-out 1s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+.call {
+    grid-area: call;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-family: var(--header-text-font);
+    padding-bottom:12vh;
+    opacity:0;
+    animation: fadein ease-in-out 1s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    animation-delay:1s
+}
+@media(min-width: 799.3px) {
+    .call {
+        padding-bottom:2vh;
+        font-size:50px;
+    }
+    .logos {
+        font-size:49px;
+    }
+    .seminary {
+        padding-bottom:40vh;
+        font-size:70px;
+    }
+}
+.apply {
+    grid-area: apply;
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: bold;
+    opacity:0;
+    animation: fadein ease-in-out 1s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    animation-delay:2s
+}
+.about{
+    grid-area:about;
+    margin-top:50vh;
+}
