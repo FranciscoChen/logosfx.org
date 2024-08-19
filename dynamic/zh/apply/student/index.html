@@ -72,13 +72,15 @@
       </div>
       <div class="form">
 	  <form method="post" id="apply-form" action="/applystudent">
-<form action="/action_page.php" target="_blank">
+              <div class="form-group">
+                  <label class="form-label" for="form-surname">姓</label>
+		  <input name="surname" class="form-control" id="form-surname" type="text" minlength="1" maxlength="40" required="required">
+              </div>
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" value="John"><br>
   <label for="lname">Last name:</label><br>
   <input type="text" id="lname" name="lname" value="Doe"><br><br>
   <input type="submit" value="Submit">
-</form>
 	  </form>
       </div>
       <div class="about">
