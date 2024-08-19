@@ -25,7 +25,7 @@
     .courses {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: ". title ." ". description ." ". subtitle ." ". bacheloroftheology ." ". bachelorofministry ." ". churchleadershipcertificate ." ". specialstudents ." "about about about";
+        grid-template-areas: "title title title" "description description description" "subtitle subtitle subtitle" "bacheloroftheology bacheloroftheology bacheloroftheology" "bachelorofministry bachelorofministry bachelorofministry" "churchleadershipcertificate churchleadershipcertificate churchleadershipcertificate" "specialstudents specialstudents specialstudents" "about about about";
     }
 
 }
