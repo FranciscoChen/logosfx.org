@@ -90,6 +90,11 @@ nav{
   transition: none;
   background: 0 0;
   box-shadow: none;
+  opacity:0;
+  transition: opacity 0.1s ease-in-out;
+}
+.opaque {
+  opacity:1;
 }
 .button:not(.disabled):hover {
   color: #fff;

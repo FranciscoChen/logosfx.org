@@ -11,9 +11,11 @@ function user() {
       if (this.responseText === '1') {
         btn.innerText = '主页'
         btn.href = '/home'
+        btn.classList.add('opaque')
       } else {
         btn.innerText = '登录'
         btn.href = '/login'
+        btn.classList.add('opaque')
       }
     }
   }
