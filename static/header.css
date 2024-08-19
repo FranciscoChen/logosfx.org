@@ -85,6 +85,9 @@ nav{
 .colorbutton{
     color:var(--main-background-color);
 }
+.opaque {
+  opacity:1;
+}
 .site-buttons .signin {
   margin: 0 1rem;
   transition: none;
@@ -92,9 +95,6 @@ nav{
   box-shadow: none;
   opacity:0;
   transition: opacity 0.1s ease-in-out;
-}
-.opaque {
-  opacity:1;
 }
 .button:not(.disabled):hover {
   color: #fff;
