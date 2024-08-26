@@ -49,3 +49,14 @@
     grid-area:about;
     margin-top:50vh;
 }
+
+.alternative {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    font-size: .9em;
+    line-height: 2em;
+    gap: 1em
+}
