@@ -5,45 +5,45 @@
     margin-top: var(--site-header-margin);
 }
 
-.home {
+.contact {
     grid-area: main;
     display: grid;
-    grid-template-areas: "news" "about";
+    grid-template-areas: "email" "about";
     grid-gap: 2vmin
 }
 
 @media(min-width: 499.3px) {
-    .home {
+    .contact {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto repeat(3, fit-content(0));
-        grid-template-areas: "news news" "about about";
+        grid-template-areas: "email email" "about about";
     }
 
 }
 
 @media(min-width: 799.3px) {
-    .home {
+    .contact {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: "news news news" "about about about";
+        grid-template-areas: "email email email" "about about about";
     }
 
 }
 
 @media(min-width: 1259.3px) {
-    .home {
+    .contact {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: ". news news ." ". about about .";
+        grid-template-areas: ". email email ." ". about about .";
     }
 }
-.news{
-    grid-area:news;
+.email{
+    grid-area:email;
     padding:3vh;
 }
-.news-image{
-    width:100%;
-    height:auto;
+.phone{
+    grid-area:phone;
+    padding:3vh;
 }
 .about{
     grid-area:about;
