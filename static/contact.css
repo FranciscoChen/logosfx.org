@@ -8,7 +8,7 @@
 .contact {
     grid-area: main;
     display: grid;
-    grid-template-areas: "email" "phone" "about";
+    grid-template-areas: "title" "email" "phone" "about";
     grid-gap: 2vmin
 }
 
@@ -16,16 +16,16 @@
     .contact {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto repeat(3, fit-content(0));
-        grid-template-areas: "email email" "phone phone" "about about";
+        grid-template-areas: "title title" "email email" "phone phone" "about about";
     }
 
 }
 
 @media(min-width: 799.3px) {
     .contact {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 3fr 1fr;
         grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: "email email email" "phone phone phone" "about about about";
+        grid-template-areas: ". title ." ". email ." ". phone ." "about about about";
     }
 
 }
@@ -34,18 +34,42 @@
     .contact {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: ". email email ." ". phone phone ." ". about about .";
+        grid-template-areas: ". title title ." ". email email ." ". phone phone ." ". about about .";
     }
 }
 .email{
     grid-area:email;
-    padding:3vh;
+    padding:2vh;
 }
 .phone{
     grid-area:phone;
-    padding:3vh;
+    padding:2vh;
 }
 .about{
     grid-area:about;
     margin-top:50vh;
+}
+
+.title {
+    grid-area: title;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-areas:
+        "datatype data1 data1"
+        ". data2 data2";
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.datatype {
+    grid-area: datatype;
+}
+
+.data1 {
+    grid-area: data1;
+}
+
+.data2 {
+    grid-area: data2;
 }
