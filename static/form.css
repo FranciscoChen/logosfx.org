@@ -34,6 +34,22 @@
 .form-check-input {
     margin-right: .5rem;
 }
+.form-help,.password-complexity-label {
+    color:var(--secondary-text-color);
+    font-size: 90%;
+    margin-top: .25rem;
+    unicode-bidi: plaintext
+}
+.password-complexity-meter {
+    display: flex;
+    grid-gap: .25rem;
+    height: .4rem;
+    margin-top: 1rem
+}
+.password-complexity-meter>* {
+    background-color:var(--secondary-text-color);
+    width: 25%
+}
 
 @media (min-width: 320px) {
     .box {
