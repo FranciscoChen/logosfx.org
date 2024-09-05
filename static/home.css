@@ -56,6 +56,13 @@
     grid-template-areas:
         ". set-password ."
         ". button .";
+    padding: 2vh;
+    margin: 2vh;
+    border: solid;
+    border-color: var(--cards-border-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px 0 var(--cards-shadow-color), inset 0 -1px 0 0 var(--cards-border-color);
+    border-width: 1px;
 }
 
 .button-area {
