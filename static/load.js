@@ -5,4 +5,7 @@ window.onload = () => {
   if (typeof home === 'function'){
     home()
   }
+  if (typeof pwcomplexity === 'function'){
+    pwcomplexity()
+  }
 }
