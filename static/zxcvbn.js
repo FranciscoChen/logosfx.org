@@ -5,7 +5,7 @@ function pwcomplexity() {
     const pm = document.getElementsByClassName("password-complexity-meter")[0];
     pw.addEventListener("input", (function() {
         if (pw.value.length > 1) {
-            switch (zxcvbn(pw.value.slice(0, 100), [document.getElementById("form3-username").value]).score) {
+            switch (zxcvbn(pw.value.slice(0, 100)).score) {
             case 0:
                 pwstr = 0;
                 for (var i = 0; i < 4; ++i) {
