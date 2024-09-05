@@ -14,18 +14,20 @@
 
 @media(min-width: 499.3px) {
     .home {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 7fr 1fr;
         grid-template-rows: auto repeat(3, fit-content(0));
-        grid-template-areas: "cards cards" "about about";
+        grid-template-areas:
+            ". cards ."
+            "about about about";
     }
 
 }
 
 @media(min-width: 799.3px) {
     .home {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 4fr 1fr;
         grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: "cards cards cards" "about about about";
+        grid-template-areas: ". cards ." "about about about";
     }
 
 }
@@ -37,10 +39,40 @@
         grid-template-areas: ". cards cards ." ". about about .";
     }
 }
-.cards{
-    grid-area:cards;
-    padding:3vh;
+
+.cards {
+    grid-area: cards;
+    padding: 2vh;
+    margin: 2vh;
+    border: solid;
+    border-color: var(--cards-border-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px 0 var(--cards-shadow-color), inset 0 -1px 0 0 var(--cards-border-color);
+    border-width: 1px;
 }
+
+.body {
+    display: grid;
+    grid-template-areas:
+        ". set-password ."
+        ". button .";
+    padding: 2vh;
+    margin: 2vh;
+    border: solid;
+    border-color: var(--cards-border-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px 0 var(--cards-shadow-color), inset 0 -1px 0 0 var(--cards-border-color);
+    border-width: 1px;
+}
+
+.button-area {
+    grid-area: button;
+}
+
+.set-password {
+    grid-area: set-password;
+}
+
 .about{
     grid-area:about;
     margin-top:50vh;
