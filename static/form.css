@@ -44,7 +44,8 @@
     display: flex;
     grid-gap: .25rem;
     height: .4rem;
-    margin-top: 1rem
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 .password-complexity-meter>* {
     background-color:var(--secondary-text-color);
