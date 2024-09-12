@@ -53,3 +53,10 @@
     grid-area:about;
     margin-top:50vh;
 }
+.logged-in{
+    display:none;
+    opacity:0;
+}
+.transition{
+    transition: opacity .25s ease-in-out;
+}
