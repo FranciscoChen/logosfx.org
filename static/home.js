@@ -33,10 +33,9 @@ function setpassword(){
     if (this.status == 200) {
       if (this.responseText === '0') {
         const setpasswordcard  = document.createElement("div");
-        setpasswordcard.classList.add = 'set-password-wrap'
+        setpasswordcard.classList.add('set-password-wrap')
         setpasswordcard.innerHTML = '<div class="set-password"><h2>您的密码尚未设置</h2></div><a class="button button-area colorbutton" href="/password">设置密码</a>'
-        const cards = document.getElementsByClassName("cards")[0]
-        cards.appendChild(setpasswordcard);
+        document.getElementsByClassName("cards")[0].appendChild(setpasswordcard);
       }
     }
   }
@@ -48,7 +47,4 @@ function personalinfo(){
 
 function photo(){
       return;
-}
-
-function newCard(){
 }
