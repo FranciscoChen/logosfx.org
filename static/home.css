@@ -51,7 +51,7 @@
     border-width: 1px;
 }
 
-.body {
+.set-password-wrap {
     display: grid;
     grid-template-areas:
         ". set-password ."

@@ -33,8 +33,8 @@ function setpassword(){
     if (this.status == 200) {
       if (this.responseText === '0') {
         const setpasswordcard = newCard();
-        setpasswordcard.classList.add = 'setpasswordcard'
-        setpasswordcard.innerHTML = '您的密码尚未设置 <a class="button" href="/password">设置密码</a>'
+        setpasswordcard.classList.add = 'set-password-wrap'
+        setpasswordcard.innerHTML = '<div class="set-password"><h2>您的密码尚未设置</h2></div><a class="button button-area colorbutton" href="/password">设置密码</a>'
       }
     }
   }
