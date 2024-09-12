@@ -32,9 +32,11 @@ function setpassword(){
       return;
     if (this.status == 200) {
       if (this.responseText === '0') {
-        const setpasswordcard = newCard();
+        const setpasswordcard  = document.createElement("div");
         setpasswordcard.classList.add = 'set-password-wrap'
         setpasswordcard.innerHTML = '<div class="set-password"><h2>您的密码尚未设置</h2></div><a class="button button-area colorbutton" href="/password">设置密码</a>'
+        const cards = document.getElementsByClassName("cards")[0]
+        cards.appendChild(setpasswordcard);
       }
     }
   }
@@ -49,8 +51,4 @@ function photo(){
 }
 
 function newCard(){
-  const cards = document.getElementsByClassName("cards")[0]
-  const newdiv = document.createElement("div");
-  cards.appendChild(newdiv);
-  return newdiv;
 }
