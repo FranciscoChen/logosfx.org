@@ -53,10 +53,3 @@
     grid-area:about;
     margin-top:50vh;
 }
-.not-visible{
-    display:none;
-    opacity:0;
-}
-.transition{
-    transition: opacity .25s ease-in-out;
-}
