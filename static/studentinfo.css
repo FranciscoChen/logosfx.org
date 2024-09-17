@@ -49,6 +49,9 @@
     grid-area:form;
     padding:1vh 3vh;
 }
+.section{
+    padding:2vh 0;
+}
 .about{
     grid-area:about;
     margin-top:50vh;
