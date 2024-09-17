@@ -5,13 +5,13 @@ function education(){
   s2.addEventListener("click", function() {
     this.classList.toggle('hidden')
     document.getElementbyId('section2').classList.toggle('hidden')
-  }
+  })
   s3.addEventListener("click", function() {
     this.classList.toggle('hidden')
     document.getElementbyId('section3').classList.toggle('hidden')
-  }
+  })
   s4.addEventListener("click", function() {
     this.classList.toggle('hidden')
     document.getElementbyId('section4').classList.toggle('hidden')
-  }
+  })
 }
