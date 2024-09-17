@@ -4,6 +4,9 @@ function home() {
   setpassword();
   personalinfo();
   photo();
+  if (typeof education === 'function'){
+    education()
+  }
 }
 
 function welcome(){
