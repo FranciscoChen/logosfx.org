@@ -44,3 +44,9 @@ h2{
   margin-top:1em;
   margin-bottom:1em;
 }
+h3{
+  font-family:var(--header-text-font);
+  font-size:1.2em;
+  margin-top:1em;
+  margin-bottom:1em;
+}
