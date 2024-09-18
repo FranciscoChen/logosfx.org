@@ -2,10 +2,13 @@
 function home() {
   welcome();
   setpassword();
-  personalinfo();
+  studentinfo();
+  education();
+  churchlife();
+  consultants();
   photo();
-  if (typeof education === 'function'){
-    education()
+  if (typeof addsection === 'function'){
+    addsection()
   }
 }
 
@@ -35,17 +38,85 @@ function setpassword(){
       return;
     if (this.status == 200) {
       if (this.responseText === '0') {
-        const setpasswordcard  = document.createElement("div");
-        setpasswordcard.classList.add('set-password-wrap')
-        setpasswordcard.innerHTML = '<div class="set-password"><h2>您的密码尚未设置</h2></div><a class="button button-area colorbutton" href="/password">设置密码</a>'
-        document.getElementsByClassName("cards")[0].appendChild(setpasswordcard);
+        const sethomecard  = document.createElement("div");
+        sethomecard.classList.add('home-card-wrap')
+        sethomecard.innerHTML = '<div class="home-card"><h2>您的密码尚未设置</h2></div><a class="button button-area colorbutton" href="/password">设置密码</a>'
+        document.getElementsByClassName("cards")[0].appendChild(sethomecard);
       }
     }
   }
 }
 
-function personalinfo(){
+function studentinfo(){
+  var xhr = new XMLHttpRequest;
+  xhr.open("POST", "/hasstudentinfo", true);
+  xhr.send();
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4)
       return;
+    if (this.status == 200) {
+      if (this.responseText === '0') {
+        const sethomecard  = document.createElement("div");
+        sethomecard.classList.add('home-card-wrap')
+        sethomecard.innerHTML = '<div class="home-card"><h2>您的入学申请表尚未完成</h2></div><a class="button button-area colorbutton" href="/home/studentinfo">继续申请</a>'
+        document.getElementsByClassName("cards")[0].appendChild(sethomecard);
+      }
+    }
+  }
+}
+
+function education(){
+  var xhr = new XMLHttpRequest;
+  xhr.open("POST", "/haseducation", true);
+  xhr.send();
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4)
+      return;
+    if (this.status == 200) {
+      if (this.responseText === '0') {
+        const sethomecard  = document.createElement("div");
+        sethomecard.classList.add('home-card-wrap')
+        sethomecard.innerHTML = '<div class="home-card"><h2>请继续填写入学申请表</h2></div><a class="button button-area colorbutton" href="/home/education">继续填写</a>'
+        document.getElementsByClassName("cards")[0].appendChild(sethomecard);
+      }
+    }
+  }
+}
+
+function churchlife(){
+  var xhr = new XMLHttpRequest;
+  xhr.open("POST", "/haschurchlife", true);
+  xhr.send();
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4)
+      return;
+    if (this.status == 200) {
+      if (this.responseText === '0') {
+        const sethomecard  = document.createElement("div");
+        sethomecard.classList.add('home-card-wrap')
+        sethomecard.innerHTML = '<div class="home-card"><h2>您即将完成表格填写</h2></div><a class="button button-area colorbutton" href="/home/churchlife">继续填写</a>'
+        document.getElementsByClassName("cards")[0].appendChild(sethomecard);
+      }
+    }
+  }
+}
+
+function consultants(){
+  var xhr = new XMLHttpRequest;
+  xhr.open("POST", "/hasconsultants", true);
+  xhr.send();
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4)
+      return;
+    if (this.status == 200) {
+      if (this.responseText === '0') {
+        const sethomecard  = document.createElement("div");
+        sethomecard.classList.add('home-card-wrap')
+        sethomecard.innerHTML = '<div class="home-card"><h2>这是完成填写表格的最后一步</h2></div><a class="button button-area colorbutton" href="/home/consultants">完成填写</a>'
+        document.getElementsByClassName("cards")[0].appendChild(sethomecard);
+      }
+    }
+  }
 }
 
 function photo(){

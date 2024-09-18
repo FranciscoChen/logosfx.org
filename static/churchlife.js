@@ -1,4 +1,4 @@
-function education(){
+function addsection(){
   const s2 = document.getElementById('toggle-section2')
   const s3 = document.getElementById('toggle-section3')
   const s4 = document.getElementById('toggle-section4')
