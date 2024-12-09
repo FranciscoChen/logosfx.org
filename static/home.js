@@ -7,9 +7,6 @@ function home() {
   churchlife();
   consultants();
   photo();
-  if (typeof addsection === 'function'){
-    addsection()
-  }
 }
 
 function welcome(){

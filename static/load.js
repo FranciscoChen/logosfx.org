@@ -8,4 +8,7 @@ window.onload = () => {
   if (typeof pwcomplexity === 'function'){
     pwcomplexity()
   }
+  if (typeof addsection === 'function'){
+    addsection()
+  }
 }
