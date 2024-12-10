@@ -160,7 +160,7 @@ nav{
   .menu-bars {
     left: 20px;
     top: 50%;
-    transition: transform 1s ease-out;
+    transition: transform 0.25s ease-in-out;
   }
 
   .menu-bars::after,.menu-bars::before {
@@ -177,7 +177,7 @@ nav{
   }
 
   .menu-display:checked~.menu-icon .menu-bars {
-    transform: rotate(225deg)
+    transform: rotate(45deg)
   }
 
   .menu-display:checked~.menu-icon .menu-bars::before {
