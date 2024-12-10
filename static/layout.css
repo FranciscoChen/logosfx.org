@@ -18,10 +18,3 @@ html{
   min-height:100%;
   box-sizing:border-box;
 }
-.not-visible{
-    display:none;
-    opacity:0;
-}
-.transition{
-    transition: opacity .25s ease-in-out;
-}
