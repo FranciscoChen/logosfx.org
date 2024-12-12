@@ -12,7 +12,6 @@ function user() {
         btn.innerText = '主页'
         btn.href = '/home'
         btn.classList.add('opaque')
-        if (auth !== null) auth.classList.remove('not-visible');
       } else {
         btn.innerText = '登录'
         btn.href = '/login'
