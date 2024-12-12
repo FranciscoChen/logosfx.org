@@ -8,7 +8,7 @@
 .apply {
     grid-area: main;
     display: grid;
-    grid-template-areas: "title" "description" "form" "about";
+    grid-template-areas: "title" "description" "form";
     grid-gap: 2vmin
 }
 
@@ -16,7 +16,7 @@
     .apply {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto repeat(3, fit-content(0));
-        grid-template-areas: "title title" "description description" "form form" "about about";
+        grid-template-areas: "title title" "description description" "form form";
     }
 
 }
@@ -25,7 +25,7 @@
     .apply {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: ". title ." ". description ." ". form ." "about about about";
+        grid-template-areas: ". title ." ". description ." ". form .";
     }
 
 }
@@ -34,7 +34,7 @@
     .apply {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: ". title title ." ". description description ." ". form form ." ". about about .";
+        grid-template-areas: ". title title ." ". description description ." ". form form .";
     }
 }
 .title{
@@ -51,10 +51,6 @@
 }
 .section{
     padding:2vh 0;
-}
-.about{
-    grid-area:about;
-    margin-top:50vh;
 }
 .hidden{
   display:none;

@@ -8,7 +8,7 @@
 .home {
     grid-area: main;
     display: grid;
-    grid-template-areas: "news" "about";
+    grid-template-areas: "news";
     grid-gap: 2vmin
 }
 
@@ -16,7 +16,7 @@
     .home {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto repeat(3, fit-content(0));
-        grid-template-areas: "news news" "about about";
+        grid-template-areas: "news news";
     }
 
 }
@@ -25,7 +25,7 @@
     .home {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: "news news news" "about about about";
+        grid-template-areas: "news news news";
     }
 
 }
@@ -34,7 +34,7 @@
     .home {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: ". news news ." ". about about .";
+        grid-template-areas: ". news news .";
     }
 }
 .news{
@@ -44,8 +44,4 @@
 .news-image{
     width:100%;
     height:auto;
-}
-.about{
-    grid-area:about;
-    margin-top:50vh;
 }

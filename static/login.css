@@ -8,7 +8,7 @@
 .login {
     grid-area: main;
     display: grid;
-    grid-template-areas: "title" "form" "about";
+    grid-template-areas: "title" "form";
     grid-gap: 2vmin
 }
 
@@ -16,7 +16,7 @@
     .login {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto repeat(3, fit-content(0));
-        grid-template-areas: "title title" "form form" "about about";
+        grid-template-areas: "title title" "form form";
     }
 
 }
@@ -25,7 +25,7 @@
     .login {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: ". title ." ". form ." "about about about";
+        grid-template-areas: ". title ." ". form .";
     }
 
 }
@@ -34,7 +34,7 @@
     .login {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: ". title title ." ". form form ." ". about about .";
+        grid-template-areas: ". title title ." ". form form .";
     }
 }
 .title{
@@ -44,10 +44,6 @@
 .form{
     grid-area:form;
     padding:3vh;
-}
-.about{
-    grid-area:about;
-    margin-top:50vh;
 }
 
 .alternative {

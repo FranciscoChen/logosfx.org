@@ -22,3 +22,9 @@ html{
 #main-wrap {
   min-height: calc(100vh - (var(--footer-height) + var(--header-height)));
 }
+.about{
+  height: var(--footer-height);
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 1800px; 
+}

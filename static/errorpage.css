@@ -8,7 +8,7 @@
 .main{
     grid-area: main;
     display: grid;
-    grid-template-areas: "description" "about";
+    grid-template-areas: "description";
     grid-gap: 2vmin
 }
 
@@ -16,7 +16,7 @@
     .home {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto repeat(3, fit-content(0));
-        grid-template-areas: "description description" "about about";
+        grid-template-areas: "description description";
     }
 
 }
@@ -25,7 +25,7 @@
     .home {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: "description description description" "about about about";
+        grid-template-areas: "description description description";
     }
 
 }
@@ -34,14 +34,10 @@
     .home {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: ". description description ." ". about about .";
+        grid-template-areas: ". description description .";
     }
 }
 .description{
     grid-area:description;
     padding:3vh;
-}
-.about{
-    grid-area:about;
-    margin-top:50vh;
 }
