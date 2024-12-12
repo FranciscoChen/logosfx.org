@@ -12,11 +12,10 @@ function role(){
       return;
     if (this.status == 200) {
       switch (this.responseText) {
-        case '0':
+        case '1':
           welcome();
           setpassword();
           submitted();
-        case '1':
         break;
         case '2':
         break;
@@ -45,7 +44,7 @@ function submitted(){
       if (this.responseText === '0') {
         const sethomecard  = document.createElement("div");
         sethomecard.classList.add('home-card-wrap')
-        sethomecard.innerHTML = '<div class="home-card"><h2>注册流程</h2><p>您尚未填写注册表，请继续注册流程</p></div>'
+        sethomecard.innerHTML = '<div class="home-card"><h2>注册流程</h2><p>您尚未填写注册表，请继续注册流程</p><a class="button button-area colorbutton" href="/home/studentinfo">继续申请</a><a class="button button-area colorbutton" href="/home/education">继续填写</a><a class="button button-area colorbutton" href="/home/churchlife">继续填写</a><a class="button button-area colorbutton" href="/home/consultants">完成填写</a></div>'
         document.getElementsByClassName("cards")[0].appendChild(sethomecard);
         studentinfo();
         education();
@@ -93,7 +92,7 @@ function setpassword(){
       if (this.responseText === '0') {
         const sethomecard  = document.createElement("div");
         sethomecard.classList.add('home-card-wrap')
-        sethomecard.innerHTML = '<div class="home-card"><h2>您的密码尚未设置</h2></div><a class="button button-area colorbutton" href="/password">设置密码</a>'
+        sethomecard.innerHTML = '<div class="home-card"><h2>您的密码尚未设置</h2><a class="button button-area colorbutton" href="/password">设置密码</a></div>'
         document.getElementsByClassName("cards")[0].appendChild(sethomecard);
       }
     }
