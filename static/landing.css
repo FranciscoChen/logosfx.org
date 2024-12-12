@@ -9,12 +9,13 @@
     grid-area: main;
     display: grid;
     grid-template-areas: "logos" "seminary" "call" "apply";
+    grid-template-rows: repeat(3, fit-content(0)) auto;
 }
 
 @media(min-width: 499.3px) {
     .home {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto repeat(3, fit-content(0));
+        grid-template-rows: repeat(3, fit-content(0)) auto;
         grid-template-areas: "logos logos" "seminary seminary" "call call" "apply apply";
     }
 
