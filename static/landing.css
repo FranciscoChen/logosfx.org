@@ -106,5 +106,6 @@
     animation: fadein ease-in-out 1s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
-    animation-delay:2s
+    animation-delay:2s;
+    max-height: 3em;
 }
