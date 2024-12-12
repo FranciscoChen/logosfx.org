@@ -24,7 +24,7 @@
 @media(min-width: 799.3px) {
     .home {
         grid-template-columns: 1fr 4fr 1fr;
-        grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
+        grid-template-rows: repeat(2, fit-content(0)) fit-content(0) auto;
         grid-template-areas: ". cards .";
     }
 
