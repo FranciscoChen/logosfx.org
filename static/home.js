@@ -1,12 +1,61 @@
 // Give welcomes, notifications and see what it needs to be done next
 function home() {
-  welcome();
-  setpassword();
-  studentinfo();
-  education();
-  churchlife();
-  consultants();
-  photo();
+  role();
+}
+
+function role(){
+  var xhr = new XMLHttpRequest;
+  xhr.open("POST", "/userrole", true);
+  xhr.send();
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4)
+      return;
+    if (this.status == 200) {
+      switch (this.responseText) {
+        case 0:
+          welcome();
+          setpassword();
+          submitted();
+        case 1:
+        break;
+        case 2:
+        break;
+        case 3:
+        break;
+        case 4:
+        break;
+        default:
+          const sethomecard  = document.createElement("div");
+          sethomecard.classList.add('home-card-wrap')
+          sethomecard.innerHTML = '<div class="home-card"><h2>错误！</h2><p>没有角色的用户，请联系网站管理员</p></div>'
+          document.getElementsByClassName("cards")[0].appendChild(sethomecard);
+      }
+    }
+  }
+}
+
+function submitted(){
+  var xhr = new XMLHttpRequest;
+  xhr.open("POST", "/applicationsubmitted", true);
+  xhr.send();
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4)
+      return;
+    if (this.status == 200) {
+      if (this.responseText === '0') {
+        const sethomecard  = document.createElement("div");
+        sethomecard.classList.add('home-card-wrap')
+        sethomecard.innerHTML = '<div class="home-card"><h2>注册流程</h2><p>您尚未填写注册表，请继续注册流程</p></div>'
+        document.getElementsByClassName("cards")[0].appendChild(sethomecard);
+        studentinfo();
+        education();
+        churchlife();
+        consultants();
+      } else {
+
+      }
+    }
+  }
 }
 
 function welcome(){
