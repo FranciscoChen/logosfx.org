@@ -44,7 +44,7 @@ function submitted(){
       if (this.responseText === '0') {
         const sethomecard  = document.createElement("div");
         sethomecard.classList.add('home-card-wrap')
-        sethomecard.innerHTML = '<div class="home-card"><h2>注册流程</h2><p>您尚未填写注册表，请继续注册流程</p><div class="application-buttons"><p><a class="button button-area colorbutton" href="/home/studentinfo">个人信息</a></p><p><a class="button button-area colorbutton" href="/home/education">教育资料</a></p><p><a class="button button-area colorbutton" href="/home/churchlife">教会资料</a></p><p><a class="button button-area colorbutton" href="/home/consultants">咨询信息</a></p></div></div>'
+        sethomecard.innerHTML = '<div class="home-card"><h2>注册流程</h2><p>您尚未填写注册表，请继续注册流程</p><div class="application-buttons"><div id="studentinfo" class="button-wrap"><div class="exclamation-bubble-anchor"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/studentinfo">个人信息</a></div><div id="education" class="button-wrap"><div class="exclamation-bubble-anchor"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/education">教育资料</a></div><div id="churchlife" class="button-wrap"><div class="exclamation-bubble-anchor"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/churchlife">教会资料</a></div><div id="consultants" class="button-wrap"><div class="exclamation-bubble-anchor"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/consultants">咨询信息</a></div></div></div>'
         document.getElementsByClassName("cards")[0].appendChild(sethomecard);
         studentinfo();
         education();
