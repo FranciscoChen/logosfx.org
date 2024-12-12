@@ -44,7 +44,7 @@ function submitted(){
       if (this.responseText === '0') {
         const sethomecard  = document.createElement("div");
         sethomecard.classList.add('home-card-wrap')
-        sethomecard.innerHTML = '<div class="home-card"><h2>注册流程</h2><p>您尚未填写注册表，请继续注册流程</p><a class="button button-area colorbutton" href="/home/studentinfo">继续申请</a><a class="button button-area colorbutton" href="/home/education">继续填写</a><a class="button button-area colorbutton" href="/home/churchlife">继续填写</a><a class="button button-area colorbutton" href="/home/consultants">完成填写</a></div>'
+        sethomecard.innerHTML = '<div class="home-card"><h2>注册流程</h2><p>您尚未填写注册表，请继续注册流程</p><div class="application-buttons"><p><a class="button button-area colorbutton" href="/home/studentinfo">个人信息</a></p><p><a class="button button-area colorbutton" href="/home/education">教育资料</a></p><p><a class="button button-area colorbutton" href="/home/churchlife">教会资料</a></p><p><a class="button button-area colorbutton" href="/home/consultants">咨询人</a></p></div></div>'
         document.getElementsByClassName("cards")[0].appendChild(sethomecard);
         studentinfo();
         education();

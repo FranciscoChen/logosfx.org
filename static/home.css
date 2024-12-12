@@ -63,3 +63,9 @@
 .home-card {
     grid-area: home-card;
 }
+.application-buttons{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
