@@ -12,17 +12,17 @@ function role(){
       return;
     if (this.status == 200) {
       switch (this.responseText) {
-        case 0:
+        case '0':
           welcome();
           setpassword();
           submitted();
-        case 1:
+        case '1':
         break;
-        case 2:
+        case '2':
         break;
-        case 3:
+        case '3':
         break;
-        case 4:
+        case '4':
         break;
         default:
           const sethomecard  = document.createElement("div");
