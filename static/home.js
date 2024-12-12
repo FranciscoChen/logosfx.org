@@ -20,7 +20,7 @@ function welcome(){
       if (this.responseText === '0') {
         const sethomecard  = document.createElement("div");
         sethomecard.classList.add('home-card-wrap')
-        sethomecard.innerHTML = '<div class="home-card"><h2>欢迎！</h2></div>欢迎来到用户的个人区域，在这里您可以执行修改个人信息、完成注册或查看正在进行的课程等操作。'
+        sethomecard.innerHTML = '<div class="home-card"><h2>欢迎！</h2><p>欢迎来到用户的个人区域，在这里您可以执行修改个人信息、完成注册或查看正在进行的课程等操作。</p></div>'
         document.getElementsByClassName("cards")[0].appendChild(sethomecard);
         welcomedone();
       }
