@@ -3,6 +3,7 @@
     --main-margin: 1vw;
     --main-max-width: 1400px;
     --site-header-margin: 0px;
+    --footer-height: 80px;
 }
 *,::after,::before {
     box-sizing: inherit;
@@ -17,4 +18,7 @@ body {
 html{
   min-height:100%;
   box-sizing:border-box;
+}
+#main-wrap {
+  min-height: calc(100vh - (var(--footer-height) + var(--header-height)));
 }
