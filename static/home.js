@@ -44,7 +44,7 @@ function submitted(){
       if (this.responseText === '0') {
         const sethomecard  = document.createElement("div");
         sethomecard.classList.add('home-card-wrap')
-        sethomecard.innerHTML = '<div class="home-card"><h2>注册流程</h2><p>您尚未填写注册表，请继续注册流程</p><div class="application-buttons"><div id="studentinfo" class="button-wrap"><div class="exclamation-bubble-anchor"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/studentinfo">个人信息</a></div><div id="education" class="button-wrap"><div class="exclamation-bubble-anchor"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/education">教育资料</a></div><div id="churchlife" class="button-wrap"><div class="exclamation-bubble-anchor"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/churchlife">教会资料</a></div><div id="consultants" class="button-wrap"><div class="exclamation-bubble-anchor"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/consultants">咨询信息</a></div></div></div>'
+        sethomecard.innerHTML = '<div class="home-card"><h2>注册流程</h2><p>您尚未填写注册表，请继续注册流程</p><div class="application-buttons"><div id="studentinfo" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/studentinfo">个人信息</a></div><div id="education" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/education">教育资料</a></div><div id="churchlife" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/churchlife">教会资料</a></div><div id="consultants" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/consultants">咨询信息</a></div></div></div>'
         document.getElementsByClassName("cards")[0].appendChild(sethomecard);
         studentinfo();
         education();
@@ -108,10 +108,7 @@ function studentinfo(){
       return;
     if (this.status == 200) {
       if (this.responseText === '0') {
-        const sethomecard  = document.createElement("div");
-        sethomecard.classList.add('home-card-wrap')
-        sethomecard.innerHTML = '<div class="home-card"><h2>您的入学申请表尚未完成</h2></div><a class="button button-area colorbutton" href="/home/studentinfo">继续申请</a>'
-        document.getElementsByClassName("cards")[0].appendChild(sethomecard);
+        document.getElementById('studentinfo').firstChild.classList.toggle('hidden')
       }
     }
   }
@@ -126,10 +123,7 @@ function education(){
       return;
     if (this.status == 200) {
       if (this.responseText === '0') {
-        const sethomecard  = document.createElement("div");
-        sethomecard.classList.add('home-card-wrap')
-        sethomecard.innerHTML = '<div class="home-card"><h2>请继续填写入学申请表</h2></div><a class="button button-area colorbutton" href="/home/education">继续填写</a>'
-        document.getElementsByClassName("cards")[0].appendChild(sethomecard);
+        document.getElementById('education').firstChild.classList.toggle('hidden')
       }
     }
   }
@@ -144,10 +138,7 @@ function churchlife(){
       return;
     if (this.status == 200) {
       if (this.responseText === '0') {
-        const sethomecard  = document.createElement("div");
-        sethomecard.classList.add('home-card-wrap')
-        sethomecard.innerHTML = '<div class="home-card"><h2>您即将完成表格填写</h2></div><a class="button button-area colorbutton" href="/home/churchlife">继续填写</a>'
-        document.getElementsByClassName("cards")[0].appendChild(sethomecard);
+        document.getElementById('churchlife').firstChild.classList.toggle('hidden')
       }
     }
   }
@@ -162,15 +153,8 @@ function consultants(){
       return;
     if (this.status == 200) {
       if (this.responseText === '0') {
-        const sethomecard  = document.createElement("div");
-        sethomecard.classList.add('home-card-wrap')
-        sethomecard.innerHTML = '<div class="home-card"><h2>这是完成填写表格的最后一步</h2></div><a class="button button-area colorbutton" href="/home/consultants">完成填写</a>'
-        document.getElementsByClassName("cards")[0].appendChild(sethomecard);
+        document.getElementById('consultants').firstChild.classList.toggle('hidden')
       }
     }
   }
-}
-
-function photo(){
-      return;
 }
