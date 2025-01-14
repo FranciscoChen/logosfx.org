@@ -11,4 +11,7 @@ window.onload = () => {
   if (typeof addsection === 'function'){
     addsection()
   }
+  if (typeof getform === 'function'){
+    getform()
+  }
 }
