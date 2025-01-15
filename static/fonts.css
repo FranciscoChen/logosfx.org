@@ -1,7 +1,7 @@
 :root{
-  --main-text-font: "宋体",SimSun,serif;
+  --main-text-font: "Times New Roman",Georgia,Garamond,"宋体",SimSun,serif;
   --main-text-font-size: 24px;
-  --header-text-font: FZKai,FangSong,serif;
+  --header-text-font: "Times New Roman",Georgia,Garamond,FZKai,FangSong,serif;
 }
 @font-face{
   font-family: 'FZKai';
