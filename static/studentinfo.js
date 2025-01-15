@@ -19,7 +19,7 @@ function getform(){
           if (ele.type === 'radio') {
             const elearr = document.getElementsByName(name)
             for (var i = elearr.length; i--;){
-              if (elearr[i].name === data[name]){
+              if (elearr[i].value === data[name]){
                 elearr[i].checked = 1
               }
             }
