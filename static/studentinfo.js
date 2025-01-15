@@ -6,7 +6,7 @@ function getform(){
     if (this.readyState != 4)
       return;
     if (this.status == 200) {
-      const data = this.responseText[0]
+      const data = JSON.parse(this.responseText)[0]
       for (name in data) {
         const ele = document.getElementsByName(name)[0]
         if (typeof ele !== 'undefined') {
