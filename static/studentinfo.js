@@ -18,9 +18,11 @@ function getform(){
           }
           if (ele.type === 'radio') {
             const elearr = document.getElementsByName(name)
-            for (var i = elearr.length; i--;){
+            const len = elearr.len
+            for (var i = 0; i < len; i++){
               if (elearr[i].value === data[name]){
-                elearr[i].checked = 1
+                elearr[i].checked = 1;
+                break;
               }
             }
           }
