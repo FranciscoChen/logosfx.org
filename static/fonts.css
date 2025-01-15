@@ -1,6 +1,6 @@
 :root{
   --main-text-font: "宋体",SimSun,serif;
-  --main-text-font-size: 16px;
+  --main-text-font-size: 21px;
   --header-text-font: FZKai,FangSong,serif;
 }
 @font-face{
@@ -33,7 +33,7 @@ a:hover{
 }
 h1{
   font-family:var(--header-text-font);
-  font-size:2em;
+  font-size:calc(2*var(--main-text-font-size));
   margin-top:2em;
   margin-bottom:1em;
   display:flex;
@@ -41,17 +41,22 @@ h1{
 }
 h2{
   font-family:var(--header-text-font);
-  font-size:1.5em;
+  font-size:calc(1.5*var(--main-text-font-size));
   margin-top:1em;
   margin-bottom:1em;
 }
 h3{
   font-family:var(--header-text-font);
-  font-size:1.2em;
+  font-size:calc(1.2*var(--main-text-font-size));
   margin-top:1em;
   margin-bottom:1em;
 }
 p{
   margin-top:1em;
   margin-bottom:1em;
+}
+input{
+  font-weight:400;
+  font-family:var(--main-text-font);
+  font-size:calc(0.9*var(--main-text-font-size));
 }
