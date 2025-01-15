@@ -54,7 +54,11 @@ function getform(){
             const elearr = document.getElementsByName(name)
             const len = elearr.length
             for (var i = 0; i < len; i++){
-              if (elearr[i].value === data[name]){
+              if (elearr[i].value === 'true' && data[name] === true){
+                elearr[i].checked = 1;
+                break;
+              }
+              if (elearr[i].value === 'false' && data[name] === false){
                 elearr[i].checked = 1;
                 break;
               }
