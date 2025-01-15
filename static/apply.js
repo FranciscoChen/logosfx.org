@@ -16,6 +16,9 @@ function getform(){
           if (ele.type === 'text') {
             ele.value = data[name]
           }
+          if (ele.type === 'date') {
+            ele.value = data[name].slice(0,4)+'-'+data[name].slice(5,7)+'-'+data[name].slice(8,10)
+          }
           if (ele.type === 'radio') {
             const elearr = document.getElementsByName(name)
             const len = elearr.length
