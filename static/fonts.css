@@ -1,6 +1,6 @@
 :root{
   --main-text-font: "Times New Roman",Georgia,Garamond,"宋体",SimSun,serif;
-  --main-text-font-size: 24px;
+  --main-text-font-size: 20px;
   --header-text-font: "Times New Roman",Georgia,Garamond,FZKai,FangSong,serif;
 }
 @font-face{
@@ -29,6 +29,21 @@ a:hover{
 @media (min-width: 320px) {
   html {
     font-size:calc(var(--main-text-font-size) + 2*((100vw - 320px)/880))
+  }
+  h1 {
+    font-size:calc(2*var(--main-text-font-size) + 2*((100vw - 320px)/880))
+  }
+  h2 {
+    font-size:calc(1.5*var(--main-text-font-size) + 2*((100vw - 320px)/880))
+  }
+  h3 {
+    font-size:calc(1.2*var(--main-text-font-size) + 2*((100vw - 320px)/880))
+  }
+  h3 {
+    font-size:calc(0.9*var(--main-text-font-size) + 2*((100vw - 320px)/880))
+  }
+  h3 {
+    font-size:calc(0.7*var(--main-text-font-size) + 2*((100vw - 320px)/880))
   }
 }
 h1{
@@ -59,4 +74,9 @@ input{
   font-weight:400;
   font-family:var(--main-text-font);
   font-size:calc(0.9*var(--main-text-font-size));
+}
+footer{
+  font-weight:400;
+  font-family:var(--main-text-font);
+  font-size:calc(0.7*var(--main-text-font-size));
 }
