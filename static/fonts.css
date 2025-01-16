@@ -1,5 +1,5 @@
 :root{
-  --main-text-font: "Times New Roman",Georgia,Garamond,"宋体",SimSun,serif;
+  --main-text-font: Arial,Verdana,Tahoma,"宋体",SimSun,sans-serif;
   --main-text-font-size: 17px;
   --header-text-font: "Times New Roman",Georgia,Garamond,FZKai,FangSong,serif;
 }
