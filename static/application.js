@@ -17,10 +17,9 @@ function fillstudentinfo(){
     if (this.status == 200) {
       const data = JSON.parse(this.responseText)[0]
       console.log(data);
-      var nameref
-      var dataref
       for (name in data) {
-        dataref = data[name]
+        const dataref = data[name]
+        var nameref = name
         if (name === 'maritalstatus') nameref = dataref
         const ele = document.getElementById(nameref)
         if (ele !== null){
