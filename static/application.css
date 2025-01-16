@@ -1,0 +1,83 @@
+#main-wrap {
+    display: grid;
+    grid-template-areas: ". . main . .";
+    grid-template-columns: var(--main-margin) 1fr minmax(auto, var(--main-max-width)) 1fr var(--main-margin);
+    margin-top: var(--site-header-margin);
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "title" "description" "part1" "part2" "part3" "part4" "part5" "form";
+    grid-gap: 2vmin
+}
+
+@media(min-width: 499.3px) {
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto repeat(3, fit-content(0));
+        grid-template-areas: "title title" "description description" "part1 part1" "part2 part2" "part3 part3" "part4 part4" "part5 part5" "form form";
+    }
+
+}
+
+@media(min-width: 799.3px) {
+    .main {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
+        grid-template-areas: ". title ." ". description ." ". part1 ." ". part2 ." ". part3 ." ". part4 ." ". part5 ." ". form .";
+    }
+
+}
+
+@media(min-width: 1259.3px) {
+    .main {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
+        grid-template-areas: ". title title ." ". description description ." ". part1 part1 ." ". part2 part2 ." ". part3 part3 ." ". part4 part4 ." ". part5 part5 ." ". form form .";
+    }
+}
+.title{
+    grid-area:title;
+    padding:3vh;
+}
+.description{
+    grid-area:description;
+    padding:1vh 3vh;
+}
+.part1{
+    grid-area:part1;
+    padding:1vh 3vh;
+}
+.part2{
+    grid-area:part2;
+    padding:1vh 3vh;
+}
+.part3{
+    grid-area:part3;
+    padding:1vh 3vh;
+}
+.part4{
+    grid-area:part4;
+    padding:1vh 3vh;
+}
+.part5{
+    grid-area:part5;
+    padding:1vh 3vh;
+}
+.form{
+    grid-area:form;
+    padding:1vh 3vh;
+}
+.part-title{
+    padding-top:1vh;
+    padding-bottom:1vh;
+}
+.part-content{
+    padding-top:1vh;
+    padding-bottom:1vh;
+}
+.part-edit{
+    padding-top:1vh;
+    padding-bottom:1vh;
+}

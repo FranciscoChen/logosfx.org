@@ -42,6 +42,23 @@ function submitted(){
       return;
     if (this.status == 200) {
       if (this.responseText === '0') {
+        ready();
+      } else {
+
+      }
+    }
+  }
+}
+
+function ready(){
+  var xhr = new XMLHttpRequest;
+  xhr.open("POST", "/applicationready", true);
+  xhr.send();
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4)
+      return;
+    if (this.status == 200) {
+      if (this.responseText === '0') {
         const sethomecard  = document.createElement("div");
         sethomecard.classList.add('home-card-wrap')
         sethomecard.innerHTML = '<div class="home-card"><h2>注册流程</h2><p>您尚未填写注册表，请继续注册流程</p><div class="application-buttons"><div id="studentinfo" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/studentinfo">个人信息</a></div><div id="education" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/education">教育资料</a></div><div id="churchlife" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/churchlife">教会资料</a></div><div id="consultants" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/consultants">咨询信息</a></div></div></div>'
@@ -50,8 +67,12 @@ function submitted(){
         education();
         churchlife();
         consultants();
-      } else {
-
+      }
+      if (this.responseText === '1') {
+        const sethomecard  = document.createElement("div");
+        sethomecard.classList.add('home-card-wrap')
+        sethomecard.innerHTML = '<div class="home-card"><h2>提交申请表</h2><p>提交前请仔细检查您的所有信息是否准确</p><div class="application-buttons"><div id="studentinfo" class="button-wrap"><a class="button button-area colorbutton" href="/home/application">检查信息</a></div></div></div>'
+        document.getElementsByClassName("cards")[0].appendChild(sethomecard);
       }
     }
   }
