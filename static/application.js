@@ -29,6 +29,12 @@ function fillstudentinfo(){
             inforow.innerHTML = data[name]
             ele.append(inforow)
 	  }
+          if (name === 'children' && data[name] !== null && data[name].length > 0){
+            document.getElementById('ifchildren').classList.remove('hidden')
+          }
+          if (name === 'partnername' && data[name] !== null && data[name].length > 0){
+            document.getElementById('ifmarried').classList.remove('hidden')
+          }
         }
       }
     }

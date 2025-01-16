@@ -83,6 +83,8 @@
 }
 .flex-wrap{
     display:flex;
+    white-space:nowrap;
+    flex-wrap:wrap;
 }
 .hidden{
     display:none;
@@ -94,23 +96,16 @@
 }
 .circle-around {
     transform: translate(18px,-18px);
-    width: 32px;
+    width: 115%;
     height: 32px;
-    font-size: 27px;
-    border-radius: 50%;
-    border: 0;
+    border: solid var(--main-attention-color) 1px;
     position: absolute;
-    top: 4px;
-    right: 4px;
+    top: 29px;
+    right: 15px;
     z-index: 11;
-    background: var(--main-attention-color);
-    color: #fff;
     border-radius: 50%;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
 }
 .separator-slash{
-    padding-left:5px;
-    padding-right:5px;
+    padding-left:4px;
+    padding-right:4px;
 }
