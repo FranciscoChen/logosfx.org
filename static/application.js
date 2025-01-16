@@ -23,17 +23,17 @@ function fillstudentinfo(){
         ele = document.getElementById(name)
         if (name === 'maritalstatus') {
           ele = document.getElementById(dataref)
-	}
+        }
         if (ele !== null){
           if (ele.classList.contains('circle-around-anchor')){
             if (dataref === true || name === 'maritalstatus') {
               ele.classList.remove('hidden')
-	    }
+            }
           } else {
             const inforow  = document.createElement("p");
             inforow.innerHTML = dataref
             ele.append(inforow)
-	  }
+          }
           if (name === 'children' && dataref !== null && dataref.length > 0){
             document.getElementById('ifchildren').classList.remove('hidden')
           }
