@@ -81,3 +81,36 @@
     padding-top:1vh;
     padding-bottom:1vh;
 }
+.flex-wrap{
+    display:flex;
+}
+.hidden{
+    display:none;
+}
+.circle-around-anchor {
+    position: relative;
+    width: 100%;
+    height: 0;
+}
+.circle-around {
+    transform: translate(18px,-18px);
+    width: 32px;
+    height: 32px;
+    font-size: 27px;
+    border-radius: 50%;
+    border: 0;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    z-index: 11;
+    background: var(--main-attention-color);
+    color: #fff;
+    border-radius: 50%;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.separator-slash{
+    padding-left:5px;
+    padding-right:5px;
+}

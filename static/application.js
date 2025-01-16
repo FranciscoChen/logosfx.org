@@ -17,27 +17,18 @@ function fillstudentinfo(){
     if (this.status == 200) {
       const data = JSON.parse(this.responseText)[0]
       console.log(data);
-      const ele = document.getElementById('studentinfo')
-      const fieldnames = {
-    "computers": true,
-    "english": true,
-    "calligraphy": false,
-    "music": true,
-    "dance": false,
-    "other": true,
-    "othertext": "IT 游戏， 烧饭",
-    "currentjob": "IT",
-    "currentjobstart": "2024",
-    "maritalstatus": null,
-    "partnername": "",
-    "partnerjob": null,
-    "children": ""
-}
       for (name in data) {
-        if (typeof fieldnames[name] !== 'undefined'){
-          const inforow  = document.createElement("div");
-          inforow.innerHTML = '<p><b>'+fieldnames[name] + ':</b>' + data[name]+'</p>'
-          ele.append(inforow)
+        const ele = document.getElementById(name)
+        if (ele !== null){
+          if (ele.classList.contains('circle-around-anchor')){
+            if (data[name] === true) {
+              ele.classList.remove('hidden')
+	    }
+          } else {
+            const inforow  = document.createElement("p");
+            inforow.innerHTML = data[name]
+            ele.append(inforow)
+	  }
         }
       }
     }
