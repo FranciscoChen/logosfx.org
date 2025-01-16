@@ -17,22 +17,26 @@ function fillstudentinfo(){
     if (this.status == 200) {
       const data = JSON.parse(this.responseText)[0]
       console.log(data);
+      var nameref
+      var dataref
       for (name in data) {
-        const ele = document.getElementById(name)
+        dataref = data[name]
+        if (name === 'maritalstatus') nameref = dataref
+        const ele = document.getElementById(nameref)
         if (ele !== null){
           if (ele.classList.contains('circle-around-anchor')){
-            if (data[name] === true) {
+            if (dataref === true) {
               ele.classList.remove('hidden')
 	    }
           } else {
             const inforow  = document.createElement("p");
-            inforow.innerHTML = data[name]
+            inforow.innerHTML = dataref
             ele.append(inforow)
 	  }
-          if (name === 'children' && data[name] !== null && data[name].length > 0){
+          if (name === 'children' && dataref !== null && dataref.length > 0){
             document.getElementById('ifchildren').classList.remove('hidden')
           }
-          if (name === 'partnername' && data[name] !== null && data[name].length > 0){
+          if (name === 'partnername' && dataref !== null && dataref.length > 0){
             document.getElementById('ifmarried').classList.remove('hidden')
           }
         }
