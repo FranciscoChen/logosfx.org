@@ -23,7 +23,7 @@ function getform(){
             const elearr = document.getElementsByName(name)
             const len = elearr.length
             for (var i = 0; i < len; i++){
-              if (elearr[i].value === data[name]){
+              if (elearr[i].value === {0:'bacheloroftheology',1:"bachelorofministry",2:"churchleadershipcertificate",3:"specialstudents"}[data[name]]){
                 elearr[i].checked = 1;
                 break;
               }
