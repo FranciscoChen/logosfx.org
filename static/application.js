@@ -22,10 +22,11 @@ function fillstudentinfo(){
 
       }
       for (name in data) {
-        if (typeof fieldnames[name] !== 'undefined')
-        const inforow  = document.createElement("div");
-        inforow.innerHTML = '<p><b>'+fieldnames[name] + ':</b>' + data[name]+'</p>'
-        ele.append(inforow)
+        if (typeof fieldnames[name] !== 'undefined'){
+          const inforow  = document.createElement("div");
+          inforow.innerHTML = '<p><b>'+fieldnames[name] + ':</b>' + data[name]+'</p>'
+          ele.append(inforow)
+        }
       }
     }
   }
