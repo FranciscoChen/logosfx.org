@@ -19,8 +19,20 @@ function fillstudentinfo(){
       console.log(data);
       const ele = document.getElementById('studentinfo')
       const fieldnames = {
-
-      }
+    "computers": true,
+    "english": true,
+    "calligraphy": false,
+    "music": true,
+    "dance": false,
+    "other": true,
+    "othertext": "IT 游戏， 烧饭",
+    "currentjob": "IT",
+    "currentjobstart": "2024",
+    "maritalstatus": null,
+    "partnername": "",
+    "partnerjob": null,
+    "children": ""
+}
       for (name in data) {
         if (typeof fieldnames[name] !== 'undefined'){
           const inforow  = document.createElement("div");
