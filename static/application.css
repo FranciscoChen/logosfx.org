@@ -96,12 +96,12 @@
 }
 .circle-around {
     transform: translate(18px,-18px);
-    width: 115%;
-    height: 32px;
+    width: 116%;
+    height: 40px;
     border: solid var(--main-attention-color) 1px;
     position: absolute;
-    top: 29px;
-    right: 15px;
+    top: 27px;
+    right: 14px;
     z-index: 11;
     border-radius: 50%;
 }
