@@ -26,7 +26,7 @@ function fillstudentinfo(){
 	}
         if (ele !== null){
           if (ele.classList.contains('circle-around-anchor')){
-            if (dataref === true) {
+            if (dataref === true || name === 'maritalstatus') {
               ele.classList.remove('hidden')
 	    }
           } else {
