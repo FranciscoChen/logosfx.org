@@ -39,35 +39,35 @@
 }
 .title{
     grid-area:title;
-    padding:3vh;
+    padding:1vh;
 }
 .description{
     grid-area:description;
-    padding:1vh 3vh;
+    padding:1vh;
 }
 .part1{
     grid-area:part1;
-    padding:1vh 3vh;
+    padding:1vh;
 }
 .part2{
     grid-area:part2;
-    padding:1vh 3vh;
+    padding:1vh;
 }
 .part3{
     grid-area:part3;
-    padding:1vh 3vh;
+    padding:1vh;
 }
 .part4{
     grid-area:part4;
-    padding:1vh 3vh;
+    padding:1vh;
 }
 .part5{
     grid-area:part5;
-    padding:1vh 3vh;
+    padding:1vh;
 }
 .form{
     grid-area:form;
-    padding:1vh 3vh;
+    padding:1vh;
 }
 .part-title{
     padding-top:1vh;

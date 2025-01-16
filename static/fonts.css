@@ -26,30 +26,10 @@ a {
 a:hover{
   color:var(--main-highlight-color);
 }
-@media (min-width: 320px) {
-  html {
-    font-size:calc(var(--main-text-font-size) + 2*((100vw - 320px)/880))
-  }
-  h1 {
-    font-size:calc(2*var(--main-text-font-size) + 2*((100vw - 320px)/880))
-  }
-  h2 {
-    font-size:calc(1.5*var(--main-text-font-size) + 2*((100vw - 320px)/880))
-  }
-  h3 {
-    font-size:calc(1.2*var(--main-text-font-size) + 2*((100vw - 320px)/880))
-  }
-  input {
-    font-size:calc(0.9*var(--main-text-font-size) + 2*((100vw - 320px)/880))
-  }
-  footer {
-    font-size:calc(0.8*var(--main-text-font-size) + 2*((100vw - 320px)/880))
-  }
-}
 h1{
   font-family:var(--header-text-font);
   font-size:calc(2*var(--main-text-font-size));
-  margin-top:2em;
+  margin-top:1em;
   margin-bottom:1em;
   display:flex;
   justify-content:center;
@@ -79,4 +59,24 @@ footer{
   font-weight:400;
   font-family:var(--main-text-font);
   font-size:calc(0.8*var(--main-text-font-size));
+}
+@media (min-width: 320px) {
+  html {
+    font-size:calc(var(--main-text-font-size) + 2*((100vw - 320px)/880))
+  }
+  h1 {
+    font-size:calc(2*var(--main-text-font-size) + 2*((100vw - 320px)/880))
+  }
+  h2 {
+    font-size:calc(1.5*var(--main-text-font-size) + 2*((100vw - 320px)/880))
+  }
+  h3 {
+    font-size:calc(1.2*var(--main-text-font-size) + 2*((100vw - 320px)/880))
+  }
+  input {
+    font-size:calc(0.9*var(--main-text-font-size) + 2*((100vw - 320px)/880))
+  }
+  footer {
+    font-size:calc(0.8*var(--main-text-font-size) + 2*((100vw - 320px)/880))
+  }
 }
