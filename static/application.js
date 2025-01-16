@@ -19,9 +19,11 @@ function fillstudentinfo(){
       console.log(data);
       for (name in data) {
         const dataref = data[name]
-        var nameref = name
-        if (name === 'maritalstatus') nameref = dataref
-        const ele = document.getElementById(nameref)
+        var ele
+        ele = document.getElementById(name)
+        if (name === 'maritalstatus') {
+          ele = document.getElementById(dataref)
+	}
         if (ele !== null){
           if (ele.classList.contains('circle-around-anchor')){
             if (dataref === true) {
