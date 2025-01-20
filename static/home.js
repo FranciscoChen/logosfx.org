@@ -71,7 +71,7 @@ function ready(){
       if (this.responseText === '1') {
         const sethomecard  = document.createElement("div");
         sethomecard.classList.add('home-card-wrap')
-        sethomecard.innerHTML = '<div class="home-card"><h2>提交申请表</h2><p>提交前请仔细检查您的所有信息是否准确</p><div class="application-buttons"><div id="studentinfo" class="button-wrap"><a class="button button-area colorbutton" href="/home/application">检查信息</a></div></div></div>'
+        sethomecard.innerHTML = '<div class="home-card"><h2>提交申请表</h2><p>提交前请仔细检查您的所有信息是否准确（一旦发送，之后将无法编辑）</p><div class="application-buttons"><div id="studentinfo" class="button-wrap"><a class="button button-area colorbutton" href="/home/application">检查信息</a></div></div></div>'
         document.getElementsByClassName("cards")[0].appendChild(sethomecard);
       }
     }
