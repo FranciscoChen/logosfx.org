@@ -75,3 +75,99 @@ function fillstudentinfo(){
     }
   }
 }
+function filleducation(){
+  var xhr = new XMLHttpRequest;
+  xhr.open("POST", "/geteducationinfo", true);
+  xhr.send();
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4)
+      return;
+    if (this.status == 200) {
+      const data = JSON.parse(this.responseText)[0]
+      console.log(data);
+      for (name in data) {
+        var dataref = data[name]
+        var ele
+        ele = document.getElementById(name)
+        if (name === 'gender') {
+          dataref = {man:'男',woman:'女'}[data[name]]
+        }
+        if (name === 'birthdate') {
+          dataref = data[name].slice(0,4)+'年 '+data[name].slice(5,7)+'月 '+data[name].slice(8,10)+'日'
+        }
+        if (name === 'course') {
+          dataref = ['「基督教神学学士班」（B.Th.）','「基督教教牧学士班」（B.Min.）','「教会领袖证书班」（Certificate）','特別学生'][data[name]]
+        }
+        if (ele !== null){
+            const inforow  = document.createElement("p");
+            inforow.innerHTML = dataref
+            ele.append(inforow)
+        }
+      }
+    }
+  }
+}
+function fillchurchlife(){
+  var xhr = new XMLHttpRequest;
+  xhr.open("POST", "/getchurchlifeinfo", true);
+  xhr.send();
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4)
+      return;
+    if (this.status == 200) {
+      const data = JSON.parse(this.responseText)[0]
+      console.log(data);
+      for (name in data) {
+        var dataref = data[name]
+        var ele
+        ele = document.getElementById(name)
+        if (name === 'gender') {
+          dataref = {man:'男',woman:'女'}[data[name]]
+        }
+        if (name === 'birthdate') {
+          dataref = data[name].slice(0,4)+'年 '+data[name].slice(5,7)+'月 '+data[name].slice(8,10)+'日'
+        }
+        if (name === 'course') {
+          dataref = ['「基督教神学学士班」（B.Th.）','「基督教教牧学士班」（B.Min.）','「教会领袖证书班」（Certificate）','特別学生'][data[name]]
+        }
+        if (ele !== null){
+            const inforow  = document.createElement("p");
+            inforow.innerHTML = dataref
+            ele.append(inforow)
+        }
+      }
+    }
+  }
+}
+function fillconsultants(){
+  var xhr = new XMLHttpRequest;
+  xhr.open("POST", "/getconsultantsinfo", true);
+  xhr.send();
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4)
+      return;
+    if (this.status == 200) {
+      const data = JSON.parse(this.responseText)[0]
+      console.log(data);
+      for (name in data) {
+        var dataref = data[name]
+        var ele
+        ele = document.getElementById(name)
+        if (name === 'gender') {
+          dataref = {man:'男',woman:'女'}[data[name]]
+        }
+        if (name === 'birthdate') {
+          dataref = data[name].slice(0,4)+'年 '+data[name].slice(5,7)+'月 '+data[name].slice(8,10)+'日'
+        }
+        if (name === 'course') {
+          dataref = ['「基督教神学学士班」（B.Th.）','「基督教教牧学士班」（B.Min.）','「教会领袖证书班」（Certificate）','特別学生'][data[name]]
+        }
+        if (ele !== null){
+            const inforow  = document.createElement("p");
+            inforow.innerHTML = dataref
+            ele.append(inforow)
+        }
+      }
+    }
+  }
+}
