@@ -1,9 +1,9 @@
 function getform(){
   fillapply();
   fillstudentinfo();
-//  filleducation();
-//  fillchurchlife();
-//  fillconsultants();
+  filleducation();
+  fillchurchlife();
+  fillconsultants();
 }
 
 function fillapply(){
@@ -15,7 +15,6 @@ function fillapply(){
       return;
     if (this.status == 200) {
       const data = JSON.parse(this.responseText)[0]
-      console.log(data);
       for (name in data) {
         var dataref = data[name]
         var ele
