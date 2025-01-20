@@ -81,10 +81,14 @@
     padding-top:1vh;
     padding-bottom:1vh;
 }
-.flex-wrap{
+.flex-display{
     display:flex;
     white-space:nowrap;
     flex-wrap:wrap;
+}
+.subsection{
+    padding-top:10px;
+    padding-bottom:10px;
 }
 .hidden{
     display:none;

@@ -84,14 +84,36 @@
               <h2>二、学生资料</h2>
           </div>
           <div class="part-content" id="applystudent">
+              <div class="subsection">
+                <h3>姓：</h3>
+		<div id="surname"></div>
+                <h3>名字：</h3>
+		<div id="name"></div>
+                <h3>性别：</h3>
+		<div id="gender"></div>
+                <h3>生日：</h3>
+		<div id="birthdate"></div>
+                <h3>地址：</h3>
+		<div id="address"></div>
+                <h3>邮政编码：</h3>
+		<div id="postalcode"></div>
+                <h3>住宅电话：</h3>
+		<div id="phone"></div>
+                <h3>移动电话：</h3>
+		<div id="mobile"></div>
+                <h3>微信号：</h3>
+		<div id="weixin"></div>
+                <h3>电子邮件：</h3>
+		<div id="email"></div>
+              </div>
           </div>
           <div class="part-edit">
               <a class="button button-area colorbutton" href="/apply/student">编辑</a>
           </div>
           <div class="part-content" id="studentinfo">
-              <div class="subsection-wrap">
+              <div class="subsection">
                 <h3>兴趣特长</h3>
-                <div class="flex-wrap">
+                <div class="flex">
 	          <div class="circle-option-wrap"><div class="circle-around-anchor hidden" id="computers"><div class="circle-around"> </div></div><p>电脑</p></div>
 		  <div class="separator-slash"><p>/</p></div>
 	          <div class="circle-option-wrap"><div class="circle-around-anchor hidden" id="english"><div class="circle-around"> </div></div><p>英语</p></div>
@@ -106,18 +128,18 @@
                 </div>
                 <div id="othertext"></div>
               </div>
-              <div class="subsection-wrap">
+              <div class="subsection">
                 <h3>职业</h3>
-                <div class="flex-wrap">
+                <div class="flex-display">
 		    <p>当前职业：</p><div id="currentjob"></div>
                 </div>
-                <div class="flex-wrap">
+                <div class="flex-display">
 		    <p>何年开始：</p><div id="currentjobstart"></div>
                 </div>
               </div>
-              <div class="subsection-wrap">
+              <div class="subsection">
                 <h3>婚姻状况</h3>
-                <div class="flex-wrap">
+                <div class="flex-display">
 	          <div class="circle-option-wrap"><div class="circle-around-anchor hidden" id="single"><div class="circle-around"> </div></div><p>单身</p></div>
 		  <div class="separator-slash"><p>/</p></div>
 	          <div class="circle-option-wrap"><div class="circle-around-anchor hidden" id="engaged"><div class="circle-around"> </div></div><p>订婚</p></div>
@@ -133,15 +155,15 @@
 	          <div class="circle-option-wrap"><div class="circle-around-anchor hidden" id="divorcedandremarried"><div class="circle-around"> </div></div><p>离婚又再婚</p></div>
                 </div>
                 <div class="hidden" id="ifmarried">
-                  <div class="flex-wrap">
+                  <div class="flex-display">
 		    <p>配偶姓名：</p><div id="partnername"></div>
                   </div>
-                  <div class="flex-wrap">
+                  <div class="flex-display">
 		    <p>配偶职业：</p><div id="partnerjob"></div>
                   </div>
                 </div>
                 <div class="hidden" id="ifchildren">
-                  <div class="flex-wrap">
+                  <div class="flex-display">
 		    <p>儿女的姓名和年龄：</p><div id="children"></div>
                   </div>
                 </div>
@@ -156,6 +178,46 @@
               <h2>三、所受的教育资料</h2>
           </div>
           <div class="part-content" id="education">
+              <div class="subsection" id="education1">
+                <h3>学校的名称</h3>
+		<div id="institution1"></div>
+                <h3>获得学位或证书</h3>
+		<div id="certificate1"></div>
+                <h3>注册(年)</h3>
+		<div id="registrationyear1"></div>
+                <h3>毕业(年)</h3>
+		<div id="graduationyear1"></div>
+              </div>
+              <div class="subsection hidden" id="education2">
+                <h3>学校的名称</h3>
+		<div id="institution2"></div>
+                <h3>获得学位或证书</h3>
+		<div id="certificate2"></div>
+                <h3>注册(年)</h3>
+		<div id="registrationyear2"></div>
+                <h3>毕业(年)</h3>
+		<div id="graduationyear2"></div>
+              </div>
+              <div class="subsection hidden" id="education3">
+                <h3>学校的名称</h3>
+		<div id="institution3"></div>
+                <h3>获得学位或证书</h3>
+		<div id="certificate3"></div>
+                <h3>注册(年)</h3>
+		<div id="registrationyear3"></div>
+                <h3>毕业(年)</h3>
+		<div id="graduationyear3"></div>
+              </div>
+              <div class="subsection hidden" id="education4">
+                <h3>学校的名称</h3>
+		<div id="institution4"></div>
+                <h3>获得学位或证书</h3>
+		<div id="certificate4"></div>
+                <h3>注册(年)</h3>
+		<div id="registrationyear4"></div>
+                <h3>毕业(年)</h3>
+		<div id="graduationyear4"></div>
+              </div>
           </div>
           <div class="part-edit">
               <a class="button button-area colorbutton" href="/home/education">编辑</a>
@@ -166,6 +228,67 @@
               <h2>四、蒙恩得救与教会资料</h2>
           </div>
           <div class="part-content" id="churchlife">
+              <div class="subsection">
+                <h3>你何时承认信靠耶稣为主？</h3>
+		<div id="faith"></div>
+                <h3>你是否已受浸？何时？</h3>
+		<div id="baptism"></div>
+                <h3>你受洗的教会名称：</h3>
+		<div id="baptismchurch"></div>
+                <h3>你经常参加聚会的教会名称及城市，在这教会有几年时间？</h3>
+		<div id="usualchurch"></div>
+                <h3>如果你的教会与某个系统团队有关联，请提供系统团队的名称</h3>
+		<div id="otherorganisations"></div>
+              </div>
+              <div class="subsection">
+                <p>列出你这两年所有的服事和教会职务：</p>
+                <div class="subsection" id="service1">
+                  <h3>所服侍的教会</h3>
+		  <div id="church1"></div>
+                  <h3>侍奉的岗位</h3>
+		  <div id="task1"></div>
+                  <h3>开始(年)</h3>
+		  <div id="startyear1"></div>
+                  <h3>结束(年)</h3>
+		  <div id="endyear1"></div>
+                </div>
+                <div class="subsection hidden" id="service2">
+                  <h3>所服侍的教会</h3>
+		  <div id="church2"></div>
+                  <h3>侍奉的岗位</h3>
+		  <div id="task2"></div>
+                  <h3>开始(年)</h3>
+		  <div id="startyear2"></div>
+                  <h3>结束(年)</h3>
+		  <div id="endyear2"></div>
+                </div>
+                <div class="subsection hidden" id="service3">
+                  <h3>所服侍的教会</h3>
+		  <div id="church3"></div>
+                  <h3>侍奉的岗位</h3>
+		  <div id="task3"></div>
+                  <h3>开始(年)</h3>
+		  <div id="startyear3"></div>
+                  <h3>结束(年)</h3>
+		  <div id="endyear3"></div>
+                </div>
+                <div class="subsection hidden" id="service4">
+                  <h3>所服侍的教会</h3>
+		  <div id="church4"></div>
+                  <h3>侍奉的岗位</h3>
+		  <div id="task4"></div>
+                  <h3>开始(年)</h3>
+		  <div id="startyear4"></div>
+                  <h3>结束(年)</h3>
+		  <div id="endyear4"></div>
+                </div>
+              </div>
+              <div class="subsection">
+                  <h3>你有没有与教会的领导们分享你蒙神呼召并上这神学课程的意愿？</h3>
+		  <div id="callingshared"></div>
+                  <h3>请表明他们的反应请</h3>
+		  <div id="leadersreaction"></div>
+              </div>
           </div>
           <div class="part-edit">
               <a class="button button-area colorbutton" href="/home/churchlife">编辑</a>
@@ -176,6 +299,27 @@
               <h2>五、咨询人</h2>
           </div>
           <div class="part-content" id="consultants">
+              <p>请提供两位咨询人的名字和联络资料 (不可以是自己的家庭成员或亲戚)。若有需要，本院招生会将会联络对方，咨询关于申请入学者的情况。</p>
+                <div class="subsection" id="consultant1">
+                  <h3>姓名：</h3>
+		  <div id="name1"></div>
+                  <h3>地址：</h3>
+		  <div id="address1"></div>
+                  <h3>联络电话：</h3>
+		  <div id="phone1"></div>
+                  <h3>与你的关系?</h3>
+		  <div id="relationship1"></div>
+                </div>
+                <div class="subsection" id="consultant2">
+                  <h3>姓名：</h3>
+		  <div id="name2"></div>
+                  <h3>地址：</h3>
+		  <div id="address2"></div>
+                  <h3>联络电话：</h3>
+		  <div id="phone2"></div>
+                  <h3>与你的关系?</h3>
+		  <div id="relationship2"></div>
+                </div>
           </div>
           <div class="part-edit">
               <a class="button button-area colorbutton" href="/home/consultants">编辑</a>
