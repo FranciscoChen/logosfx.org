@@ -120,14 +120,8 @@ function fillchurchlife(){
         var dataref = data[name]
         var ele
         ele = document.getElementById(name)
-        if (name === 'gender') {
-          dataref = {man:'男',woman:'女'}[data[name]]
-        }
-        if (name === 'birthdate') {
-          dataref = data[name].slice(0,4)+'年 '+data[name].slice(5,7)+'月 '+data[name].slice(8,10)+'日'
-        }
-        if (name === 'course') {
-          dataref = ['「基督教神学学士班」（B.Th.）','「基督教教牧学士班」（B.Min.）','「教会领袖证书班」（Certificate）','特別学生'][data[name]]
+        if (name === 'callingshared') {
+          dataref = data[name] ? '有' : '没有'
         }
         if (ele !== null){
             const inforow  = document.createElement("p");
@@ -152,15 +146,6 @@ function fillconsultants(){
         var dataref = data[name]
         var ele
         ele = document.getElementById(name)
-        if (name === 'gender') {
-          dataref = {man:'男',woman:'女'}[data[name]]
-        }
-        if (name === 'birthdate') {
-          dataref = data[name].slice(0,4)+'年 '+data[name].slice(5,7)+'月 '+data[name].slice(8,10)+'日'
-        }
-        if (name === 'course') {
-          dataref = ['「基督教神学学士班」（B.Th.）','「基督教教牧学士班」（B.Min.）','「教会领袖证书班」（Certificate）','特別学生'][data[name]]
-        }
         if (ele !== null){
             const inforow  = document.createElement("p");
             inforow.innerHTML = dataref
