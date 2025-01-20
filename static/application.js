@@ -88,14 +88,14 @@ function filleducation(){
         var dataref = data[name]
         var ele
         ele = document.getElementById(name)
-        if (name === 'gender') {
-          dataref = {man:'男',woman:'女'}[data[name]]
+        if (name === 'institution2' && dataref !== null && dataref.length > 0){
+          document.getElementById('education2').classList.remove('hidden')
         }
-        if (name === 'birthdate') {
-          dataref = data[name].slice(0,4)+'年 '+data[name].slice(5,7)+'月 '+data[name].slice(8,10)+'日'
+        if (name === 'institution3' && dataref !== null && dataref.length > 0){
+          document.getElementById('education3').classList.remove('hidden')
         }
-        if (name === 'course') {
-          dataref = ['「基督教神学学士班」（B.Th.）','「基督教教牧学士班」（B.Min.）','「教会领袖证书班」（Certificate）','特別学生'][data[name]]
+        if (name === 'institution4' && dataref !== null && dataref.length > 0){
+          document.getElementById('education4').classList.remove('hidden')
         }
         if (ele !== null){
             const inforow  = document.createElement("p");
@@ -122,6 +122,15 @@ function fillchurchlife(){
         ele = document.getElementById(name)
         if (name === 'callingshared') {
           dataref = data[name] ? '有' : '没有'
+        }
+        if (name === 'church2' && dataref !== null && dataref.length > 0){
+          document.getElementById('service2').classList.remove('hidden')
+        }
+        if (name === 'church3' && dataref !== null && dataref.length > 0){
+          document.getElementById('service3').classList.remove('hidden')
+        }
+        if (name === 'church4' && dataref !== null && dataref.length > 0){
+          document.getElementById('service4').classList.remove('hidden')
         }
         if (ele !== null){
             const inforow  = document.createElement("p");
