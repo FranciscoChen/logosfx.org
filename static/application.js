@@ -1,5 +1,5 @@
 function getform(){
-//  fillapply();
+  fillapply();
   fillstudentinfo();
 //  filleducation();
 //  fillchurchlife();
