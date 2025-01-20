@@ -23,7 +23,7 @@ function fillapply(){
         if (name === 'gender') {
           dataref = {man:'男',woman:'女'}[data[name]]
         }
-        if (name === 'birthday') {
+        if (name === 'birthdate') {
           dataref = data[name].slice(0,4)+'年 '+data[name].slice(5,7)+'月 '+data[name].slice(8,10)+'日'
         }
         if (name === 'course') {
