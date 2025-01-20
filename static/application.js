@@ -27,7 +27,7 @@ function fillapply(){
           dataref = data[name].slice(0,4)+'年 '+data[name].slice(5,7)+'月 '+data[name].slice(8,10)+'日'
         }
         if (name === 'course') {
-          dataref = {'0':'「基督教神学学士班」（B.Th.）','1':'「基督教教牧学士班」（B.Min.）','2':'「教会领袖证书班」（Certificate）','3':'特別学生'}[data[name]]
+          dataref = ['「基督教神学学士班」（B.Th.）','「基督教教牧学士班」（B.Min.）','「教会领袖证书班」（Certificate）','特別学生'][data[name]]
         }
         if (ele !== null){
             const inforow  = document.createElement("p");
