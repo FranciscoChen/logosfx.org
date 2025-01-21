@@ -34,3 +34,21 @@ function getform(){
     }
   }
 }
+function formcheck() {
+    if (document.getElementById("form-bacheloroftheology").checked === true || document.getElementById("form-bachelorofministry").checked === true || document.getElementById("form-churchleadershipcertificate").checked === true || document.getElementById("form-specialstudents").checked === true) {
+        if (document.getElementsByClassName("submit")[0].className.indexOf("disabled") > -1) {
+            document.getElementsByClassName("submit")[0].classList.toggle("disabled")
+        }
+        if (document.getElementsByClassName("submit")[0].hasAttribute("disabled") === true) {
+            document.getElementsByClassName("submit")[0].removeAttribute("disabled")
+        }
+    } else {
+        if (document.getElementsByClassName("submit")[0].className.indexOf("disabled") === -1) {
+            document.getElementsByClassName("submit")[0].classList.toggle("disabled")
+        }
+        if (document.getElementsByClassName("submit")[0].hasAttribute("disabled") === false) {
+            document.getElementsByClassName("submit")[0].setAttribute("disabled", "")
+        }
+    }
+}
+setInterval(formcheck, 500);

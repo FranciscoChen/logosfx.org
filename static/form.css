@@ -88,3 +88,6 @@
     font-size:1em;
     font-weight:400;
 }
+.disabled {
+    background: var(--main-grey-color);
+}
