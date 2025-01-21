@@ -31,3 +31,41 @@ function getform(){
     }
   }
 }
+function formcheck() {
+    if (
+            (
+                    document.getElementById("form-computers").checked === true || 
+                    document.getElementById("form-english").checked === true || 
+                    document.getElementById("form-calligraphy").checked === true || 
+                    document.getElementById("form-music").checked === true || 
+                    document.getElementById("form-dance").checked === true || 
+                    document.getElementById("form-other").checked === true
+            ) &&
+            document.getElementById("form-currentjob").value.length > 0 && 
+            document.getElementById("form-currentjobstart").value.length > 0 &&
+            (
+                    document.getElementById("form-single").checked === true || 
+                    document.getElementById("form-engaged").checked === true || 
+                    document.getElementById("form-married").checked === true || 
+                    document.getElementById("form-widow").checked === true || 
+                    document.getElementById("form-separated").checked === true || 
+                    document.getElementById("form-divorced").checked === true || 
+                    document.getElementById("form-divorcedandremarried").checked === true
+            )
+    ) {
+        if (document.getElementsByClassName("submit")[0].className.indexOf("disabled") > -1) {
+            document.getElementsByClassName("submit")[0].classList.toggle("disabled")
+        }
+        if (document.getElementsByClassName("submit")[0].hasAttribute("disabled") === true) {
+            document.getElementsByClassName("submit")[0].removeAttribute("disabled")
+        }
+    } else {
+        if (document.getElementsByClassName("submit")[0].className.indexOf("disabled") === -1) {
+            document.getElementsByClassName("submit")[0].classList.toggle("disabled")
+        }
+        if (document.getElementsByClassName("submit")[0].hasAttribute("disabled") === false) {
+            document.getElementsByClassName("submit")[0].setAttribute("disabled", "")
+        }
+    }
+}
+setInterval(formcheck, 500);

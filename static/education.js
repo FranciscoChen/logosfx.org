@@ -66,3 +66,26 @@ function getform(){
     }
   }
 }
+function formcheck() {
+    if (
+            document.getElementById("form-institution1").value.length > 0 && 
+            document.getElementById("form-certificate1").value.length > 0 && 
+            document.getElementById("form-registrationyear1").value.length > 0 && 
+            document.getElementById("form-graduationyear1").value.length > 0
+    ) {
+        if (document.getElementsByClassName("submit")[0].className.indexOf("disabled") > -1) {
+            document.getElementsByClassName("submit")[0].classList.toggle("disabled")
+        }
+        if (document.getElementsByClassName("submit")[0].hasAttribute("disabled") === true) {
+            document.getElementsByClassName("submit")[0].removeAttribute("disabled")
+        }
+    } else {
+        if (document.getElementsByClassName("submit")[0].className.indexOf("disabled") === -1) {
+            document.getElementsByClassName("submit")[0].classList.toggle("disabled")
+        }
+        if (document.getElementsByClassName("submit")[0].hasAttribute("disabled") === false) {
+            document.getElementsByClassName("submit")[0].setAttribute("disabled", "")
+        }
+    }
+}
+setInterval(formcheck, 500);

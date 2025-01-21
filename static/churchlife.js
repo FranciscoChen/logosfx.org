@@ -70,3 +70,35 @@ function getform(){
     }
   }
 }
+function formcheck() {
+    if (
+            document.getElementById("form-faith").value.length > 0 && 
+            document.getElementById("form-baptism").value.length > 0 && 
+            document.getElementById("form-baptismchurch").value.length > 0 &&
+            document.getElementById("form-usualchurch").value.length > 0 &&
+            document.getElementById("form-otherorganisations").value.length > 0 &&
+            document.getElementById("form-church1").value.length > 0 &&
+            document.getElementById("form-task1").value.length > 0 &&
+            document.getElementById("form-startyear1").value.length > 0 &&
+            document.getElementById("form-endyear1").value.length > 0 &&
+            (
+                    document.getElementById("form-callingsharedtrue").checked === true || 
+                    document.getElementById("form-callingsharedfalse").checked === true
+            )
+    ) {
+        if (document.getElementsByClassName("submit")[0].className.indexOf("disabled") > -1) {
+            document.getElementsByClassName("submit")[0].classList.toggle("disabled")
+        }
+        if (document.getElementsByClassName("submit")[0].hasAttribute("disabled") === true) {
+            document.getElementsByClassName("submit")[0].removeAttribute("disabled")
+        }
+    } else {
+        if (document.getElementsByClassName("submit")[0].className.indexOf("disabled") === -1) {
+            document.getElementsByClassName("submit")[0].classList.toggle("disabled")
+        }
+        if (document.getElementsByClassName("submit")[0].hasAttribute("disabled") === false) {
+            document.getElementsByClassName("submit")[0].setAttribute("disabled", "")
+        }
+    }
+}
+setInterval(formcheck, 500);

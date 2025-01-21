@@ -31,3 +31,30 @@ function getform(){
     }
   }
 }
+function formcheck() {
+    if (
+            document.getElementById("form-name1").value.length > 0 && 
+            document.getElementById("form-address1").value.length > 0 && 
+            document.getElementById("form-phone1").value.length > 0 && 
+            document.getElementById("form-relationship1").value.length > 0 && 
+            document.getElementById("form-name2").value.length > 0 && 
+            document.getElementById("form-address2").value.length > 0 && 
+            document.getElementById("form-phone2").value.length > 0 && 
+            document.getElementById("form-relationship2").value.length > 0
+    ) {
+        if (document.getElementsByClassName("submit")[0].className.indexOf("disabled") > -1) {
+            document.getElementsByClassName("submit")[0].classList.toggle("disabled")
+        }
+        if (document.getElementsByClassName("submit")[0].hasAttribute("disabled") === true) {
+            document.getElementsByClassName("submit")[0].removeAttribute("disabled")
+        }
+    } else {
+        if (document.getElementsByClassName("submit")[0].className.indexOf("disabled") === -1) {
+            document.getElementsByClassName("submit")[0].classList.toggle("disabled")
+        }
+        if (document.getElementsByClassName("submit")[0].hasAttribute("disabled") === false) {
+            document.getElementsByClassName("submit")[0].setAttribute("disabled", "")
+        }
+    }
+}
+setInterval(formcheck, 500);
