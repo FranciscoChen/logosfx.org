@@ -34,3 +34,35 @@ function getform(){
     }
   }
 }
+function formcheck() {
+    if (
+            document.getElementById("form-surname").value.length > 0 &&
+            document.getElementById("form-name").value.length > 0 && 
+            (
+                    document.getElementById("man").checked === true || 
+                    document.getElementById("woman").checked === true 
+            ) &&
+            document.getElementById("form-birthdate").value.length > 0 && 
+            document.getElementById("form-address").value.length > 0 && 
+            document.getElementById("form-postalcode").value.length > 0 && 
+            document.getElementById("form-phone").value.length > 0 && 
+            document.getElementById("form-mobile").value.length > 0 && 
+            document.getElementById("form-weixin").value.length > 0 && 
+            document.getElementById("form-email").value.length > 0 
+    ) {
+        if (document.getElementsByClassName("submit")[0].className.indexOf("disabled") > -1) {
+            document.getElementsByClassName("submit")[0].classList.toggle("disabled")
+        }
+        if (document.getElementsByClassName("submit")[0].hasAttribute("disabled") === true) {
+            document.getElementsByClassName("submit")[0].removeAttribute("disabled")
+        }
+    } else {
+        if (document.getElementsByClassName("submit")[0].className.indexOf("disabled") === -1) {
+            document.getElementsByClassName("submit")[0].classList.toggle("disabled")
+        }
+        if (document.getElementsByClassName("submit")[0].hasAttribute("disabled") === false) {
+            document.getElementsByClassName("submit")[0].setAttribute("disabled", "")
+        }
+    }
+}
+setInterval(formcheck, 500);
