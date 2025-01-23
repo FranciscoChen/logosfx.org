@@ -20,7 +20,7 @@ function submitForm(url) {
 function displaysuccessmessage(content){
   const notification = document.createElement("div");
   notification.setAttribute("id", "notification");
-  notification.innerHTML = '<p>'+content+'</p>'
+  notification.innerHTML = '<p class="notification">'+content+'</p>'
   document.getElementById("main-wrap").appendChild(notification);
   document.getElementById("main-wrap").classList.add('notification-in')
   setTimeout(
