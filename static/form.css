@@ -119,6 +119,7 @@
     height:var(--ui-button-height)
 }
 .back-button {
+    color:var(--secondary-text-color);
     width: 90px;
     border-radius: 20px 3px;
     border: 0;
