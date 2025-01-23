@@ -1,6 +1,6 @@
 function forminit(){
   document.getElementById("submit").onclick = function(){
-	  submitForm(document.getElementById("apply-form"))
+	  submitForm(document.getElementById("apply-form").action)
   };
 }
 
@@ -13,7 +13,8 @@ function submitForm(url) {
     }
   }; 
   var formData = new FormData(document.getElementById("apply-form")); 
-  xhr.send(formData);
+  var querystring = new URLSearchParams(formData).toString()
+  xhr.send(querystring);
 }
 
 function displaysuccessmessage(content){
