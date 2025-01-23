@@ -21,7 +21,7 @@ function displaysuccessmessage(content){
   const notification = document.createElement("div");
   notification.setAttribute("id", "notification");
   notification.innerHTML = '<p>'+content+'</p>'
-  document.getElementById("main-wrap")[0].appendChild(notification);
+  document.getElementById("main-wrap").appendChild(notification);
   setTimeout(
     function() {
       document.getElementById("notification").remove()
