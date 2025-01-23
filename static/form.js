@@ -22,9 +22,16 @@ function displaysuccessmessage(content){
   notification.setAttribute("id", "notification");
   notification.innerHTML = '<p>'+content+'</p>'
   document.getElementById("main-wrap").appendChild(notification);
+  document.getElementById("main-wrap").classList.add('notification-in')
+  setTimeout(
+    function() {
+      document.getElementById("main-wrap").classList.remove('notification-in')
+      document.getElementById("main-wrap").classList.add('notification-out')
+    }, 1000
+  );
   setTimeout(
     function() {
       document.getElementById("notification").remove()
-    }, 1000
+    }, 1400
   );
 }

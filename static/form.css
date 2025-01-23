@@ -95,6 +95,21 @@
     position:absolute;
     width:100vw;
     display:flex;
+    opacity:0;
     text-align:center;
+    justify-content:center;
     top:40vh;
+    background:none;
+    transition: all 0.3s ease-in-out;
+}
+.notification-in{
+  opacity:1;
+  top:50vh;
+}
+.notification-out{
+  opacity:0
+  top:30vh;
+}
+.notificaion{
+    background-color:var(--main-grey-color)
 }
