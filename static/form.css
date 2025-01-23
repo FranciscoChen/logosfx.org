@@ -97,17 +97,17 @@
     opacity:0;
     text-align:center;
     justify-content:center;
-    top:40vh;
+    top:42vh;
     background:none;
     transition: all 0.3s ease-in-out;
 }
 .notification-in{
     opacity:1;
-    top:39vh;
+    top:41vh;
 }
 .notification-out{
     opacity:0;
-    top:41vh;
+    top:40vh;
 }
 .notification-content{
     background-color:var(--main-grey-color);
