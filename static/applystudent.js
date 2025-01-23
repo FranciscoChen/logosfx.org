@@ -13,7 +13,7 @@ function getform(){
           if (ele.type === 'checkbox') {
             ele.checked = {'true':1,'false':0}[data[name]];
           }
-          if (ele.type === 'text') {
+          if (ele.type === 'text' || ele.type === 'email') {
             ele.value = data[name]
           }
           if (ele.type === 'date') {
