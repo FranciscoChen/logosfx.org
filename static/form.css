@@ -91,7 +91,7 @@
     background: var(--main-grey-color);
 }
 .notification{
-    position:absolute;
+    position:fixed;
     width:100vw;
     display:flex;
     opacity:0;
