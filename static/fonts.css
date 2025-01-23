@@ -23,7 +23,7 @@ a {
   color:var(--main-link-color);
   white-space:nowrap;
 }
-a:hover{
+a:not(.disabled)hover{
   color:var(--main-highlight-color);
 }
 h1{

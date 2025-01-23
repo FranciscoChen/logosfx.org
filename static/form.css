@@ -91,3 +91,10 @@
 .disabled {
     background: var(--main-grey-color);
 }
+#notification{
+    position:absolute;
+    width:100vw;
+    display:flex;
+    text-align:center;
+    top:40vh;
+}

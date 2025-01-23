@@ -14,4 +14,7 @@ window.onload = () => {
   if (typeof getform === 'function'){
     getform()
   }
+  if (typeof forminit === 'function'){
+    forminit()
+  }
 }
