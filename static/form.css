@@ -85,8 +85,7 @@
 }
 .submit{
     width:100%;
-    font-size:1em;
-    font-weight:400;
+    font-size:var(--main-text-font-size);
 }
 .disabled {
     background: var(--main-grey-color);
@@ -117,7 +116,13 @@
 }
 .form-buttons{
     display:flex;
+    height:var(--ui-button-height)
 }
-.back-button{
-    width:50px;
+.back-button {
+    width: 90px;
+    border-radius: 20px 3px;
+    border: 0;
+    margin-right: 12px;
+    font-size: var(--main-text-font-size);
+    background: var(--main-grey-color);
 }

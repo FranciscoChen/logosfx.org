@@ -3,7 +3,8 @@
     --main-margin: 1vw;
     --main-max-width: 1400px;
     --site-header-margin: 0px;
-    --footer-height: 80px;
+    --footer-height: 50px;
+    --ui-button-height: 60px;
 }
 *,::after,::before {
     box-sizing: inherit;

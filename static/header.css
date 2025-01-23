@@ -76,6 +76,7 @@ nav{
   border: 0;
   cursor: pointer;
   text-align: center;
+  align-content:center;
   user-select: none;
   white-space: nowrap;
   display: inline-block;
