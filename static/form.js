@@ -1,5 +1,5 @@
 function forminit(){
-  document.getElementsById("submit").onclick = function(){
+  document.getElementById("submit").onclick = function(){
 	  submitForm(document.getElementById("apply-form"))
   };
 }
