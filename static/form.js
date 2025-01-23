@@ -23,11 +23,15 @@ function displaysuccessmessage(content){
   notification.setAttribute("class", "notification");
   notification.innerHTML = '<p class="notification-content">'+content+'</p>'
   document.getElementById("main-wrap").appendChild(notification);
-  document.getElementById("notification").classList.add('notification-in')
   setTimeout(
     function() {
-      document.getElementById("notification").classList.remove('notification-in')
+      document.getElementById("notification").classList.add('notification-in')
+    }, 100
+  );
+  setTimeout(
+    function() {
       document.getElementById("notification").classList.add('notification-out')
+      document.getElementById("notification").classList.remove('notification-in')
     }, 1000
   );
   setTimeout(

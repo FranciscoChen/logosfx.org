@@ -115,3 +115,9 @@
     padding:1em;
     border-radius: 20px 3px;
 }
+.form-buttons{
+    display:flex;
+}
+.back-button{
+    width:50px;
+}
