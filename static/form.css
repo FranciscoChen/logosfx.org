@@ -126,3 +126,7 @@
     font-size: var(--main-text-font-size);
     background: var(--main-grey-color);
 }
+.back-button:not(.disabled):hover {
+  color: var(--main-text-color);
+  background: var(--secondary-grey-color);
+}
