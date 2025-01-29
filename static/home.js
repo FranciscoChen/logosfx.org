@@ -18,6 +18,7 @@ function role(){
           submitted();
         break;
         case '2':
+          submenu();
         break;
         case '3':
         break;
@@ -101,6 +102,12 @@ function welcomedone(){
   var xhr = new XMLHttpRequest;
   xhr.open("POST", "/welcomedone", true);
   xhr.send();
+}
+function submenu(){
+  const sethomecard  = document.createElement("div");
+  sethomecard.classList.add('home-card-wrap')
+  sethomecard.innerHTML = '<div class="home-card"><h2>欢迎！</h2><a class="button button-area colorbutton" href="/home/menu">进入</a></div>'
+  document.getElementsByClassName("cards")[0].appendChild(sethomecard);
 }
 function setpassword(){
   var xhr = new XMLHttpRequest;
