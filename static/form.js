@@ -7,14 +7,16 @@ function forminit(){
 function submitForm(url) {
   var xhr = new XMLHttpRequest();
   xhr.open("POST",url); 
-  xhr.onload = function(event){
-    if (xhr.status == 200) {
-      displaysuccessmessage('信息保存成功');
-    }
-  }; 
   var formData = new FormData(document.getElementById("apply-form")); 
   var querystring = new URLSearchParams(formData).toString()
   xhr.send(querystring);
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4)
+      return;
+    if (this.status == 200) {
+      displaysuccessmessage('信息保存成功');
+    }
+  }
 }
 
 function displaysuccessmessage(content){
