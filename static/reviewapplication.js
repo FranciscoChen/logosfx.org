@@ -9,8 +9,8 @@ function getform(){
 
 function fillapply(id){
   var xhr = new XMLHttpRequest;
-  xhr.open("POST", "/getapplyinfo?id="+id, true);
-  xhr.send();
+  xhr.open("POST", "/getapplyinfo", true);
+  xhr.send(id);
   xhr.onreadystatechange = function() {
     if (this.readyState != 4)
       return;
@@ -40,8 +40,8 @@ function fillapply(id){
 }
 function fillstudentinfo(id){
   var xhr = new XMLHttpRequest;
-  xhr.open("POST", "/getstudentinfo?id="+id, true);
-  xhr.send();
+  xhr.open("POST", "/getstudentinfo", true);
+  xhr.send(id);
   xhr.onreadystatechange = function() {
     if (this.readyState != 4)
       return;
@@ -77,8 +77,8 @@ function fillstudentinfo(id){
 }
 function filleducation(id){
   var xhr = new XMLHttpRequest;
-  xhr.open("POST", "/geteducationinfo?id="+id, true);
-  xhr.send();
+  xhr.open("POST", "/geteducationinfo", true);
+  xhr.send(id);
   xhr.onreadystatechange = function() {
     if (this.readyState != 4)
       return;
@@ -108,8 +108,8 @@ function filleducation(id){
 }
 function fillchurchlife(id){
   var xhr = new XMLHttpRequest;
-  xhr.open("POST", "/getchurchlifeinfo?id="+id, true);
-  xhr.send();
+  xhr.open("POST", "/getchurchlifeinfo", true);
+  xhr.send(id);
   xhr.onreadystatechange = function() {
     if (this.readyState != 4)
       return;
@@ -142,8 +142,8 @@ function fillchurchlife(id){
 }
 function fillconsultants(id){
   var xhr = new XMLHttpRequest;
-  xhr.open("POST", "/getconsultantsinfo?id="+id, true);
-  xhr.send();
+  xhr.open("POST", "/getconsultantsinfo", true);
+  xhr.send(id);
   xhr.onreadystatechange = function() {
     if (this.readyState != 4)
       return;

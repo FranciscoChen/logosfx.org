@@ -9,7 +9,7 @@ function getform(){
 function fillapply(){
   var xhr = new XMLHttpRequest;
   xhr.open("POST", "/getapplyinfo", true);
-  xhr.send();
+  xhr.send('0');
   xhr.onreadystatechange = function() {
     if (this.readyState != 4)
       return;
@@ -40,7 +40,7 @@ function fillapply(){
 function fillstudentinfo(){
   var xhr = new XMLHttpRequest;
   xhr.open("POST", "/getstudentinfo", true);
-  xhr.send();
+  xhr.send('0');
   xhr.onreadystatechange = function() {
     if (this.readyState != 4)
       return;
@@ -77,7 +77,7 @@ function fillstudentinfo(){
 function filleducation(){
   var xhr = new XMLHttpRequest;
   xhr.open("POST", "/geteducationinfo", true);
-  xhr.send();
+  xhr.send('0');
   xhr.onreadystatechange = function() {
     if (this.readyState != 4)
       return;
@@ -108,7 +108,7 @@ function filleducation(){
 function fillchurchlife(){
   var xhr = new XMLHttpRequest;
   xhr.open("POST", "/getchurchlifeinfo", true);
-  xhr.send();
+  xhr.send('0');
   xhr.onreadystatechange = function() {
     if (this.readyState != 4)
       return;
@@ -142,7 +142,7 @@ function fillchurchlife(){
 function fillconsultants(){
   var xhr = new XMLHttpRequest;
   xhr.open("POST", "/getconsultantsinfo", true);
-  xhr.send();
+  xhr.send('0');
   xhr.onreadystatechange = function() {
     if (this.readyState != 4)
       return;
