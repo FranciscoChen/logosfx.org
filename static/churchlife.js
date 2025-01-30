@@ -76,7 +76,6 @@ function formcheck() {
             document.getElementById("form-baptism").value.length > 0 && 
             document.getElementById("form-baptismchurch").value.length > 0 &&
             document.getElementById("form-usualchurch").value.length > 0 &&
-            document.getElementById("form-otherorganisations").value.length > 0 &&
             document.getElementById("form-church1").value.length > 0 &&
             document.getElementById("form-task1").value.length > 0 &&
             document.getElementById("form-startyear1").value.length > 0 &&

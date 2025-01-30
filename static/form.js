@@ -9,7 +9,9 @@ function forminit(){
         const btn = document.getElementsByClassName("site-buttons")[0].firstChild;
       if (this.responseText === '1') {
         document.getElementById("submit").onclick = function(){
-          submitForm(document.getElementById("apply-form").action)
+          if (document.getElementById("submit").hasAttribute("disabled") === false) {
+            submitForm(document.getElementById("apply-form").action)
+          }
         };
       } else {
         var e = document.getElementById("submit")
