@@ -5,8 +5,15 @@ function getform(){
   filleducation(id);
   fillchurchlife(id);
   fillconsultants(id);
+  rejectbutton();
 }
-
+function rejectbutton(){
+  document.getElementById("reject").onclick = function(){
+    if (document.getElementById("reject").hasAttribute("disabled") === false) {
+      submitForm('/applicationreviewrejected')
+    }
+  };
+}
 function fillapply(id){
   var xhr = new XMLHttpRequest;
   xhr.open("POST", "/getapplyinfo", true);
