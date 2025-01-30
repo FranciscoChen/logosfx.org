@@ -35,7 +35,7 @@ function expandsection(){
 function getform(){
   var xhr = new XMLHttpRequest;
   xhr.open("POST", "/getchurchlifeinfo", true);
-  xhr.send();
+  xhr.send('0');
   xhr.onreadystatechange = function() {
     if (this.readyState != 4)
       return;

@@ -1,7 +1,7 @@
 function getform(){
   var xhr = new XMLHttpRequest;
   xhr.open("POST", "/getapplyinfo", true);
-  xhr.send();
+  xhr.send('0');
   xhr.onreadystatechange = function() {
     if (this.readyState != 4)
       return;
