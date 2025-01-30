@@ -6,7 +6,6 @@ function forminit(){
     if (this.readyState != 4)
       return;
     if (this.status == 200) {
-        const btn = document.getElementsByClassName("site-buttons")[0].firstChild;
       if (this.responseText === '1') {
         document.getElementById("submit").onclick = function(){
           if (document.getElementById("submit").hasAttribute("disabled") === false) {

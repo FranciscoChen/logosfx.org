@@ -5,15 +5,58 @@ function getform(){
   filleducation(id);
   fillchurchlife(id);
   fillconsultants(id);
+  acceptbutton();
   rejectbutton();
+}
+
+function acceptbutton(){
+  document.getElementById("accept").onclick = function(){
+    submitForm("/applicationreviewaccepted")
+  };
 }
 function rejectbutton(){
   document.getElementById("reject").onclick = function(){
-    if (document.getElementById("reject").hasAttribute("disabled") === false) {
-      submitForm('/applicationreviewrejected')
-    }
+    submitForm("/applicationreviewrejected")
   };
 }
+function submitForm(url) {
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST",url); 
+  const id = new URLSearchParams(window.location.search).get('id');
+  xhr.send(id);
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4)
+      return;
+    if (this.status == 200) {
+      displaysuccessmessage('信息保存成功');
+    }
+  }
+}
+
+function displaysuccessmessage(content){
+  const notification = document.createElement("div");
+  notification.setAttribute("id", "notification");
+  notification.setAttribute("class", "notification");
+  notification.innerHTML = '<p class="notification-content">'+content+'</p>'
+  document.getElementById("main-wrap").appendChild(notification);
+  setTimeout(
+    function() {
+      document.getElementById("notification").classList.add('notification-in')
+    }, 100
+  );
+  setTimeout(
+    function() {
+      document.getElementById("notification").classList.add('notification-out')
+      document.getElementById("notification").classList.remove('notification-in')
+    }, 1000
+  );
+  setTimeout(
+    function() {
+      document.getElementById("notification").remove()
+    }, 1400
+  );
+}
+
 function fillapply(id){
   var xhr = new XMLHttpRequest;
   xhr.open("POST", "/getapplyinfo", true);

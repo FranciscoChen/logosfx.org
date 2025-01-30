@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="https://static.logosfx.org/application.css">
   <script src="https://static.logosfx.org/user.js"></script>
   <script src="https://static.logosfx.org/load.js"></script>
-  <script src="https://static.logosfx.org/form.js"></script>
   <script src="https://static.logosfx.org/reviewapplication.js"></script>
   <link rel="apple-touch-icon" sizes="180x180" href="https://static.logosfx.org/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="https://static.logosfx.org/favicon-32x32.png">
@@ -310,13 +309,11 @@
           </div>
       </div>
       <div class="form">
-          <form method="post" id="apply-form" action="/applicationreviewaccepted">
-              <div class="form-buttons">
-                  <a onclick="location.href = document.referrer" class="button back-button">返回</a>
-                  <a id="reject" class="button back-button">拒绝</a>
-                  <a id="submit" class="submit colorbutton button">接受申请</a>
-              </div>
-          </form>
+          <div class="form-buttons">
+              <a onclick="location.href = document.referrer" class="button back-button">返回</a>
+              <a id="reject" class="button back-button">拒绝</a>
+              <a id="accept" class="submit colorbutton button">接受申请</a>
+          </div>
       </div>
     </div>
   </div>
