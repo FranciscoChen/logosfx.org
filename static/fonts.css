@@ -59,6 +59,8 @@ footer{
   font-weight:400;
   font-family:var(--main-text-font);
   font-size:calc(0.8*var(--main-text-font-size));
+  position:relative;
+  z-index:7;
 }
 @media (min-width: 320px) {
   html {

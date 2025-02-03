@@ -111,12 +111,12 @@
     max-height: 3em;
 }
 .cover {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
     background: var(--main-background-color);
-    z-index: 7;
+    z-index: 4;
     display: block;
+    overflow: hidden;
+    transform: rotate(40deg);
 }
