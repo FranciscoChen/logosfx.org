@@ -17,3 +17,10 @@ function landing() {
     }
   }
 }
+function uncover(){
+  if (document.fonts.check("12px FZKai") == true) {
+    document.getElementById('cover').classList.add('uncover');
+    clearInterval(uncoverInterval)
+  }
+}
+var uncoverInterval = setInterval(uncover,500)

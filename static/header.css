@@ -12,6 +12,7 @@ header{
   margin: 0 auto;
   max-width:1800px;
   height: var(--header-height);
+  background:var(--main-background-color);
 }
 .menu{
   display:flex;
