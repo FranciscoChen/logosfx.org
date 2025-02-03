@@ -7,8 +7,8 @@ function landing() {
     if (this.readyState != 4)
       return;
     if (this.status == 200) {
-      const msg = document.getElementById("message")[0].firstChild;
-      const btn = document.getElementById("action")[0].firstChild;
+      const msg = document.getElementById("message");
+      const btn = document.getElementById("action");
       if (this.responseText === '1') {
         msg.innerText = '欢迎回来！'
         btn.innerText = '进入主页'
