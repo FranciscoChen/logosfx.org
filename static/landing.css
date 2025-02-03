@@ -110,3 +110,13 @@
     animation-delay:2s;
     max-height: 3em;
 }
+.cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--main-background-color);
+    z-index: 7;
+    display: block;
+}
