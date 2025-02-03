@@ -2,6 +2,9 @@ window.onload = () => {
   if (typeof user === 'function'){
     user()
   }
+  if (typeof landing === 'function'){
+    landing()
+  }
   if (typeof home === 'function'){
     home()
   }
