@@ -120,17 +120,33 @@
     position:fixed;
     background-color:var(--main-background-color);
     z-index:14;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.logoscreen-logo-cover{
-    position:relative;
-    z-index:16;
+.logoscreen-logo-cover {
+    position: absolute;
+    z-index: 16;
     border-radius: 50%;
-    background-color:var(--main-background-color);
+    background-color: var(--main-background-color);
+    height: 320px;
+    width: 320px;
+    transform: translateY(0px);
+    transition: all 2s ease-in-out;
 }
-.logoscreen-logo{
-    position:relative;
-    z-index:15;
-    height:auto;
-    width:100%;
+.logoscreen-uncover{
+    transform: translateY(340px);
+    border-radius: 30%;
+}
+.logoscreen-logo {
+    position: relative;
+    z-index: 15;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoscreen-logo img {
+    height: 100%;
+    width: 100%;
 }
