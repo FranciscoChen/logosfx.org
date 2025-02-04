@@ -112,7 +112,8 @@ nav{
     bottom: 0;
     z-index: 9;
     flex-flow: column;
-    width: 50%
+    width: 50%;
+    border-radius: 0px 3px 20px 0px;
   }
 
   .menu-display:checked~#nav{
