@@ -44,18 +44,18 @@
     font-weight: normal;
     font-family: times new roman;
     padding-top:12vh;
-    letter-spacing:-0.4rem;
     animation: fadein ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:1s;
+    transform: scaleX(0.98)
 }
 @keyframes fadein{
     0% {
-        letter-spacing: -0.40rem;
+      transform: scaleX(0.98)
     }
     100% {
-        letter-spacing: 0;
+      transform: scaleX(1.01)
     }
 }
 .seminary {
@@ -66,11 +66,11 @@
     font-weight: bold;
     font-size: 43px;
     padding-bottom:20vh;
-    letter-spacing:-0.4rem;
     animation: fadein ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:1s;
+    transform: scaleX(0.98)
 }
 .call {
     grid-area: call;
@@ -80,11 +80,11 @@
     justify-content: center;
     font-family: var(--header-text-font);
     padding-bottom:12vh;
-    letter-spacing:-0.4rem;
     animation: fadein ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:1s;
+    transform: scaleX(0.98)
 }
 @media(min-width: 799.3px) {
     .call {
@@ -105,12 +105,12 @@
     justify-content: center;
     font-size: 26px;
     font-weight: bold;
-    letter-spacing:-0.4rem;
     animation: fadein ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     max-height: 3em;
     animation-delay:1s;
+    transform: scaleX(0.98)
 }
 .cover {
     position: fixed;
