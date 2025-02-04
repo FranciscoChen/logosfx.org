@@ -20,9 +20,12 @@ window.onload = () => {
   if (typeof forminit === 'function'){
     forminit()
   }
+  if (typeof logo === 'function'){
+    logo()
+  }
 }
 function uncover(){
-  if (document.fonts.check("12px FZKai") === true && document.getElementById('cover').classList.contains('uncover') === false) {
+  if (document.fonts.check("12px FZKai") === true && document.getElementById('cover').classList.contains('uncover') === false && !document.getElementById('logoscreen')) {
     document.getElementById('cover').classList.add('uncover');
     clearInterval(uncoverInterval)
   }

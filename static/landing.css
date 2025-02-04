@@ -125,6 +125,9 @@
     justify-content: center;
 }
 .logo-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     z-index: 16;
     border-radius: 50%;
@@ -132,23 +135,19 @@
     height: 320px;
     width: 320px;
     transform: translateY(0px);
-    transition: all 1.5s ease-in-out;
-}
-.logoscreen-uncover{
-    transform: translateY(340px);
-    border-radius: 30%;
+    transition: all 2s ease-in-out;
 }
 .logo-uncover-left {
-    transform: translate(-400px,400px);
+    transform: translate(-350px,350px);
     border-radius: 0%;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
 }
 .logo-uncover-right {
-    transform: translate(400px,400px);
+    transform: translate(350px,350px);
     border-radius: 0%;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
 }
 .logoscreen-logo {
     position: relative;
