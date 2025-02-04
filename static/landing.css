@@ -74,7 +74,7 @@
     animation: scalestretch ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
-    height: 72px;
+    max-height: 3em;
     animation-delay:4s;
     transform: scaleX(0.95)
 }
