@@ -105,10 +105,12 @@ nav{
 }
 @keyframes scalestretch{
     0% {
-      transform: scaleX(0.96)
+      transform: scaleX(0.96);
+      left:-1vw;
     }
     100% {
-      transform: scaleX(1)
+      transform: scaleX(1);
+      left:0;
     }
 }
 @media (max-width: 980px) {
