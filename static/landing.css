@@ -112,3 +112,25 @@
     animation-delay:1s;
     transform: scaleX(0.95)
 }
+.logoscreen{
+    width:100vw;
+    height:100vh;
+    top:0;
+    left:0;
+    position:fixed;
+    background-color:var(--main-background-color);
+    z-index:14;
+
+}
+.logoscreen-logo-cover{
+    position:relative;
+    z-index:16;
+    border-radius: 50%;
+    background-color:var(--main-background-color);
+}
+.logoscreen-logo{
+    position:relative;
+    z-index:15;
+    height:auto;
+    width:100%;
+}
