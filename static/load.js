@@ -27,4 +27,4 @@ function uncover(){
     clearInterval(uncoverInterval)
   }
 }
-var uncoverInterval = setInterval(uncover,500)
+var uncoverInterval = setInterval(uncover,200)
