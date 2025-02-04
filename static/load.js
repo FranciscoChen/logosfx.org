@@ -21,3 +21,10 @@ window.onload = () => {
     forminit()
   }
 }
+function uncover(){
+  if (document.fonts.check("12px FZKai") === true && document.getElementById('cover').classList.contains('uncover') === false) {
+    document.getElementById('cover').classList.add('uncover');
+    clearInterval(uncoverInterval)
+  }
+}
+var uncoverInterval = setInterval(uncover,500)
