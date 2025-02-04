@@ -44,7 +44,7 @@
     font-weight: normal;
     font-family: times new roman;
     padding-top:12vh;
-    animation: fadein ease-out 12s;
+    animation: fadein ease-out 4s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
 }
@@ -53,7 +53,7 @@
         letter-spacing: 0;
     }
     100% {
-        letter-spacing: 1px;
+        letter-spacing: 2px;
     }
 }
 .seminary {
@@ -64,7 +64,7 @@
     font-weight: bold;
     font-size: 43px;
     padding-bottom:20vh;
-    animation: fadein ease-out 12s;
+    animation: fadein ease-out 4s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
 }
@@ -76,7 +76,7 @@
     justify-content: center;
     font-family: var(--header-text-font);
     padding-bottom:12vh;
-    animation: fadein ease-out 12s;
+    animation: fadein ease-out 4s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
 }
@@ -99,7 +99,7 @@
     justify-content: center;
     font-size: 26px;
     font-weight: bold;
-    animation: fadein ease-out 12s;
+    animation: fadein ease-out 4s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     max-height: 3em;
