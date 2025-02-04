@@ -103,7 +103,7 @@ nav{
   color: #fff;
   background: var(--main-highlight-color);
 }
-@keyframes scalestretch{
+@keyframes menustretch{
     0% {
       transform: scaleX(0.96);
       left:-1vw;
@@ -124,7 +124,7 @@ nav{
     flex-flow: column;
     width: 50%;
     border-radius: 0px 3px 20px 0px;
-    animation: scalestretch ease-out 0.3s;
+    animation: menustretch ease-out 0.3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
   }
