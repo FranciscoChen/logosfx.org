@@ -45,7 +45,7 @@
     font-family: times new roman;
     padding-top:12vh;
     letter-spacing:-0.4rem;
-    animation: fadein ease-out 1s;
+    animation: fadein ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:1s;
@@ -67,7 +67,7 @@
     font-size: 43px;
     padding-bottom:20vh;
     letter-spacing:-0.4rem;
-    animation: fadein ease-out 1s;
+    animation: fadein ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:1s;
@@ -81,7 +81,7 @@
     font-family: var(--header-text-font);
     padding-bottom:12vh;
     letter-spacing:-0.4rem;
-    animation: fadein ease-out 1s;
+    animation: fadein ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:1s;
@@ -106,7 +106,7 @@
     font-size: 26px;
     font-weight: bold;
     letter-spacing:-0.4rem;
-    animation: fadein ease-out 1s;
+    animation: fadein ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     max-height: 3em;
