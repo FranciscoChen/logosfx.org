@@ -131,13 +131,14 @@ nav{
     bottom: 0;
     right: 0;
     background:var(--menu-cover);
-    z-index: 8;
+    z-index: -1;
     opacity: 0;
     transition: opacity 1s ease-out;
   }
 
   .menu-display:checked~.menu-cover {
-    opacity: 1
+    opacity: 1;
+    z-index: 8;
   }
 
   .menu-icon {
