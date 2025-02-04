@@ -20,8 +20,8 @@ window.onload = () => {
   if (typeof forminit === 'function'){
     forminit()
   }
-  if (typeof logo === 'function'){
-    logo()
+  if (typeof logouncover === 'function'){
+    logouncover()
   }
 }
 function uncover(){
