@@ -44,16 +44,17 @@
     font-weight: normal;
     font-family: times new roman;
     padding-top:12vh;
+    letter-spacing:-0.3rem;
     animation: fadein ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
 }
 @keyframes fadein{
     0% {
-        letter-spacing: 0;
+        letter-spacing: -0.3rem;
     }
     100% {
-        letter-spacing: 3px;
+        letter-spacing: 0.2rem;
     }
 }
 .seminary {
