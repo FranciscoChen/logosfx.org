@@ -10,7 +10,7 @@ function landing() {
       const msg = document.getElementById("message");
       const btn = document.getElementById("action");
       if (this.responseText === '1') {
-        msg.innerText = '欢迎回来！'
+        msg.innerText = '欢迎回来'
         btn.innerText = '进入主页'
         btn.href = '/home'
       }
