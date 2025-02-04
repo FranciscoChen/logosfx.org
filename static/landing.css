@@ -121,11 +121,11 @@
     display: block;
     overflow: hidden;
     transform: rotate(-29deg);
-    transition: all 3s ease-out;
-    box-shadow: 14vw 2px 7px 7px var(--cards-shadow-color), inset 0 -1px 3vw 3vw var(--cards-border-color);
+    transition: all 1.8s ease-in;
+    box-shadow: 14vw 2px 7px 7px var(--cards-shadow-color), inset 0 -1px 4vw 4vw var(--cards-border-color);
 }
 .uncover {
     width: 0;
     height: 1200vh;
-    box-shadow: 7vw 2px 7px 7px var(--cards-shadow-color), inset 0 -1px 3vw 3vw var(--cards-border-color);
+    box-shadow: 1vw 2px 7px 7px var(--cards-shadow-color), inset 0 -1px 4vw 4vw var(--cards-border-color);
 }
