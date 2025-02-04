@@ -38,7 +38,7 @@
 }
 @keyframes scalestretch{
     0% {
-      transform: scaleX(0.95);
+      transform: scaleX(0.94);
     }
     100% {
       transform: scaleX(1);
@@ -57,7 +57,7 @@
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:4s;
-    transform: scaleX(0.95)
+    transform: scaleX(0.94)
 }
 @media(min-width: 799.3px) {
     .call {
@@ -76,7 +76,7 @@
     animation-fill-mode:forwards;
     max-height: 3em;
     animation-delay:4s;
-    transform: scaleX(0.95)
+    transform: scaleX(0.94)
 }
 .logoscreen{
     width:100vw;
