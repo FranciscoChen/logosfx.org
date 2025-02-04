@@ -51,7 +51,8 @@
     display: flex;
     justify-content: center;
     font-family: var(--header-text-font);
-    padding-bottom:12vh;
+    padding-bottom:2vh;
+    padding-top:60vh;
     animation: scalestretch ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
@@ -73,7 +74,7 @@
     animation: scalestretch ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
-    max-height: 3em;
+    height: 72px;
     animation-delay:4s;
     transform: scaleX(0.95)
 }
