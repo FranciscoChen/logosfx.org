@@ -48,14 +48,14 @@
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:1s;
-    transform: scaleX(0.98)
+    transform: scaleX(0.97)
 }
 @keyframes fadein{
     0% {
-      transform: scaleX(0.98)
+      transform: scaleX(0.97)
     }
     100% {
-      transform: scaleX(1.01)
+      transform: scaleX(1)
     }
 }
 .seminary {
@@ -70,7 +70,7 @@
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:1s;
-    transform: scaleX(0.98)
+    transform: scaleX(0.97)
 }
 .call {
     grid-area: call;
@@ -84,7 +84,7 @@
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:1s;
-    transform: scaleX(0.98)
+    transform: scaleX(0.97)
 }
 @media(min-width: 799.3px) {
     .call {
@@ -110,7 +110,7 @@
     animation-fill-mode:forwards;
     max-height: 3em;
     animation-delay:1s;
-    transform: scaleX(0.98)
+    transform: scaleX(0.97)
 }
 .cover {
     position: fixed;
