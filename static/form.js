@@ -35,6 +35,9 @@ function submitForm(url) {
     if (this.status == 200) {
       displaysuccessmessage('信息保存成功');
     }
+    if (this.status == 403) {
+      displaysuccessmessage('无法更改此信息');
+    }
   }
 }
 
