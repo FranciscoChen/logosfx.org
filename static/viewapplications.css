@@ -41,3 +41,6 @@
 .table{
     grid-area: table;
 }
+.red{
+    background-color:var(--main-attention-color);
+}
