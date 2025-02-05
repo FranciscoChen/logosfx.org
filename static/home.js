@@ -45,7 +45,10 @@ function submitted(){
       if (this.responseText === '0') {
         ready();
       } else {
-
+        const sethomecard  = document.createElement("div");
+        sethomecard.classList.add('home-card-wrap')
+        sethomecard.innerHTML = '<div class="home-card"><h2>感谢您的申请！</h2><p>我们将尽快审核您的申请并在几天内回复您</p></div>'
+        document.getElementsByClassName("cards")[0].appendChild(sethomecard);
       }
     }
   }
