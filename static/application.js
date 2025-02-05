@@ -60,7 +60,7 @@ function fillstudentinfo(){
             }
           } else {
             const inforow  = document.createElement("p");
-            inforow.innerHTML = dataref
+            inforow.innerHTML = name === 'othertext' ? '其他：'+dataref : dataref
             ele.append(inforow)
           }
           if (name === 'children' && dataref !== null && dataref.length > 0){
