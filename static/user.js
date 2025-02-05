@@ -13,9 +13,15 @@ function user() {
         btn.href = '/home'
         btn.classList.add('opaque')
       } else {
-        btn.innerText = '登录'
-        btn.href = '/login'
-        btn.classList.add('opaque')
+        if (new URL(window.location.href).pathname === '/home') {
+          btn.innerText = '注销'
+          btn.href = '/logout'
+          btn.classList.add('opaque')
+	} else {
+          btn.innerText = '登录'
+          btn.href = '/login'
+          btn.classList.add('opaque')
+	}
       }
     }
   }
