@@ -15,7 +15,7 @@ function  getsubmittedapplications(){
       for (rownumber in data){
         const row = data[rownumber]
         const tablerow  = document.createElement("tr");
-        sethomecard.innerHTML = '<td>'+row.surname+' '+row.name+'</td>'+
+        tablerow.innerHTML = '<td>'+row.surname+' '+row.name+'</td>'+
         '<td><a class="button button-area '+row.verified ? '' : 'red' +' colorbutton" href="/home/menu/applications/view?id='+row.id+'">检查</a></div></td>'
         '<td><a class="button button-area '+row.photo ? '' : 'red' +' colorbutton" href="/home/menu/photos/view?id='+row.id+'">查看</a></div></td>'
         '<td><a class="button button-area '+row.educationcertificate ? '' : 'red' +' colorbutton" href="/home/menu/educationcertificate/view?id='+row.id+'">查看</a></div></td>'
