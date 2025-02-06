@@ -37,8 +37,14 @@
         grid-template-areas: "table table table table";
     }
 }
+.table table thead tr th {
+    padding:1.5em;
+    background-color:var(--main-grey-color);
+    border-bottom:var(--secondary-grey-color) solid 2px;
+}
 @media(max-width: 1259.3px) {
     .table table thead tr th {
+        padding:1.5em 0;
         writing-mode:vertical-lr;
         text-orientation:upright;
     }
@@ -49,10 +55,8 @@
         border-radius: 50%;
     }
 }
-.table table thead tr th {
-    padding:1.5em 0;
-    background-color:var(--main-grey-color);
-    border-bottom:var(--secondary-grey-color) solid 2px;
+.table-body tr td {
+    padding: 1.5em;
 }
 .table{
     grid-area: table;
