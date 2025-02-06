@@ -42,7 +42,7 @@
     top:0;
 }
 .table table thead tr th {
-    padding: 2vh 2vw;
+    padding: 2vh 1vw;
     text-align:center;
     background-color:var(--main-grey-color);
     border-bottom:var(--secondary-grey-color) solid 2px;
