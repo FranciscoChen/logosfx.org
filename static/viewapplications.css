@@ -78,4 +78,6 @@
 .red{
     background-color:var(--main-attention-color);
 }
-
+.evenrow{
+    background-color:var(--secondary-grey-color)
+}
