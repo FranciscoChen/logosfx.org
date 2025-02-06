@@ -39,6 +39,7 @@
 }
 .table table thead tr th {
     padding:1.5em;
+    text-align:center;
     background-color:var(--main-grey-color);
     border-bottom:var(--secondary-grey-color) solid 2px;
 }
