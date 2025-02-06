@@ -12,11 +12,9 @@ function  getsubmittedapplications(){
     if (this.status == 200) {
       const data = JSON.parse(this.responseText)
       const table = document.getElementsByClassName("table-body")[0]
-      var even = false;
       for (rownumber in data){
         const row = data[rownumber]
         const tablerow  = document.createElement("tr");
-        if (even) {tablerow.classList.add("evenrow")}
         tablerow.innerHTML = '<td class="applicantname"><p>'+row.surname+' '+row.name+'</p></td>'+
         '<td><a class="button button-area'+(row.verified ? ' ' : ' red ')+'colorbutton" href="/home/menu/applications/view?id='+row.id+'">检查</a></td>'+
         '<td><a class="button button-area'+(row.photo ? ' ' : ' red ')+'colorbutton" href="/home/menu/photos/view?id='+row.id+'">查看</a></td>'+
@@ -27,7 +25,6 @@ function  getsubmittedapplications(){
         '<td><a class="button button-area'+(row.elderrecommendation1 ? ' ' : ' red ')+'colorbutton" href="/home/menu/elderrecommendation1/view?id='+row.id+'">查看</a></td>'+
         '<td><a class="button button-area'+(row.elderrecommendation2 ? ' ' : ' red ')+'colorbutton" href="/home/menu/elderrecommendation2/view?id='+row.id+'">查看</a></td>'
         table.appendChild(tablerow);
-        even = !even
       }
     }
   }
