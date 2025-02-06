@@ -16,14 +16,14 @@ function  getsubmittedapplications(){
         const row = data[rownumber]
         const tablerow  = document.createElement("tr");
         tablerow.innerHTML = '<td class="applicantname"><p>'+row.surname+' '+row.name+'</p></td>'+
-        '<td><a class="button button-area'+(row.verified ? ' ' : ' red ')+'colorbutton" href="/home/menu/applications/view?id='+row.id+'">检查</a></td>'+
-        '<td><a class="button button-area'+(row.photo ? ' ' : ' red ')+'colorbutton" href="/home/menu/photos/view?id='+row.id+'">查看</a></td>'+
-        '<td><a class="button button-area'+(row.educationcertificate ? ' ' : ' red ')+'colorbutton" href="/home/menu/educationcertificate/view?id='+row.id+'">查看</a></td>'+
-        '<td><a class="button button-area'+(row.faithsignature ? ' ' : ' red ')+'colorbutton" href="/home/menu/faithsignature/view?id='+row.id+'">查看</a></td>'+
-        '<td><a class="button button-area'+(row.testimony ? ' ' : ' red ')+'colorbutton" href="/home/menu/testimony/view?id='+row.id+'">查看</a></td>'+
-        '<td><a class="button button-area'+(row.churchrecommendation ? ' ' : ' red ')+'colorbutton" href="/home/menu/churchrecommendation/view?id='+row.id+'">查看</a></td>'+
-        '<td><a class="button button-area'+(row.elderrecommendation1 ? ' ' : ' red ')+'colorbutton" href="/home/menu/elderrecommendation1/view?id='+row.id+'">查看</a></td>'+
-        '<td><a class="button button-area'+(row.elderrecommendation2 ? ' ' : ' red ')+'colorbutton" href="/home/menu/elderrecommendation2/view?id='+row.id+'">查看</a></td>'
+        '<td><a class="button button-area'+(row.verified ? ' ' : ' disabled ')+'colorbutton" href="/home/menu/applications/view?id='+row.id+'">检查</a></td>'+
+        '<td><a class="button button-area'+(row.photo ? ' ' : ' disabled ')+'colorbutton" href="/home/menu/photos/view?id='+row.id+'">查看</a></td>'+
+        '<td><a class="button button-area'+(row.educationcertificate ? ' ' : ' disabled ')+'colorbutton" href="/home/menu/educationcertificate/view?id='+row.id+'">查看</a></td>'+
+        '<td><a class="button button-area'+(row.faithsignature ? ' ' : ' disabled ')+'colorbutton" href="/home/menu/faithsignature/view?id='+row.id+'">查看</a></td>'+
+        '<td><a class="button button-area'+(row.testimony ? ' ' : ' disabled ')+'colorbutton" href="/home/menu/testimony/view?id='+row.id+'">查看</a></td>'+
+        '<td><a class="button button-area'+(row.churchrecommendation ? ' ' : ' disabled ')+'colorbutton" href="/home/menu/churchrecommendation/view?id='+row.id+'">查看</a></td>'+
+        '<td><a class="button button-area'+(row.elderrecommendation1 ? ' ' : ' disabled ')+'colorbutton" href="/home/menu/elderrecommendation1/view?id='+row.id+'">查看</a></td>'+
+        '<td><a class="button button-area'+(row.elderrecommendation2 ? ' ' : ' disabled ')+'colorbutton" href="/home/menu/elderrecommendation2/view?id='+row.id+'">查看</a></td>'
         table.appendChild(tablerow);
       }
     }

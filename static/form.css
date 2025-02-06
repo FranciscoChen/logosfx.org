@@ -88,7 +88,7 @@
     font-size:var(--main-text-font-size);
 }
 .disabled {
-    background: var(--main-grey-color);
+    background: var(--secondary-grey-color);
 }
 .notification{
     position:fixed;
