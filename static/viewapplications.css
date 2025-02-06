@@ -58,7 +58,17 @@
     width:100%;
 }
 
-.table-body tr td {
+.table-body tr td .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.applicantname{
+    max-width:12vw;
+    overflow:hidden;
+}
+.table-body tr td p{
     display: flex;
     justify-content: center;
     align-items: center;
