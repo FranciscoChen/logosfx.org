@@ -36,6 +36,11 @@
         grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
         grid-template-areas: "table table table table";
     }
+    .table table thead tr th {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
 }
 .table table thead tr th {
     padding:1.5em;
