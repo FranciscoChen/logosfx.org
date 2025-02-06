@@ -56,13 +56,18 @@
 
 .table table{
     width:100%;
+    border: solid;
+    border-color: var(--cards-border-color);
+    border-radius: 20px 3px;
+    box-shadow: 0 2px 6px 0 var(--cards-shadow-color), inset 0 -1px 0 0 var(--cards-border-color);
+    border-width: 1px;
+    border-collapse: collapse;
 }
 
 .table-body tr td .button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
 }
 .applicantname{
     max-width:12vw;
@@ -74,7 +79,12 @@
     align-items: center;
     margin: auto;
 }
-
+th{
+    border-radius:3px;
+}
+tr{
+    border-radius:3px;
+}
 .red{
     background-color:var(--main-attention-color);
 }
