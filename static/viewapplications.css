@@ -42,22 +42,22 @@
     top:0;
 }
 .table table thead tr th {
-    padding:1.5em;
+    padding: 2vh 2vw;
     text-align:center;
     background-color:var(--main-grey-color);
     border-bottom:var(--secondary-grey-color) solid 2px;
 }
 .table-body tr td {
-    padding: 1.5em;
+    padding: 2vh 2vw;
 }
 @media(max-width: 1259.3px) {
     .table table thead tr th {
-        padding:1.5em 0;
+        padding:2vh 0;
         writing-mode:vertical-lr;
         text-orientation:upright;
     }
     .table-body tr td {
-        padding: 1.5em 0;
+        padding: 2vh 0;
     }
     .table-body .button {
         font-size: 0;
