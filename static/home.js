@@ -45,10 +45,158 @@ function submitted(){
       if (this.responseText === '0') {
         ready();
       } else {
+        verified();
         const sethomecard  = document.createElement("div");
         sethomecard.classList.add('home-card-wrap')
         sethomecard.innerHTML = '<div class="home-card"><h2>感谢您的申请！</h2><p>我们将尽快审核您的申请并在几天内回复您</p></div>'
         document.getElementsByClassName("cards")[0].appendChild(sethomecard);
+      }
+    }
+  }
+}
+function verified(){
+  var xhr = new XMLHttpRequest;
+  xhr.open("POST", "/applicationverified", true);
+  xhr.send();
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4)
+      return;
+    if (this.status == 200) {
+      if (this.responseText === '0') {
+        const sethomecard  = document.createElement("div");
+        sethomecard.classList.add('home-card-wrap')
+        sethomecard.innerHTML = '<div class="home-card"><h2>感谢您的申请！</h2><p>我们将尽快审核您的申请并在几天内回复您</p></div>'
+        document.getElementsByClassName("cards")[0].appendChild(sethomecard);
+      } else {
+        applicationdocuments();
+      }
+    }
+  }
+}
+function applicationdocuments(){
+  var xhr = new XMLHttpRequest;
+  xhr.open("POST", "/applicationdocuments", true);
+  xhr.send();
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4)
+      return;
+    if (this.status == 200) {
+      if (this.responseText === '0') {
+        const sethomecard  = document.createElement("div");
+        sethomecard.classList.add('home-card-wrap')
+        sethomecard.innerHTML = '<div class="home-card"><h2>文件提交</h2><p>我们需要您上传并签署一些文件</p><div class="application-buttons"><div id="testimony" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/testimony">个人见证</a></div><div id="ethicalcode" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/ethicalcode">操守签约</a></div><div id="photo" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/photo">证件照片</a></div><div id="certificate" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/certificate">学习证书</a></div></div></div>'
+        document.getElementsByClassName("cards")[0].appendChild(sethomecard);
+        testimony();
+        ethicalcode();
+        photo();
+        certificate();
+        churchrecommendation();
+        firstrecommendation();
+        secondrecommendation();
+      }
+      if (this.responseText === '1') {
+        const sethomecard  = document.createElement("div");
+        sethomecard.classList.add('home-card-wrap')
+        sethomecard.innerHTML = '<div class="home-card"><h2>文件提交完毕</h2><p>请仔细检查所有内容是否正确并确认您的提交（一旦提交，内容将被记录，并且无法进一步修改）</p><div class="application-buttons"><div id="confirmapplicationdocuments" class="button-wrap"><a class="button button-area colorbutton" href="/home/confirmapplicationdocuments">提交文件</a></div></div></div>'
+        document.getElementsByClassName("cards")[0].appendChild(sethomecard);
+      }
+    }
+  }
+}
+function testimony(){
+  var xhr = new XMLHttpRequest;
+  xhr.open("POST", "/hastestimony", true);
+  xhr.send();
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4)
+      return;
+    if (this.status == 200) {
+      if (this.responseText === '0') {
+        document.getElementById('testimony').firstChild.classList.toggle('hidden')
+      }
+    }
+  }
+}
+function ethicalcode(){
+  var xhr = new XMLHttpRequest;
+  xhr.open("POST", "/hasethicalcode", true);
+  xhr.send();
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4)
+      return;
+    if (this.status == 200) {
+      if (this.responseText === '0') {
+        document.getElementById('ethicalcode').firstChild.classList.toggle('hidden')
+      }
+    }
+  }
+}
+function photo(){
+  var xhr = new XMLHttpRequest;
+  xhr.open("POST", "/hasphoto", true);
+  xhr.send();
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4)
+      return;
+    if (this.status == 200) {
+      if (this.responseText === '0') {
+        document.getElementById('photo').firstChild.classList.toggle('hidden')
+      }
+    }
+  }
+}
+function certificate(){
+  var xhr = new XMLHttpRequest;
+  xhr.open("POST", "/hascertificate", true);
+  xhr.send();
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4)
+      return;
+    if (this.status == 200) {
+      if (this.responseText === '0') {
+        document.getElementById('certificate').firstChild.classList.toggle('hidden')
+      }
+    }
+  }
+}
+function churchrecommendation(){
+  var xhr = new XMLHttpRequest;
+  xhr.open("POST", "/haschurchrecommendation", true);
+  xhr.send();
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4)
+      return;
+    if (this.status == 200) {
+      if (this.responseText === '0') {
+        document.getElementById('churchrecommendation').firstChild.classList.toggle('hidden')
+      }
+    }
+  }
+}
+function firstrecommendation(){
+  var xhr = new XMLHttpRequest;
+  xhr.open("POST", "/hasfirstrecommendation", true);
+  xhr.send();
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4)
+      return;
+    if (this.status == 200) {
+      if (this.responseText === '0') {
+        document.getElementById('firstrecommendation').firstChild.classList.toggle('hidden')
+      }
+    }
+  }
+}
+function secondrecommendation(){
+  var xhr = new XMLHttpRequest;
+  xhr.open("POST", "/hassecondrecommendation", true);
+  xhr.send();
+  xhr.onreadystatechange = function() {
+    if (this.readyState != 4)
+      return;
+    if (this.status == 200) {
+      if (this.responseText === '0') {
+        document.getElementById('secondrecommendation').firstChild.classList.toggle('hidden')
       }
     }
   }
