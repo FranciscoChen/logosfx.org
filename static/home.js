@@ -46,10 +46,6 @@ function submitted(){
         ready();
       } else {
         verified();
-        const sethomecard  = document.createElement("div");
-        sethomecard.classList.add('home-card-wrap')
-        sethomecard.innerHTML = '<div class="home-card"><h2>感谢您的申请！</h2><p>我们将尽快审核您的申请并在几天内回复您</p></div>'
-        document.getElementsByClassName("cards")[0].appendChild(sethomecard);
       }
     }
   }
@@ -84,7 +80,7 @@ function applicationdocuments(){
       if (this.responseText === '0') {
         const sethomecard  = document.createElement("div");
         sethomecard.classList.add('home-card-wrap')
-        sethomecard.innerHTML = '<div class="home-card"><h2>文件提交</h2><p>我们需要您上传并签署一些文件</p><div class="application-buttons"><div id="testimony" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/testimony">个人见证</a></div><div id="ethicalcode" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/ethicalcode">操守签约</a></div><div id="photo" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/photo">证件照片</a></div><div id="certificate" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/certificate">学习证书</a></div></div></div>'
+        sethomecard.innerHTML = '<div class="home-card"><h2>文件提交</h2><p>我们需要您上传并签署一些文件</p><div class="application-buttons"><div id="testimony" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/testimony">个人见证</a></div><div id="ethicalcode" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/ethicalcode">操守签约</a></div><div id="photo" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/photo">证件照片</a></div><div id="certificate" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/certificate">学习证书</a></div><div id="churchrecommendation" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/churchrecommendation">教会推信</a></div><div id="firstrecommendation" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/firstrecommendation">推荐信1</a></div><div id="secondrecommendation" class="button-wrap"><div class="exclamation-bubble-anchor hidden"><div class="exclamation-bubble">!</div></div><a class="button button-area colorbutton" href="/home/secondrecommendation">推荐信2</a></div></div></div>'
         document.getElementsByClassName("cards")[0].appendChild(sethomecard);
         testimony();
         ethicalcode();
