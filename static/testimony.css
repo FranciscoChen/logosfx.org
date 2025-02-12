@@ -15,7 +15,6 @@
 @media(min-width: 499.3px) {
     .main {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto repeat(3, fit-content(0));
         grid-template-areas: "title title" "description description" "form form";
     }
 
