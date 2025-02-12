@@ -48,7 +48,7 @@
     border-bottom:var(--secondary-grey-color) solid 2px;
 }
 .table-body tr td {
-    padding: 2vh 2vw;
+    padding: 2vh 1.5vw;
 }
 @media(max-width: 1259.3px) {
     .table table thead tr th {
