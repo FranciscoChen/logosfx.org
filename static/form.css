@@ -18,6 +18,9 @@
     padding: 8px 12px;
     background-clip: padding-box;
 }
+textarea {
+    height:200px;
+}
 .form-control:invalid, {
     border-color: #fc0;
 }
