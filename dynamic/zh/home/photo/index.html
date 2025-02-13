@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>上传身份证照片 - Logos复兴神学院</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width, height=device-height">
+  <meta name="description" content="上传你的身份证照片">
+  <meta name="keywords" content="Logos,复兴,神学院,教导,培训,研究,神学,意大利,罗马,照片,Seminari,Logos,Roma,Italia,Revival,photo">
+  <link rel="icon" type="image/x-icon" href="https://static.logosfx.org/favicon.ico">
+  <link rel="preload" as="style" href="https://static.logosfx.org/fonts.css">
+  <link rel="stylesheet" href="https://static.logosfx.org/layout.css">
+  <link rel="stylesheet" href="https://static.logosfx.org/fonts.css">
+  <link rel="stylesheet" href="https://static.logosfx.org/light-theme.css">
+  <link rel="stylesheet" href="https://static.logosfx.org/header.css">
+  <link rel="stylesheet" href="https://static.logosfx.org/form.css">
+  <link rel="stylesheet" href="https://static.logosfx.org/photo.css">
+  <script src="https://static.logosfx.org/user.js"></script>
+  <script src="https://static.logosfx.org/load.js"></script>
+  <script src="https://static.logosfx.org/form.js"></script>
+  <script src="https://static.logosfx.org/photo.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="https://static.logosfx.org/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://static.logosfx.org/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://static.logosfx.org/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
+  <link rel="mask-icon" href="https://static.logosfx.org/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <header>
+    <div class="menu">
+      <input type="checkbox" id="menu-button" class="menu-display" autocomplete="off">
+      <label for="menu-button" class="menu-cover"></label>
+      <label for="menu-button" class="menu-icon">
+        <span class="menu-bars"></span>
+      </label>
+      <div class="logo">
+        <a href="/">
+          <div class="logo-wrap">
+            <img src="https://static.logosfx.org/logo.png">
+          </div>
+        </a>
+      </div>
+      <nav id="nav">
+        <div class="menu-item">
+          <a href="/about">学院简介</a>
+        </div>
+        <div class="menu-item">
+          <a href="/faith">信仰告白</a>
+        </div>
+        <div class="menu-item">
+          <a href="/courses">学位学制</a>
+        </div>
+        <div class="menu-item">
+          <a href="/apply">申请入学</a>
+        </div>
+      </nav>
+    </div>
+    <div class="site-buttons"><a class="signin button button-empty"></a></div>
+  </header>
+  <div id="main-wrap"><div id="cover" class="cover"></div>
+    <div class="main">
+      <div class="title">
+          <h1>
+              上传照片
+          </h1>
+      </div>
+      <div class="description">
+          <h2>
+              请上传一张身份证照片，白色或无背景，脸部正面朝前。必须是 jpeg 或 png 文件，大小不超过 2 MB。
+          </h2>
+      </div>
+      <div class="form">
+          <form method="post" id="apply-form" action="/testimony">
+              <div class="section">
+                <div class="form-group">
+                   <input class="form-control" name="photo" id="form-photo" type="file" accept="image/png, image/jpeg" required="required"></textarea>
+                </div>
+              </div>
+              <div class="section">
+                <div class="photo-wrap hidden">
+                  <img id="photo-preview" src="" alt="">
+                </div>
+              </div>
+              <div class="form-buttons">
+                  <a onclick="location.href = document.referrer" class="button back-button">返回</a>
+                  <a id="submit" class="submit colorbutton button disabled">发送</a>
+              </div>
+          </form>
+      </div>
+    </div>
+  </div>
+  <footer class="about">
+    <div>版权所有 2021-2025 LOGOS复兴神学院 | <a href="/privacy">隐私政策</a> | <a href="/contact">联系我们</a></div>
+  </footer>
+</body>
+</html>
