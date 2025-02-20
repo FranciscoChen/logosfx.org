@@ -10,13 +10,14 @@ function getform(){
       console.error("Error reading file:",err);
     };
     reader.readAsDataURL(formphoto.files[0]);
-  }) 
+  });
   var xhr = new XMLHttpRequest;
   xhr.open("POST", "/getphoto", true);
   xhr.send('0');
   xhr.onreadystatechange = function() {
-    if (this.readyState != 4)
+    if (this.readyState != 4) {
       return;
+    }
     if (this.status == 200) {
       const data = JSON.parse(this.responseText)[0]
       for (name in data) {
