@@ -51,13 +51,14 @@
 .section{
     padding:2vh 0;
 }
-.photo-wrao{
+.photo-wrap{
     opacity:1;
     height:200px;
     display:flex;
     width:auto;
     justify-content:center;
     align-items:center;
+    margin-bottom:2rem;
 }
 .hidden{
     height:0;

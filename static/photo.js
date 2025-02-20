@@ -5,6 +5,9 @@ function getform(){
     const reader = new FileReader();
     reader.onload= (e) => {
       photopreview.src = e.target.result;
+      if (photopreview.parentNode.classList.contains('hidden')) {
+        photopreview.parentNode.classList.toggle('hidden')
+      }
     };
     reader.onerror = (err) => {
       console.error("Error reading file:",err);
