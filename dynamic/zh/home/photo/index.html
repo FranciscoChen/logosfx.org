@@ -66,15 +66,16 @@
           </h1>
       </div>
       <div class="description">
-          <h2>
+          <h3>
               请上传一张身份证照片，白色或无背景，脸部正面朝前。必须是 jpeg 或 png 文件，大小不超过 2 MB。
-          </h2>
+          </h3>
       </div>
       <div class="form">
           <form method="post" id="apply-form" action="https://static.logosfx.org/photo">
               <div class="section">
                 <div class="form-group">
-                   <input class="form-control" name="photo" id="form-photo" type="file" accept="image/png, image/jpeg" required="required"></textarea>
+                   <label for="form-photo" class="upload">上传</label>
+                   <input class="form-control" name="photo" id="form-photo" type="file" accept=".jpg,.jpeg,.png,image/png,image/jpeg" required="required">
                 </div>
               </div>
               <div class="section">
