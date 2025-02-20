@@ -50,3 +50,8 @@ html{
     height: 1200vh;
     box-shadow: 1vw 2px 7px 7px var(--cards-shadow-color), inset 0 -1px 4vw 4vw var(--cards-border-color);
 }
+.flex-center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
