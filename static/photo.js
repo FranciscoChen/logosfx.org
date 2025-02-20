@@ -57,7 +57,8 @@ function formcheck() {
     if (
             typeof document.getElementById("form-photo").files !== "undefined" &&
             document.getElementById("form-photo").files.length > 0 &&
-            document.getElementById("form-photo").files[0].size < 2097152
+            document.getElementById("form-photo").files[0].size < 2097152 &&
+            document.getElementById("photo-preview").height > 0
     ) {
         if (document.getElementsByClassName("submit")[0].className.indexOf("disabled") > -1) {
             document.getElementsByClassName("submit")[0].classList.toggle("disabled")
