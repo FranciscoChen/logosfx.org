@@ -1,7 +1,7 @@
 function getform(){
   const formphoto = document.getElementById("form-photo")
   const photopreview = document.getElementById("photo-preview")
-  formphoto.addEventListener("change",()={
+  function readerFunction(){
     const reader = new FileReader();
     reader.onload= (e) => {
       photopreview.src = e.target.result;
@@ -10,7 +10,8 @@ function getform(){
       console.error("Error reading file:",err);
     };
     reader.readAsDataURL(formphoto.files[0]);
-  });
+  };
+  formphoto.addEventListener("change", readerFunction);
   var xhr = new XMLHttpRequest;
   xhr.open("POST", "/getphoto", true);
   xhr.send('0');
