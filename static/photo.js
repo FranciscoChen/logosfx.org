@@ -12,7 +12,13 @@ function getform(){
     reader.onerror = (err) => {
       console.error("Error reading file:",err);
     };
-    reader.readAsDataURL(formphoto.files[0]);
+    if (formphoto.files.length){
+      reader.readAsDataURL(formphoto.files[0]);
+    } else {
+      if (!photopreview.parentNode.classList.contains('hidden')) {
+        photopreview.parentNode.classList.toggle('hidden')
+      }
+    }
   };
   formphoto.addEventListener("change", readerFunction);
   var xhr = new XMLHttpRequest;
