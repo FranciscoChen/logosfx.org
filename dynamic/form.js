@@ -28,6 +28,7 @@ function submitForm(url) {
   xhr.open("POST",url); 
   var formData = new FormData(document.getElementById("apply-form")); 
   var querystring = new URLSearchParams(formData).toString()
+  xhr.withCredentials = true;
   xhr.send(querystring);
   xhr.onreadystatechange = function() {
     if (this.readyState != 4)

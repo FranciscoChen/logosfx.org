@@ -84,7 +84,7 @@
     position: absolute;
     top: 4px;
     right: 4px;
-    z-index: 11;
+    z-index: 2;
     background: var(--main-attention-color);
     color: #fff;
     font-weight: bold;
