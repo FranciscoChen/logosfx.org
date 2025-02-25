@@ -26,10 +26,14 @@ function forminit(){
 function submitForm(url) {
   var xhr = new XMLHttpRequest();
   xhr.open("POST",url); 
-  var formData = new FormData(document.getElementById("apply-form")); 
-  var querystring = new URLSearchParams(formData).toString()
   xhr.withCredentials = true;
-  xhr.send(querystring);
+  var formData = new FormData(document.getElementById("apply-form")); 
+  if (formData.get('photo') !== null) {
+    xhr.send(formData)
+  } else {
+    var querystring = new URLSearchParams(formData).toString()
+    xhr.send(querystring);
+  }
   xhr.onreadystatechange = function() {
     if (this.readyState != 4)
       return;
