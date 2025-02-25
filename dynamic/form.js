@@ -29,7 +29,7 @@ function submitForm(url) {
   xhr.withCredentials = true;
   var formData = new FormData(document.getElementById("apply-form")); 
   if (formData.get('photo') !== null) {
-    xhr.send(formData)
+    xhr.send(document.getElementById("form-photo").files[0])
   } else {
     var querystring = new URLSearchParams(formData).toString()
     xhr.send(querystring);
