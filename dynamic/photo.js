@@ -49,8 +49,9 @@ function getImage(url,element){
   xhr.responseType = "blob";
   xhr.onload = (event) => {
     const urlobject = new URL(url)
-    const imagefile = new File([xhr.response], urlobject.pathname.split('/').slice(-1)[0])
-    formphoto.files.push(imagefile);
+    const dT = new DataTransfer()
+    dT.items.add(new File([xhr.response], urlobject.pathname.split('/').slice(-1)[0]))
+    formphoto.files = dT.files
   }
   xhr.send();
 }
