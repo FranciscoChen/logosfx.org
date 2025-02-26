@@ -45,9 +45,7 @@ function formcheck() {
             document.getElementById("form-birthdate").value.length > 0 && 
             document.getElementById("form-address").value.length > 0 && 
             document.getElementById("form-postalcode").value.length > 0 && 
-            document.getElementById("form-phone").value.length > 0 && 
             document.getElementById("form-mobile").value.length > 0 && 
-            document.getElementById("form-weixin").value.length > 0 && 
             document.getElementById("form-email").value.length > 0 
     ) {
         if (document.getElementsByClassName("submit")[0].className.indexOf("disabled") > -1) {
