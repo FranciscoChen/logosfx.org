@@ -43,7 +43,7 @@ function getform(){
 function getImage(url,element){
   const formphoto = document.getElementById("form-photo")
   var xhr = new XMLHttpRequest;
-  xhr.open("GET", url, true);
+  xhr.open("GET", 'https://static.logosfx.org/'+url, true);
   xhr.responseType = "blob";
   xhr.onload = (event) => {
     const urlobject = new URL(url)
