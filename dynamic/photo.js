@@ -45,6 +45,7 @@ function getImage(url,element){
   var xhr = new XMLHttpRequest;
   url = 'https://static.logosfx.org/'+url;
   xhr.open("GET", url, true);
+  xhr.withCredentials = true;
   xhr.responseType = "blob";
   xhr.onload = (event) => {
     const urlobject = new URL(url)
