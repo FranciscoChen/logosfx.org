@@ -42,6 +42,7 @@ function getform(){
 }
 function getImage(url,element){
   const formphoto = document.getElementById("form-photo")
+  const photopreview = document.getElementById("photo-preview")
   var xhr = new XMLHttpRequest;
   url = 'https://static.logosfx.org/'+url;
   xhr.open("GET", url, true);
@@ -52,6 +53,23 @@ function getImage(url,element){
     const dT = new DataTransfer()
     dT.items.add(new File([xhr.response], urlobject.pathname.split('/').slice(-1)[0]))
     formphoto.files = dT.files
+    const reader = new FileReader();
+    reader.onload= (e) => {
+      photopreview.src = e.target.result;
+      if (photopreview.parentNode.classList.contains('hidden')) {
+        photopreview.parentNode.classList.toggle('hidden')
+      }
+    };
+    reader.onerror = (err) => {
+      console.error("Error reading file:",err);
+    };
+    if (formphoto.files.length){
+      reader.readAsDataURL(formphoto.files[0]);
+    } else {
+      if (!photopreview.parentNode.classList.contains('hidden')) {
+        photopreview.parentNode.classList.toggle('hidden')
+      }
+    }
   }
   xhr.send();
 }
