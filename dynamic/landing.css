@@ -7,35 +7,8 @@
 
 .main {
     grid-area: main;
-    display: grid;
-    grid-template-areas: "seminary" "photo" "calling";
-    grid-template-rows: repeat(3, fit-content(0)) auto;
 }
 
-@media(min-width: 499.3px) {
-    .main {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, fit-content(0)) auto;
-        grid-template-areas: "seminary seminary" "photo photo" "calling calling";
-    }
-
-}
-
-@media(min-width: 799.3px) {
-    .main {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: "seminary seminary seminary" "photo photo photo" "calling calling calling";
-    }
-}
-
-@media(min-width: 1259.3px) {
-    .main {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: "seminary seminary seminary seminary" "photo photo photo photo" "calling calling calling calling";
-    }
-}
 @keyframes scalestretch{
     0% {
       transform: scaleX(0.94);
@@ -50,45 +23,16 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    grid-area:seminary;
-    display: grid;
-    grid-template-areas: "." "purpose" "more";
-    grid-template-rows: repeat(3, fit-content(0)) auto;
 }
 
-@media(min-width: 499.3px) {
-    .seminary{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, fit-content(0)) auto;
-        grid-template-areas: ". ." "purpose purpose" "more more";
-    }
-
-}
-
-@media(min-width: 799.3px) {
-    .seminary{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: ". . ." "purpose purpose ." ". . more";
-    }
-}
-
-@media(min-width: 1259.3px) {
-    .seminary {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas:  ". . . ." "purpose purpose . ." ". . . more";
-    }
-}
 .purpose{
-    grid-area: purpose;
-    font-size: 34px;
+    font-size: 30px;
     font-weight: bold;
     display: flex;
     justify-content: center;
     font-family: var(--header-text-font);
     padding-bottom:3vh;
-    padding-top:56vh;
+    padding-top:3vh;
     animation: scalestretch ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
@@ -98,11 +42,10 @@
 @media(min-width: 799.3px) {
     .purpose {
         padding-bottom:2vh;
-        font-size:44px;
+        font-size:34px;
     }
 }
 .more{
-    grid-area: more;
     display: flex;
     justify-content: center;
     font-size: 26px;
@@ -114,49 +57,33 @@
     animation-delay:4s;
     transform: scaleX(0.94)
 }
-.photo{
-    grid-area:photo;
-}
 .calling{
     grid-area:calling;
-    display: grid;
-    grid-template-areas: "." "call" "apply";
-    grid-template-rows: repeat(3, fit-content(0)) auto;
 }
 
 @media(min-width: 499.3px) {
     .calling{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, fit-content(0)) auto;
-        grid-template-areas: ". ." "call call" "apply apply";
     }
 
 }
 
 @media(min-width: 799.3px) {
     .calling {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: ". . ." "call call ." ". . apply";
     }
 }
 
 @media(min-width: 1259.3px) {
     .calling {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas:  ". . . ." "call call . ." ". . . apply";
     }
 }
 .call {
-    grid-area: call;
     font-size: 34px;
     font-weight: bold;
     display: flex;
     justify-content: center;
     font-family: var(--header-text-font);
     padding-bottom:3vh;
-    padding-top:56vh;
+    padding-top:3vh;
     animation: scalestretch ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
@@ -170,7 +97,6 @@
     }
 }
 .apply {
-    grid-area: apply;
     display: flex;
     justify-content: center;
     font-size: 26px;
@@ -234,7 +160,7 @@
 .background-photo{
     background-image: url(/images/bible.jpg);
     width:100%;
-    height:100px;
+    height:400px;
 }
 .parallax{
     background-attachment: fixed;
