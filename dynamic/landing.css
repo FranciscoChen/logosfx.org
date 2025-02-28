@@ -228,13 +228,19 @@
     width: 100%;
 }
 .background-photo{
-    background-image: url(/images/students.jpg);
+    background-image: url(/images/bible.jpg);
     width:100%;
-    height:auto;
+    height:100px;
 }
 .parallax{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.text-over-photo-wrap{
+    box-shadow:0 1px 1px rgba(0,0,0,.38)
+}
+.photo-wrap{
+    height:300px;
 }
