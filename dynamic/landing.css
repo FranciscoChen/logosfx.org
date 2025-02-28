@@ -47,8 +47,10 @@
 }
 
 .seminary{
+    grid-area:seminary;
+    min-height:80vh;
     display: grid;
-    grid-template-areas: "." "purpose" "more";
+    grid-template-areas: "spacer" "purpose" "more";
     grid-template-rows: repeat(3, fit-content(0)) auto;
     background:linear-gradient(199deg, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.7)), url(/images/students.jpg);
     background-position: center;
@@ -60,7 +62,7 @@
     .seminary{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, fit-content(0)) auto;
-        grid-template-areas: ". ." "purpose purpose" "more more";
+        grid-template-areas: "spacer spacer" "purpose purpose" "more more";
     }
 
 }
@@ -69,7 +71,7 @@
     .seminary{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: ". . ." "purpose purpose ." ". . more";
+        grid-template-areas: "spacer spacer spacer" "purpose purpose ." ". . more";
     }
 }
 
@@ -77,8 +79,13 @@
     .seminary {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas:  ". . . ." "purpose purpose . ." ". . . more";
+        grid-template-areas:  "spacer spacer spacer spacer" "purpose purpose purpose ." ". . . more";
     }
+}
+
+.spacer{
+    grid-area:spacer;
+    height:63vh;
 }
 
 .purpose{
