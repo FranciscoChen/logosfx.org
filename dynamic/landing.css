@@ -47,6 +47,9 @@
 
 .seminary{
     background:linear-gradient(to bottom, rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.7)),url(/images/students.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-area:seminary;
     display: grid;
     grid-template-areas: "." "purpose" "more";
