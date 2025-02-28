@@ -33,7 +33,7 @@
     .main {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: ". seminary seminary ." ". photo photo ." ". calling calling .";
+        grid-template-areas: "seminary seminary seminary seminary" "photo photo photo photo" "calling calling calling calling";
     }
 }
 @keyframes scalestretch{
