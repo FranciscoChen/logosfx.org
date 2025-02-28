@@ -7,6 +7,34 @@
 
 .main {
     grid-area: main;
+    display: grid;
+    grid-template-areas: "seminary" "photo" "calling";
+    grid-template-rows: repeat(3, fit-content(0)) auto;
+}
+
+@media(min-width: 499.3px) {
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, fit-content(0)) auto;
+        grid-template-areas: "seminary seminary" "photo photo" "calling calling";
+    }
+
+}
+
+@media(min-width: 799.3px) {
+    .main {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
+        grid-template-areas: "seminary seminary seminary" "photo photo photo" "calling calling calling";
+    }
+}
+
+@media(min-width: 1259.3px) {
+    .main {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
+        grid-template-areas: "seminary seminary seminary seminary" "photo photo photo photo" "calling calling calling calling";
+    }
 }
 
 @keyframes scalestretch{
@@ -19,13 +47,42 @@
 }
 
 .seminary{
-    background:linear-gradient(to bottom, rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.7)),url(/images/students.jpg);
+    display: grid;
+    grid-template-areas: "." "purpose" "more";
+    grid-template-rows: repeat(3, fit-content(0)) auto;
+    background:linear-gradient(199deg, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.7)), url(/images/students.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+@media(min-width: 499.3px) {
+    .seminary{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, fit-content(0)) auto;
+        grid-template-areas: ". ." "purpose purpose" "more more";
+    }
+
+}
+
+@media(min-width: 799.3px) {
+    .seminary{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
+        grid-template-areas: ". . ." "purpose purpose ." ". . more";
+    }
+}
+
+@media(min-width: 1259.3px) {
+    .seminary {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
+        grid-template-areas:  ". . . ." "purpose purpose . ." ". . . more";
+    }
+}
+
 .purpose{
+    grid-area: purpose;
     font-size: 30px;
     font-weight: bold;
     display: flex;
@@ -46,6 +103,7 @@
     }
 }
 .more{
+    grid-area: more;
     display: flex;
     justify-content: center;
     font-size: 26px;
@@ -57,26 +115,42 @@
     animation-delay:4s;
     transform: scaleX(0.94)
 }
+
+.photo{
+    grid-area: photo;
+}
+
 .calling{
     grid-area:calling;
 }
 
 @media(min-width: 499.3px) {
     .calling{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, fit-content(0)) auto;
+        grid-template-areas: ". ." "call call" "apply apply";
     }
 
 }
 
 @media(min-width: 799.3px) {
     .calling {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
+        grid-template-areas: ". . ." "call call ." ". . apply";
     }
 }
 
 @media(min-width: 1259.3px) {
     .calling {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
+        grid-template-areas:  ". . . ." "call call . ." ". . . apply";
     }
 }
+
 .call {
+    grid-area:call;
     font-size: 34px;
     font-weight: bold;
     display: flex;
@@ -97,6 +171,7 @@
     }
 }
 .apply {
+    grid-area:apply;
     display: flex;
     justify-content: center;
     font-size: 26px;
