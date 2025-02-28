@@ -46,6 +46,7 @@
 }
 
 .seminary{
+    background:linear-gradient(to bottom, rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.7)),url(/images/students.jpg);
     grid-area:seminary;
     display: grid;
     grid-template-areas: "." "purpose" "more";
@@ -237,10 +238,4 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.text-over-photo-wrap{
-    box-shadow:0 1px 1px rgba(0,0,0,.38)
-}
-.photo-wrap{
-    height:300px;
 }
