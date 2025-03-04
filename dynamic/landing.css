@@ -314,7 +314,7 @@
 @media(min-width: 799.3px) {
     .fellowship {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: "fellowship-title fellowship-title fellowship-title" "fellowship-subtitle fellowship-subtitle fellowship-subtitle" ". fellowship-photo-wrap .";
+        grid-template-areas: "fellowship-title fellowship-title fellowship-title" "fellowship-subtitle fellowship-subtitle fellowship-subtitle" "fellowship-photo-wrap fellowship-photo-wrap fellowship-photo-wrap";
     }
 }
 
