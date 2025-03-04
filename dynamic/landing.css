@@ -130,14 +130,6 @@
     grid-template-areas: "purpose-title" "purpose-subtitle" "purpose-photo-wrap";
     grid-template-rows: repeat(2, fit-content(0)) auto;
 }
-.purpose-background{
-    position:absolute;
-    top:0;
-    height:100%;
-    width:100%;
-    background-color:var(--main-background-color);
-    border-radius: 0 0 70% 50%/7%;
-}
 @media(min-width: 499.3px) {
     .purpose{
         grid-template-columns: repeat(2, 1fr);
@@ -223,6 +215,7 @@
     display: grid;
     grid-template-areas: "teachers-title" "teachers-subtitle" "teachers-photo-wrap";
     grid-template-rows: repeat(2, fit-content(0)) auto;
+    border-radius: 0 0 70% 50%/7%;
 }
 
 @media(min-width: 499.3px) {
