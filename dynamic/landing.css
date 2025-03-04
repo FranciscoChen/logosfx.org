@@ -125,12 +125,19 @@
 }
 .purpose{
     grid-area:purpose;
-    min-height:max(80vh,80vw);
+    min-height:max(50vw,70vh);
     display: grid;
     grid-template-areas: "purpose-title" "purpose-subtitle" "purpose-photo-wrap";
     grid-template-rows: repeat(2, fit-content(0)) auto;
 }
-
+.purpose-background{
+    position:absolute;
+    top:0;
+    height:100%;
+    width:100%;
+    background-color:var(--main-background-color);
+    border-radius: 0 0 70% 50%/7%;
+}
 @media(min-width: 499.3px) {
     .purpose{
         grid-template-columns: repeat(2, 1fr);
@@ -200,7 +207,7 @@
     margin-top: max(5vh,5vw);
 }
 .purpose-photo{
-    height: min(80vw,50vh);
+    height: min(80vw,43vh);
     width: 93%;
     border-radius: 40px 7px;
     background:url(/images/purpose.jpg);
@@ -211,7 +218,8 @@
 }
 .teachers{
     grid-area:teachers;
-    min-height:max(80vh,80vw);
+    min-height:max(70vh,50vw);
+    background-color: var(--secondary-background-color);
     display: grid;
     grid-template-areas: "teachers-title" "teachers-subtitle" "teachers-photo-wrap";
     grid-template-rows: repeat(2, fit-content(0)) auto;
@@ -286,7 +294,7 @@
     margin-top: max(5vh,5vw);
 }
 .teachers-photo{
-    height: min(80vw,50vh);
+    height: min(80vw,43vh);
     width: 93%;
     border-radius: 50%;
     background:url(/images/teachers.jpg);
