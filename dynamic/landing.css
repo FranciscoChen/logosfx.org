@@ -1,6 +1,6 @@
 #main-wrap {
     display: grid;
-    grid-template-areas: ". . main . .";
+    grid-template-areas: "main main main main main";
     grid-template-columns: var(--main-margin) 1fr minmax(auto, var(--main-max-width)) 1fr var(--main-margin);
     margin-top: var(--site-header-margin);
 }

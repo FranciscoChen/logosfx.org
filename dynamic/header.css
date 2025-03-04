@@ -10,8 +10,6 @@ header{
   font-family:var(--main-text-font);
   color:var(--main-text-color);
   z-index:7;
-  margin: 0 auto;
-  max-width:1800px;
   height: var(--header-height);
   background:transparent;
 }
