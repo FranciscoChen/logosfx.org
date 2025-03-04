@@ -8,7 +8,7 @@
 .main {
     grid-area: main;
     display: grid;
-    grid-template-areas: "seminary" "photo" "calling";
+    grid-template-areas: "seminary" "purpose" "teachers" "fellowship";
     grid-template-rows: repeat(3, fit-content(0)) auto;
 }
 
@@ -16,7 +16,7 @@
     .main {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, fit-content(0)) auto;
-        grid-template-areas: "seminary seminary" "photo photo" "calling calling";
+        grid-template-areas: "seminary seminary" "purpose purpose" "teachers teachers" "fellowship fellowship";
     }
 
 }
@@ -25,7 +25,7 @@
     .main {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: "seminary seminary seminary" "photo photo photo" "calling calling calling";
+        grid-template-areas: "seminary seminary seminary" "purpose purpose purpose" "teachers teachers teachers" "fellowship fellowship fellowship";
     }
 }
 
@@ -33,7 +33,7 @@
     .main {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: "seminary seminary seminary seminary" "photo photo photo photo" "calling calling calling calling";
+        grid-template-areas: "seminary seminary seminary seminary" "purpose purpose purpose purpose" "teachers teachers teachers teachers" "fellowship fellowship fellowship fellowship";
     }
 }
 
@@ -56,7 +56,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 0 0 0 50%/7%;
+    border-radius: 0 0 70% 50%/7%;
 }
 
 @media(min-width: 499.3px) {
@@ -88,78 +88,6 @@
     grid-area:spacer;
     height:55vh;
 }
-.purpose{
-    grid-area: purpose;
-    font-size: 30px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    font-family: var(--header-text-font);
-    padding-bottom:3vh;
-    padding-top:3vh;
-    animation: scalestretch ease-out 3s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
-    animation-delay:4s;
-    transform: scaleX(0.94)
-}
-@media(min-width: 799.3px) {
-    .purpose {
-        padding-bottom:2vh;
-        font-size:34px;
-    }
-}
-.illustration{
-    grid-area: illustration;
-    display: flex;
-    justify-content: center;
-    font-size: 26px;
-    font-weight: bold;
-    animation: scalestretch ease-out 3s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
-    max-height: 3em;
-    animation-delay:4s;
-    transform: scaleX(0.94)
-}
-
-.photo{
-    grid-area: photo;
-}
-
-.calling{
-    grid-area:calling;
-    min-height:80vh;
-    display: grid;
-    grid-template-areas: "purpose" "illustration";
-    grid-template-rows: repeat(3, fit-content(0)) auto;
-}
-
-@media(min-width: 499.3px) {
-    .calling{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, fit-content(0)) auto;
-        grid-template-areas: "purpose purpose" "illustration illustration";
-    }
-
-}
-
-@media(min-width: 799.3px) {
-    .calling {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: "purpose purpose purpose" ". illustration .";
-    }
-}
-
-@media(min-width: 1259.3px) {
-    .calling {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas:  "purpose purpose purpose purpose" ". illustration illustration .";
-    }
-}
-
 .call {
     grid-area:call;
     font-size: 34px;
@@ -169,7 +97,7 @@
     justify-content: center;
     font-family: var(--header-text-font);
     padding-bottom:3vh;
-    padding-top:3vh;
+    padding-top:5vh;
     animation: scalestretch ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
@@ -195,6 +123,95 @@
     animation-delay:4s;
     transform: scaleX(0.94)
 }
+.purpose{
+    grid-area:purpose;
+    min-height:80vh;
+    display: grid;
+    grid-template-areas: "purpose-title" "purpose-subtitle" "purpose-photo-wrap";
+    grid-template-rows: repeat(3, fit-content(0)) auto;
+}
+
+@media(min-width: 499.3px) {
+    .purpose{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, fit-content(0)) auto;
+        grid-template-areas: "purpose-title purpose-title" "purpose-subtitle purpose-subtitle" "purpose-photo-wrap purpose-photo-wrap";
+    }
+
+}
+
+@media(min-width: 799.3px) {
+    .purpose {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
+        grid-template-areas: "purpose-title purpose-title purpose-title" "purpose-subtitle purpose-subtitle purpose-subtitle" ". purpose-photo-wrap .";
+    }
+}
+
+@media(min-width: 1259.3px) {
+    .purpose {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
+        grid-template-areas: "purpose-title purpose-title purpose-title purpose-title" "purpose-subtitle purpose-subtitle purpose-subtitle purpose-subtitle" ". purpose-photo-wrap purpose-photo-wrap .";
+    }
+}
+.purpose-title{
+    grid-area: purpose-title;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-family: var(--header-text-font);
+    padding-bottom:3vh;
+    padding-top:7vh;
+    animation: scalestretch ease-out 3s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    animation-delay:4s;
+    transform: scaleX(0.94)
+}
+@media(min-width: 799.3px) {
+    .purpose-title {
+        padding-bottom:2vh;
+        font-size:34px;
+    }
+    .purpose-subtitle {
+        padding-bottom:2vh;
+        font-size:24px;
+    }
+}
+.purpose-subtitle{
+    grid-area: purpose-subtitle;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-family: var(--header-text-font);
+    padding-bottom:3vh;
+    padding-top:7vh;
+    animation: scalestretch ease-out 3s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    animation-delay:4s;
+    transform: scaleX(0.94)
+}
+.purpose-photo-wrap{
+    grid-area: purpose-photo-wrap;
+    display: flex;
+    justify-content: center;
+    animation: scalestretch ease-out 3s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    animation-delay:4s;
+    transform: scaleX(0.94)
+}
+.purpose-photo{
+    background:url(/images/teaching.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .logoscreen{
     width:100vw;
     height:100vh;
