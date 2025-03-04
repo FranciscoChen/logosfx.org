@@ -215,7 +215,7 @@
     display: grid;
     grid-template-areas: "teachers-title" "teachers-subtitle" "teachers-photo-wrap";
     grid-template-rows: repeat(2, fit-content(0)) auto;
-    border-radius: 0 0 70% 50%/7%;
+    border-radius: 31% 71%/11%;
 }
 
 @media(min-width: 499.3px) {
