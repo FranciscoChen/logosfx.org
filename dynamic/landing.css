@@ -203,11 +203,97 @@
     height: min(80vw,50vh);
     width: 93%;
     border-radius: 40px 7px;
-    background:url(/images/teaching.jpg);
+    background:url(/images/purpose.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0 2px 6px 0 var(--cards-shadow-color), inset 0 -1px 0 0 var(--cards-border-color);
+    box-shadow: 7px 12px 6px 0 var(--cards-shadow-color), inset -1 -1px 0 0 var(--cards-border-color);
+}
+.teachers{
+    grid-area:teachers;
+    min-height:max(80vh,80vw);
+    display: grid;
+    grid-template-areas: "teachers-title" "teachers-subtitle" "teachers-photo-wrap";
+    grid-template-rows: repeat(2, fit-content(0)) auto;
+}
+
+@media(min-width: 499.3px) {
+    .teachers{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "teachers-title teachers-title" "teachers-subtitle teachers-subtitle" "teachers-photo-wrap teachers-photo-wrap";
+    }
+
+}
+
+@media(min-width: 799.3px) {
+    .teachers {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "teachers-title teachers-title teachers-title" "teachers-subtitle teachers-subtitle teachers-subtitle" ". teachers-photo-wrap .";
+    }
+}
+
+@media(min-width: 1259.3px) {
+    .teachers {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "teachers-title teachers-title teachers-title teachers-title" "teachers-subtitle teachers-subtitle teachers-subtitle teachers-subtitle" ". teachers-photo-wrap teachers-photo-wrap .";
+    }
+}
+.teachers-title{
+    grid-area: teachers-title;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-family: var(--header-text-font);
+    padding-top:max(5vh,5vw);
+    animation: scalestretch ease-out 3s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    animation-delay:4s;
+    transform: scaleX(0.94)
+}
+.teachers-subtitle{
+    grid-area: teachers-subtitle;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-family: var(--header-text-font);
+    padding-top:max(2vh,2vw);
+    animation: scalestretch ease-out 3s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    animation-delay:4s;
+    transform: scaleX(0.94)
+}
+@media(min-width: 799.3px) {
+    .teachers-title {
+        font-size:34px;
+    }
+    .teachers-subtitle {
+        font-size:24px;
+    }
+}
+.teachers-photo-wrap{
+    grid-area: teachers-photo-wrap;
+    display: flex;
+    justify-content: center;
+    animation: scalestretch ease-out 3s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    animation-delay:4s;
+    transform: scaleX(0.94);
+    margin-top: max(5vh,5vw);
+}
+.teachers-photo{
+    height: min(80vw,50vh);
+    width: 93%;
+    border-radius: 50%;
+    background:url(/images/teachers.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 7px 12px 6px 0 var(--cards-shadow-color), inset -1 -1px 0 0 var(--cards-border-color);
 }
 
 .logoscreen{
