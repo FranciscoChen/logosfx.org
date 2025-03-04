@@ -158,7 +158,7 @@
     display: flex;
     justify-content: center;
     font-family: var(--header-text-font);
-    padding-top:max(5vh,5vw);
+    padding-top:max(7vh,7vw);
     animation: scalestretch ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
@@ -206,7 +206,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 7px 12px 6px 0 var(--cards-shadow-color), inset -1 -1px 0 0 var(--cards-border-color);
+    box-shadow: 7px 12px 6px 0 var(--cards-shadow-color), inset -1px -1px 0 0 var(--cards-border-color);
 }
 .teachers{
     grid-area:teachers;
@@ -294,7 +294,112 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 7px 12px 6px 0 var(--cards-shadow-color), inset -1 -1px 0 0 var(--cards-border-color);
+    box-shadow: 7px 12px 6px 0 var(--cards-shadow-color), inset -1px -1px 0 0 var(--cards-border-color);
+}
+.fellowship{
+    grid-area:fellowship;
+    min-height:max(50vw,70vh);
+    display: grid;
+    grid-template-areas: "fellowship-title" "fellowship-subtitle" "fellowship-photo-wrap";
+    grid-template-rows: repeat(2, fit-content(0)) auto;
+}
+@media(min-width: 499.3px) {
+    .fellowship{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "fellowship-title fellowship-title" "fellowship-subtitle fellowship-subtitle" "fellowship-photo-wrap fellowship-photo-wrap";
+    }
+
+}
+
+@media(min-width: 799.3px) {
+    .fellowship {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "fellowship-title fellowship-title fellowship-title" "fellowship-subtitle fellowship-subtitle fellowship-subtitle" ". fellowship-photo-wrap .";
+    }
+}
+
+@media(min-width: 1259.3px) {
+    .fellowship {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "fellowship-title fellowship-title fellowship-title fellowship-title" "fellowship-subtitle fellowship-subtitle fellowship-subtitle fellowship-subtitle" ". fellowship-photo-wrap fellowship-photo-wrap .";
+    }
+}
+.fellowship-title{
+    grid-area: fellowship-title;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-family: var(--header-text-font);
+    padding-top:max(7vh,7vw);
+    animation: scalestretch ease-out 3s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    animation-delay:4s;
+    transform: scaleX(0.94)
+}
+.fellowship-subtitle{
+    grid-area: fellowship-subtitle;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-family: var(--header-text-font);
+    padding-top:max(2vh,2vw);
+    animation: scalestretch ease-out 3s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    animation-delay:4s;
+    transform: scaleX(0.94)
+}
+@media(min-width: 799.3px) {
+    .fellowship-title {
+        font-size:34px;
+    }
+    .fellowship-subtitle {
+        font-size:24px;
+    }
+}
+.fellowship-photo-wrap{
+    grid-area: fellowship-photo-wrap;
+    display: flex;
+    justify-content: center;
+    animation: scalestretch ease-out 3s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    animation-delay:4s;
+    transform: scaleX(0.94);
+    margin-top: max(5vh,5vw);
+}
+.fellowship1-photo{
+    height: min(80vw,43vh);
+    width: 93%;
+    border-radius: 40px 7px;
+    background:url(/images/fellowship1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 7px 12px 6px 0 var(--cards-shadow-color), inset -1px -1px 0 0 var(--cards-border-color);
+}
+.fellowship2-photo{
+    height: min(80vw,43vh);
+    width: 93%;
+    border-radius: 40px 7px;
+    background:url(/images/fellowship2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 7px 12px 6px 0 var(--cards-shadow-color), inset -1px -1px 0 0 var(--cards-border-color);
+}
+.fellowship3-photo{
+    height: min(80vw,43vh);
+    width: 93%;
+    border-radius: 40px 7px;
+    background:url(/images/fellowship3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 7px 12px 6px 0 var(--cards-shadow-color), inset -1px -1px 0 0 var(--cards-border-color);
 }
 
 .logoscreen{
