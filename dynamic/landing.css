@@ -373,7 +373,8 @@
 }
 .fellowship1-photo{
     height: min(80vw,43vh);
-    width: 93%;
+    width: 119%;
+    transform: rotate(-15deg);
     border-radius: 40px 7px;
     background:url(/images/fellowship1.jpg);
     background-position: center;
@@ -383,7 +384,7 @@
 }
 .fellowship2-photo{
     height: min(80vw,43vh);
-    width: 93%;
+    width: 200%;
     border-radius: 40px 7px;
     background:url(/images/fellowship2.jpg);
     background-position: center;
@@ -393,7 +394,8 @@
 }
 .fellowship3-photo{
     height: min(80vw,43vh);
-    width: 93%;
+    width: 120%;
+    transform: rotate(12deg);
     border-radius: 40px 7px;
     background:url(/images/fellowship3.jpg);
     background-position: center;
