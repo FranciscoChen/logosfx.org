@@ -95,7 +95,7 @@ nav{
   transition: all 150ms
 }
 .colorbutton{
-    color:var(--main-background-color);
+    color:var(--text-on-background);
 }
 .site-buttons .signin {
   margin: 0 1rem;

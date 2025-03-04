@@ -8,10 +8,11 @@
   --main-hover-color: rgba(255,255,255,.1);
   --secondary-background-color: #303134;
   --text-over-image-background-color: rgba(0,0,0,.7);
-  --cards-border-color:#313335;
+  --cards-border-color:rgba(49,51,53,.5);
   --cards-shadow-color:rgba(0, 0, 0, .3);
   --main-attention-color: #fe8d59;
   --main-grey-color: #303134;
   --secondary-grey-color: #4d5156;
   --header-background-color: rgba(32,33,36,0.9);
+  --text-on-background: #fff;
 }

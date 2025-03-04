@@ -52,10 +52,11 @@
     display: grid;
     grid-template-areas: "spacer" "purpose" "more";
     grid-template-rows: repeat(3, fit-content(0)) auto;
-    background:linear-gradient(199deg, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.7)), url(/images/students.jpg);
+    background:linear-gradient(199deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7)), url(/images/ceremony.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 0 0 0 50%/7%;
 }
 
 @media(min-width: 499.3px) {
@@ -85,9 +86,8 @@
 
 .spacer{
     grid-area:spacer;
-    height:63vh;
+    height:55vh;
 }
-
 .purpose{
     grid-area: purpose;
     font-size: 30px;
@@ -160,6 +160,7 @@
     grid-area:call;
     font-size: 34px;
     font-weight: bold;
+    color:var(--text-on-background);
     display: flex;
     justify-content: center;
     font-family: var(--header-text-font);
@@ -238,13 +239,4 @@
 .logoscreen-logo img {
     height: 100%;
     width: 100%;
-}
-.background-photo{
-    background-image: url(/images/bible.jpg);
-    width:100%;
-    height:400px;
-}
-.parallax{
-    background-repeat: no-repeat;
-    background-size: cover;
 }
