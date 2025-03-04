@@ -5,14 +5,24 @@
 header{
   display:flex;
   justify-content:space-between;
-  position:relative;
+  position:sticky;
+  top:0;
   font-family:var(--main-text-font);
   color:var(--main-text-color);
   z-index:7;
   margin: 0 auto;
   max-width:1800px;
   height: var(--header-height);
-  background:var(--main-background-color);
+  background:transparent;
+}
+.blur{
+  background:var(--header-background-color);
+  position: absolute;
+  width: 100vw;
+  height: calc(var(--header-height)*1.1);
+  filter: blur(3px);
+  top: -7px;
+  z-index: -1;
 }
 .menu{
   display:flex;
@@ -38,7 +48,7 @@ header{
 
 nav{
   display:flex;
-  background:var(--main-background-color);
+  background:transparent;
 }
 .menu-item{
   display:block;
@@ -128,6 +138,8 @@ nav{
     animation: menustretch ease-out 0.3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
+    background:var(--header-background-color);
+    backdrop-filter:blur(4px);
   }
 
   .menu-display:checked~#nav{
