@@ -200,7 +200,7 @@
     margin-top: max(5vh,5vw);
 }
 .purpose-photo{
-    height: min(50vw,50vh);
+    height: min(80vw,50vh);
     width: 93%;
     border-radius: 40px 7px;
     background:url(/images/teaching.jpg);
