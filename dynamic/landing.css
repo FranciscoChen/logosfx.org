@@ -300,6 +300,7 @@
     grid-area:fellowship;
     min-height:max(50vw,70vh);
     margin-bottom:max(7vh,7vw);
+    overflow-x:clip;
     display: grid;
     grid-template-areas: "fellowship-title" "fellowship-subtitle" "fellowship-photo-wrap";
     grid-template-rows: repeat(2, fit-content(0)) auto;
