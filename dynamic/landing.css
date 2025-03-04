@@ -125,16 +125,15 @@
 }
 .purpose{
     grid-area:purpose;
-    min-height:80vh;
+    min-height:max(80vh,80vw);
     display: grid;
     grid-template-areas: "purpose-title" "purpose-subtitle" "purpose-photo-wrap";
-    grid-template-rows: repeat(3, fit-content(0)) auto;
+    grid-template-rows: repeat(2, fit-content(0)) auto;
 }
 
 @media(min-width: 499.3px) {
     .purpose{
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, fit-content(0)) auto;
         grid-template-areas: "purpose-title purpose-title" "purpose-subtitle purpose-subtitle" "purpose-photo-wrap purpose-photo-wrap";
     }
 
@@ -143,7 +142,6 @@
 @media(min-width: 799.3px) {
     .purpose {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
         grid-template-areas: "purpose-title purpose-title purpose-title" "purpose-subtitle purpose-subtitle purpose-subtitle" ". purpose-photo-wrap .";
     }
 }
@@ -151,7 +149,6 @@
 @media(min-width: 1259.3px) {
     .purpose {
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
         grid-template-areas: "purpose-title purpose-title purpose-title purpose-title" "purpose-subtitle purpose-subtitle purpose-subtitle purpose-subtitle" ". purpose-photo-wrap purpose-photo-wrap .";
     }
 }
@@ -162,23 +159,12 @@
     display: flex;
     justify-content: center;
     font-family: var(--header-text-font);
-    padding-bottom:3vh;
-    padding-top:7vh;
+    padding-top:max(5vh,5vw);
     animation: scalestretch ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:4s;
     transform: scaleX(0.94)
-}
-@media(min-width: 799.3px) {
-    .purpose-title {
-        padding-bottom:2vh;
-        font-size:34px;
-    }
-    .purpose-subtitle {
-        padding-bottom:2vh;
-        font-size:24px;
-    }
 }
 .purpose-subtitle{
     grid-area: purpose-subtitle;
@@ -187,13 +173,20 @@
     display: flex;
     justify-content: center;
     font-family: var(--header-text-font);
-    padding-bottom:3vh;
-    padding-top:7vh;
+    padding-top:max(2vh,2vw);
     animation: scalestretch ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:4s;
     transform: scaleX(0.94)
+}
+@media(min-width: 799.3px) {
+    .purpose-title {
+        font-size:34px;
+    }
+    .purpose-subtitle {
+        font-size:24px;
+    }
 }
 .purpose-photo-wrap{
     grid-area: purpose-photo-wrap;
@@ -203,13 +196,18 @@
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:4s;
-    transform: scaleX(0.94)
+    transform: scaleX(0.94);
+    margin-top: max(5vh,5vw);
 }
 .purpose-photo{
+    height: min(50vw,50vh);
+    width: 93%;
+    border-radius: 40px 7px;
     background:url(/images/teaching.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 0 2px 6px 0 var(--cards-shadow-color), inset 0 -1px 0 0 var(--cards-border-color);
 }
 
 .logoscreen{
