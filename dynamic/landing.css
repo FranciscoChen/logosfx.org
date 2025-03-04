@@ -287,8 +287,8 @@
     margin-top: max(5vh,5vw);
 }
 .teachers-photo{
-    height: min(80vw,43vh);
-    width: min(80vw,43vh);
+    height: min(80vw,44vh);
+    width: min(80vw,44vh);
     border-radius: 50%;
     background:url(/images/teachers.jpg);
     background-position: center;
