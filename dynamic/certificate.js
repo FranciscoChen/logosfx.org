@@ -22,7 +22,7 @@ function getform(){
   };
   formphoto.addEventListener("change", readerFunction);
   var xhr = new XMLHttpRequest;
-  xhr.open("POST", "/getsignaturephoto", true);
+  xhr.open("POST", "/getcertificatephoto", true);
   xhr.send('0');
   xhr.onreadystatechange = function() {
     if (this.readyState != 4) {

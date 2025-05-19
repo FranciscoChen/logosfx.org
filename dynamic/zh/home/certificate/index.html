@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <title>学历证书 - Logos复兴神学院</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width, height=device-height">
+  <meta name="description" content="请上传学历证书或证明">
+  <meta name="keywords" content="Logos,复兴,神学院,教导,培训,研究,神学,意大利,罗马,Seminari,Logos,Roma,Italia,Revival">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="preload" as="style" href="/fonts.css">
+  <link rel="stylesheet" href="/layout.css">
+  <link rel="stylesheet" href="/fonts.css">
+  <link rel="stylesheet" href="/light-theme.css">
+  <link rel="stylesheet" href="/header.css">
+  <link rel="stylesheet" href="/form.css">
+  <link rel="stylesheet" href="/certificate.css">
+  <script src="/user.js"></script>
+  <script src="/load.js"></script>
+  <script src="/form.js"></script>
+  <script src="/certificate.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <header>
+    <div class="blur"></div>
+    <div class="menu">
+      <input type="checkbox" id="menu-button" class="menu-display" autocomplete="off">
+      <label for="menu-button" class="menu-cover"></label>
+      <label for="menu-button" class="menu-icon">
+        <span class="menu-bars"></span>
+      </label>
+      <div class="logo">
+        <a href="/">
+          <div class="logo-wrap">
+            <img src="/logo.png">
+          </div>
+        </a>
+      </div>
+      <nav id="nav">
+        <div class="menu-item">
+          <a href="/about">学院简介</a>
+        </div>
+        <div class="menu-item">
+          <a href="/faith">信仰告白</a>
+        </div>
+        <div class="menu-item">
+          <a href="/courses">学位学制</a>
+        </div>
+      </nav>
+    </div>
+    <div class="site-buttons"><a class="signin button button-empty"></a></div>
+  </header>
+  <div id="main-wrap"><div id="cover" class="cover"></div>
+    <div class="main">
+      <div class="title">
+          <h1>
+              学历证书学历证书
+          </h1>
+      </div>
+      <div class="form">
+          <form method="post" id="apply-form" action="https://static.logosfx.org/certificateofstudies">
+              <div class="section">
+                <div class="form-group flex-center">
+                   <label for="form-photo" class="button colorbutton">上传学历证书照片</label>
+                   <input class="form-control" name="photo" id="form-photo" type="file" accept=".jpg,.jpeg,.png,image/png,image/jpeg" required="required">
+                </div>
+              </div>
+              <div class="section">
+                <div class="photo-wrap hidden">
+                  <img id="photo-preview" src="" alt="">
+                </div>
+              </div>
+              <div class="form-buttons">
+                  <a onclick="location.href = document.referrer" class="button back-button">返回</a>
+                  <a id="submit" class="submit colorbutton button disabled">发送</a>
+              </div>
+          </form>
+      </div>
+    </div>
+  </div>
+  <footer class="about">
+    <div>版权所有 2021-2025 LOGOS复兴神学院 | <a href="/privacy">隐私政策</a> | <a href="/contact">联系我们</a></div>
+  </footer>
+</body>
+</html>
