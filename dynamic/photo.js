@@ -44,7 +44,7 @@ function getImage(url,element){
   const formphoto = document.getElementById("form-photo")
   const photopreview = document.getElementById("photo-preview")
   var xhr = new XMLHttpRequest;
-  url = 'https://static.logosfx.org/'+url;
+  url = 'https://logosfx.org/'+url;
   xhr.open("GET", url, true);
   xhr.withCredentials = true;
   xhr.responseType = "blob";
