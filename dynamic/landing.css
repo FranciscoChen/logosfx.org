@@ -52,7 +52,7 @@
     display: grid;
     grid-template-areas: "spacer" "call" "apply";
     grid-template-rows: repeat(3, fit-content(0)) auto;
-    background:linear-gradient(199deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7)), url(/images/ceremony.jpg);
+    background:linear-gradient(199deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1)), url(/images/ceremony.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,6 +93,7 @@
     font-size: 34px;
     font-weight: bold;
     color:var(--text-on-background);
+    text-shadow: 2px 2px 4px var(--text-shadow-on-background);
     display: flex;
     justify-content: center;
     font-family: var(--header-text-font);
