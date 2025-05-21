@@ -50,17 +50,21 @@
 }
 .bacheloroftheology{
     grid-area:bacheloroftheology;
-    padding:3vh;
+    padding:1vh;
+    margin:1vh;
 }
 .bachelorofministry{
     grid-area:bachelorofministry;
-    padding:3vh;
+    padding:1vh;
+    margin:1vh;
 }
 .churchleadershipcertificate{
     grid-area:churchleadershipcertificate;
-    padding:3vh;
+    padding:1vh;
+    margin:1vh;
 }
 .specialstudents{
     grid-area:specialstudents;
-    padding:3vh;
+    padding:1vh;
+    margin:1vh;
 }
