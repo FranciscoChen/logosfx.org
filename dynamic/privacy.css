@@ -9,7 +9,7 @@
     grid-area: main;
     display: grid;
     grid-template-areas: "title" "technicaldata" "personaldata" "dataprotection";
-    grid-gap: 2vmin
+    grid-gap: 1vmin
 }
 
 @media(min-width: 499.3px) {
@@ -23,9 +23,9 @@
 
 @media(min-width: 799.3px) {
     .privacy {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: ". title ." ". technicaldata ." ". personaldata ." ". dataprotection .";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
+        grid-template-areas: ". title title ." ". technicaldata technicaldata ." ". personaldata personaldata ." ". dataprotection dataprotection .";
     }
 
 }
@@ -39,16 +39,26 @@
 }
 .title{
     grid-area:title;
+    padding: 1vh;
+    margin: 1vh;
 }
 .technicaldata{
     grid-area:technicaldata;
+    padding: 1vh;
+    margin: 1vh;
 }
 .testimonies{
     grid-area:testimonies;
+    padding: 1vh;
+    margin: 1vh;
 }
 .personaldata{
     grid-area:personaldata;
+    padding: 1vh;
+    margin: 1vh;
 }
 .dataprotection{
     grid-area:dataprotection;
+    padding: 1vh;
+    margin: 1vh;
 }
