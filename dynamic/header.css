@@ -236,3 +236,6 @@ nav{
     display: block;
   }
 }
+.backgroundless{
+  background: 0 0;
+}

@@ -9,7 +9,6 @@
     grid-area: main;
     display: grid;
     grid-template-areas: "title" "description" "subtitle" "bacheloroftheology" "bachelorofministry" "churchleadershipcertificate" "specialstudents";
-    grid-gap: 2vmin
 }
 
 @media(min-width: 499.3px) {
