@@ -25,7 +25,7 @@ html{
 }
 .about{
   display:grid;
-  grid-template-areas: "courses" "aboutus" "privacy" "copyright";
+  grid-template-areas: "footer-courses" "footer-aboutus" "footer-privacy" "footer-copyright";
   grid-template-columns: repeat(1,auto);
   grid-template-rows: repeat(4, auto);
   height: var(--footer-height);
@@ -35,47 +35,47 @@ html{
   border-top: solid 1px var(--main-grey-color);
 }
 @media(min-width: 499.3px) {
-    grid-template-areas: "courses courses" "aboutus privacy" "copyright copyright";
+    grid-template-areas: "footer-courses footer-courses" "footer-aboutus footer-privacy" "footer-copyright footer-copyright";
     grid-template-columns: repeat(2,auto);
     grid-template-rows: repeat(3, auto);
 }
 @media(min-width: 799.3px) {
   .about{
-    grid-template-areas: "courses aboutus privacy" "copyright copyright copyright";
+    grid-template-areas: "footer-courses footer-aboutus footer-privacy" "footer-copyright footer-copyright footer-copyright";
     grid-template-columns: repeat(3,auto);
     grid-template-rows: repeat(2, auto);
   }
 }
 @media(min-width: 1259.3px) {
   .about{
-    grid-template-areas: "courses aboutus privacy" "copyright copyright copyright";
+    grid-template-areas: "footer-courses footer-aboutus footer-privacy" "footer-copyright footer-copyright footer-copyright";
     grid-template-columns: repeat(3,auto);
     grid-template-rows: repeat(2, auto);
   }
 }
-.copyright {
+.footer-copyright {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-area:copyright;
+  grid-area:footer-copyright;
 }
-.privacy {
+.footer-privacy {
   display: flex;
   justify-content: left;
   align-items: center;
-  grid-area:privacy;
+  grid-area:footer-privacy;
 }
-.courses{
+.footer-courses{
   display: flex;
   justify-content: left;
   align-items: center;
-  grid-area:courses;
+  grid-area:footer-courses;
 }
-.aboutus {
+.footer-aboutus {
   display: flex;
   justify-content: left;
   align-items: center;
-  grid-area:aboutus;
+  grid-area:footer-aboutus;
 }
 .cover {
     position: fixed;
