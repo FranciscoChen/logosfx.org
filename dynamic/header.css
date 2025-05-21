@@ -253,27 +253,31 @@ nav{
   opacity:0;
 }
 .menu-item:hover + .sub-menu{
-  display:grid;
+  display:fixed;
+  top:var(--header-height);
   animation: fadein ease-out 0.3s;
   animation-iteration-count:1;
   animation-fill-mode:forwards;
 }
+.sub-menu-grid{
+  display:grid;
+}
 @media(min-width: 499.3px) {
-  .sub-menu{
+  .sub-menu-grid{
     grid-template-areas: "column1" "column2" "column3" "column4" "column5";
     grid-template-columns: repeat(1,auto);
     grid-template-rows: repeat(5, auto);
   }
 }
 @media(min-width: 799.3px) {
-  .sub-menu{
+  .sub-menu-grid{
     grid-template-areas: "column1 column2 column3 column4 column5";
     grid-template-columns: repeat(5,auto);
     grid-template-rows: repeat(1, auto);
   }
 }
 @media(min-width: 1259.3px) {
-  .sub-menu{
+  .sub-menu-grid{
     grid-template-areas: "column1 column2 column3 column4 column5";
     grid-template-columns: repeat(5,auto);
     grid-template-rows: repeat(1, auto);
