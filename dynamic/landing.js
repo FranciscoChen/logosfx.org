@@ -5,22 +5,32 @@ function logouncover(){
 }
 
 function scrolling(){
-  var elem = document.getElementsByClassName('purpose-photo')[0];
-  if (coming(elem) > 0 ) {
-    if (elem.classList.contains('purpose-photo-below')){
-      elem.classList.toggle('purpose-photo-below')
+  var purpose = document.getElementsByClassName('purpose-photo')[0];
+  if (coming(purpose) > 0 ) {
+    if (purpose.classList.contains('purpose-photo-below')){
+      purpose.classList.toggle('purpose-photo-below')
     }
   } else {
-    if (!elem.classList.contains('purpose-photo-below')){
-      elem.classList.toggle('purpose-photo-below')
+    if (!purpose.classList.contains('purpose-photo-below')){
+      purpose.classList.toggle('purpose-photo-below')
+    }
+  }
+  var teachers = document.getElementsByClassName('teachers-photo')[0];
+  if (coming(teachers) > 0 ) {
+    if (teachers.classList.contains('teachers-photo-below')){
+      teachers.classList.toggle('teachers-photo-below')
+    }
+  } else {
+    if (!teachers.classList.contains('teachers-photo-below')){
+      teachers.classList.toggle('teachers-photo-below')
     }
   }
 }
 
 function coming(ele){
-  // Given an element this function returns zero or lower if the element is still below, and a number above zero if the element is coming into sight from the bottom, centered at 1/2 of the page
+  // Given an element this function returns zero or lower if the element is still below, and a number above zero if the element is coming into sight from the bottom, centered at 45% of the page
   var y = window.innerHeight||document.documentElement.clientHeight||document.getElementsByTagName("body")[0].clientHeight,
-  center = y/2,
+  center = 4.5*y/10,
   rect = ele.getBoundingClientRect(),
   topcenter = rect.top - center;
   if ( topcenter < 0 ) return 1 ;
