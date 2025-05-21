@@ -98,7 +98,7 @@
     justify-content: center;
     font-family: var(--header-text-font);
     padding-bottom:3vh;
-    padding-top:5vh;
+    padding-top:1vh;
     animation: scalestretch ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
@@ -107,6 +107,7 @@
 }
 @media(min-width: 799.3px) {
     .call {
+        padding-top:5vh;
         padding-bottom:2vh;
         font-size:44px;
     }
