@@ -8,6 +8,7 @@
 .login {
     grid-area: main;
     display: grid;
+    grid-template-rows: 20vh 40vh;
     grid-template-areas: "title" "form";
     grid-gap: 2vmin
 }
@@ -15,7 +16,6 @@
 @media(min-width: 499.3px) {
     .login {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto repeat(3, fit-content(0));
         grid-template-areas: "title title" "form form";
     }
 
@@ -24,7 +24,6 @@
 @media(min-width: 799.3px) {
     .login {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
         grid-template-areas: ". title ." ". form .";
     }
 
@@ -33,17 +32,16 @@
 @media(min-width: 1259.3px) {
     .login {
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
         grid-template-areas: ". title title ." ". form form .";
     }
 }
 .title{
     grid-area:title;
-    padding:3vh;
+    padding:2vh;
 }
 .form{
     grid-area:form;
-    padding:3vh;
+    padding:2vh;
 }
 
 .alternative {
