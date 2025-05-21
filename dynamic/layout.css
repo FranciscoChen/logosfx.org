@@ -3,7 +3,7 @@
     --main-margin: 1vw;
     --main-max-width: 1400px;
     --site-header-margin: 0px;
-    --footer-height: 50px;
+    --footer-height: 120px;
     --ui-button-height: 60px;
 }
 *,::after,::before {
@@ -24,6 +24,10 @@ html{
   min-height: calc(100vh - (var(--footer-height) + var(--header-height)));
 }
 .about{
+  display:grid;
+  grid-template-areas: "copyright privacy" ". contact";
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(2, auto);
   height: var(--footer-height);
   max-width: 1800px;
   display: flex;
@@ -31,6 +35,15 @@ html{
   align-items: center;
   padding: 5px;
   margin-top: 3vh;
+}
+.copyright {
+  grid-area:copyright
+}
+.privacy {
+  grid-area:privacy
+}
+.contact {
+  grid-area:contact
 }
 .cover {
     position: fixed;
