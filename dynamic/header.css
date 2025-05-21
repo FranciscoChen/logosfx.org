@@ -253,11 +253,20 @@ nav{
   opacity:0;
 }
 .menu-item:hover + .sub-menu{
-  display:fixed;
+  display:block;
+  position:fixed;
   top:var(--header-height);
   animation: fadein ease-out 0.3s;
   animation-iteration-count:1;
   animation-fill-mode:forwards;
+}
+@keyframes fadein{
+    0% {
+      opacity:0
+    }
+    100% {
+      opacity:1
+    }
 }
 .sub-menu-grid{
   display:grid;
