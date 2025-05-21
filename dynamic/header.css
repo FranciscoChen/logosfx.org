@@ -18,7 +18,7 @@ header{
   position: absolute;
   width: 100vw;
   height: calc(var(--header-height)*1.1);
-  filter: blur(3px);
+  filter: blur(1px);
   top: -7px;
   z-index: -1;
 }
