@@ -66,7 +66,7 @@ nav{
   background-color:var(--main-link-color);
   width: 0px;
   height: 3px;
-  transform:translate(0px,-3px);
+  transform:translate(0px,-6px);
   transition: 0.25s width ease-out;
 }
 .menu-item:hover:after {
@@ -251,21 +251,23 @@ nav{
 .sub-menu{
   display:none;
   opacity:0;
+  width:100%;
+  background: var(--main-background-color)
 }
 .menu-item:hover + .sub-menu{
   display:block;
   position:fixed;
   top:var(--header-height);
-  animation: fadein ease-out 0.3s;
+  animation: appear ease-out 0.4s;
   animation-iteration-count:1;
   animation-fill-mode:forwards;
 }
-@keyframes fadein{
+@keyframes appear{
     0% {
       opacity:0
     }
     100% {
-      opacity:1
+      opacity:0.98
     }
 }
 .sub-menu-grid{
@@ -294,14 +296,16 @@ nav{
 }
 .column1{
   grid-area:column1;
+  margin:20px;
 }
 .sub-column1{
   display:none;
   opacity:0;
+  margin:20px;
 }
 .column1:hover + .sub-column1{
   display:block;
-  animation: fadein ease-out 0.3s;
+  animation: fadein ease-out 0.4s;
   animation-iteration-count:1;
   animation-fill-mode:forwards;
 }
