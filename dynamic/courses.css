@@ -14,7 +14,7 @@
 @media(min-width: 499.3px) {
     .courses {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto repeat(3, fit-content(0));
+        grid-template-rows: auto;
         grid-template-areas: "title title" "description description" "subtitle subtitle" "bacheloroftheology bachelorofministry" "churchleadershipcertificate specialstudents";
     }
 
@@ -23,7 +23,7 @@
 @media(min-width: 799.3px) {
     .courses {
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
+        grid-template-rows: repeat(2, fit-content(0)) auto;
         grid-template-areas: ". title title ." ". description description ." ". subtitle subtitle ." ". bacheloroftheology bachelorofministry ." ". churchleadershipcertificate specialstudents .";
     }
 
@@ -32,21 +32,21 @@
 @media(min-width: 1259.3px) {
     .courses {
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
+        grid-template-rows: repeat(2, fit-content(0)) auto;
         grid-template-areas: ". title title ." ". description description ." ". subtitle subtitle ." ". bacheloroftheology bachelorofministry ." ". churchleadershipcertificate specialstudents .";
     }
 }
 .title{
     grid-area:title;
-    padding:2vh;
+    padding:1vh;
 }
 .subtitle{
     grid-area:subtitle;
-    padding:2vh;
+    padding:1vh;
 }
 .description{
     grid-area:description;
-    padding:2vh;
+    padding:1vh;
 }
 .bacheloroftheology{
     grid-area:bacheloroftheology;
