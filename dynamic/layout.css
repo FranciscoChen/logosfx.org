@@ -64,21 +64,36 @@ footer{
   justify-content: center;
   align-items: center;
   grid-area:footer-copyright;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  color:var(--secondary-text-color);
 }
 .footer-privacy {
   display: flex;
   justify-content: left;
   grid-area:footer-privacy;
+  margin-top:2vh;
+  margin-left:2vw;
 }
 .footer-courses{
   display: flex;
   justify-content: left;
   grid-area:footer-courses;
+  margin-top:2vh;
+  margin-left:2vw;
 }
 .footer-aboutus {
   display: flex;
   justify-content: left;
   grid-area:footer-aboutus;
+  margin-top:2vh;
+  margin-left:2vw;
+}
+.footer-links{
+  color:var(--secondary-text-color);
+}
+.footer-links:first-child{
+  color:var(--main-text-color);
 }
 .cover {
     position: fixed;
