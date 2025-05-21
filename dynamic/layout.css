@@ -68,19 +68,16 @@ footer{
 .footer-privacy {
   display: flex;
   justify-content: left;
-  align-items: center;
   grid-area:footer-privacy;
 }
 .footer-courses{
   display: flex;
   justify-content: left;
-  align-items: center;
   grid-area:footer-courses;
 }
 .footer-aboutus {
   display: flex;
   justify-content: left;
-  align-items: center;
   grid-area:footer-aboutus;
 }
 .cover {
