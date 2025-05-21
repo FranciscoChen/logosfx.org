@@ -3,7 +3,7 @@
     --main-margin: 1vw;
     --main-max-width: 1400px;
     --site-header-margin: 0px;
-    --footer-height: 120px;
+    --footer-height: 180px;
     --ui-button-height: 60px;
 }
 *,::after,::before {
@@ -25,19 +25,32 @@ html{
 }
 .about{
   display:grid;
-  grid-template-areas: "privacy" "contact" "copyright";
+  grid-template-areas: "courses" "aboutus" "privacy" "copyright";
   grid-template-columns: repeat(1,auto);
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
   height: var(--footer-height);
   max-width: 1800px;
   padding: 5px;
   margin-top: 3vh;
   border-top: solid 1px var(--main-grey-color);
 }
+@media(min-width: 499.3px) {
+    grid-template-areas: "courses courses" "aboutus privacy" "copyright copyright";
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(3, auto);
+}
 @media(min-width: 799.3px) {
   .about{
-    grid-template-columns: repeat(2,auto);
-    grid-template-areas: "copyright ." ". privacy" ". contact";
+    grid-template-areas: "courses aboutus privacy" "copyright copyright copyright";
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2, auto);
+  }
+}
+@media(min-width: 1259.3px) {
+  .about{
+    grid-template-areas: "courses aboutus privacy" "copyright copyright copyright";
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2, auto);
   }
 }
 .copyright {
@@ -48,15 +61,21 @@ html{
 }
 .privacy {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   grid-area:privacy;
 }
-.contact {
+.courses{
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  grid-area:contact;
+  grid-area:courses;
+}
+.aboutus {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  grid-area:aboutus;
 }
 .cover {
     position: fixed;
