@@ -87,3 +87,6 @@ footer{
 .maincolor{
   color:var(--main-text-color);
 }
+.maincolor:not(.disabled):hover {
+  color:var(--main-text-color);
+}
