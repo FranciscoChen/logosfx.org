@@ -25,6 +25,36 @@ function scrolling(){
       teachers.classList.toggle('teachers-photo-below')
     }
   }
+  var fellowship1 = document.getElementsByClassName('fellowship1-photo')[0];
+  if (coming(fellowship1) > 0 ) {
+    if (fellowship1.classList.contains('fellowship1-photo-below')){
+      fellowship1.classList.toggle('fellowship1-photo-below')
+    }
+  } else {
+    if (!fellowship1.classList.contains('fellowship1-photo-below')){
+      fellowship1.classList.toggle('fellowship1-photo-below')
+    }
+  }
+  var fellowship2 = document.getElementsByClassName('fellowship2-photo')[0];
+  if (coming(fellowship2) > 0 ) {
+    if (fellowship2.classList.contains('fellowship2-photo-below')){
+      fellowship2.classList.toggle('fellowship2-photo-below')
+    }
+  } else {
+    if (!fellowship2.classList.contains('fellowship2-photo-below')){
+      fellowship2.classList.toggle('fellowship2-photo-below')
+    }
+  }
+  var fellowship3 = document.getElementsByClassName('fellowship3-photo')[0];
+  if (coming(fellowship3) > 0 ) {
+    if (fellowship3.classList.contains('fellowship3-photo-below')){
+      fellowship3.classList.toggle('fellowship3-photo-below')
+    }
+  } else {
+    if (!fellowship3.classList.contains('fellowship3-photo-below')){
+      fellowship3.classList.toggle('fellowship3-photo-below')
+    }
+  }
 }
 
 function coming(ele){

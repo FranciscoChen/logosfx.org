@@ -444,6 +444,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 7px 12px 6px 0 var(--cards-shadow-color), inset -1px -1px 0 0 var(--cards-border-color);
+    transition: all 0.3s ease-out;
+}
+.fellowship1-photo-below{
+    transform: rotate(-20deg);
 }
 .fellowship2-photo{
     height: min(80vw,43vh);
@@ -454,6 +458,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 7px 12px 6px 0 var(--cards-shadow-color), inset -1px -1px 0 0 var(--cards-border-color);
+    transition: all 0.3s ease-out;
+}
+.fellowship2-photo-below{
+    width: 150%;
 }
 .fellowship3-photo{
     height: min(80vw,43vh);
@@ -465,6 +473,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 7px 12px 6px 0 var(--cards-shadow-color), inset -1px -1px 0 0 var(--cards-border-color);
+    transition: all 0.3s ease-out;
+}
+.fellowship3-photo-below{
+    transform: rotate(7deg);
 }
 
 .logoscreen{
