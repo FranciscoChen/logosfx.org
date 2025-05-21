@@ -30,20 +30,27 @@ html{
   grid-template-rows: repeat(2, auto);
   height: var(--footer-height);
   max-width: 1800px;
+  padding: 5px;
+  margin-top: 3vh;
+  border-top:var(--main-grey-color);
+}
+.copyright {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
-  margin-top: 3vh;
-}
-.copyright {
-  grid-area:copyright
+  grid-area:copyright;
 }
 .privacy {
-  grid-area:privacy
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area:privacy;
 }
 .contact {
-  grid-area:contact
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area:contact;
 }
 .cover {
     position: fixed;
