@@ -112,8 +112,8 @@ nav{
   color: #fff;
   background: var(--main-highlight-color);
 }
-.backgroundless:not(.disabled):hover {
-  background:0 0;
+.uncolored:not(.disabled):hover {
+  background:var(--main-hover-color);
 }
 .maincolor{
   color:var(--main-text-color);
@@ -245,6 +245,6 @@ nav{
     display: block;
   }
 }
-.backgroundless{
-  background: 0 0;
+.uncolored{
+  background: var(--main-background-color);
 }
