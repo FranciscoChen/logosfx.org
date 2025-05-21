@@ -9,13 +9,11 @@
     grid-area: main;
     display: grid;
     grid-template-areas: "seminary" "purpose" "teachers" "fellowship";
-    grid-template-rows: repeat(3, fit-content(0)) auto;
 }
 
 @media(min-width: 499.3px) {
     .main {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, fit-content(0)) auto;
         grid-template-areas: "seminary seminary" "purpose purpose" "teachers teachers" "fellowship fellowship";
     }
 
@@ -24,7 +22,6 @@
 @media(min-width: 799.3px) {
     .main {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
         grid-template-areas: "seminary seminary seminary" "purpose purpose purpose" "teachers teachers teachers" "fellowship fellowship fellowship";
     }
 }
@@ -32,7 +29,6 @@
 @media(min-width: 1259.3px) {
     .main {
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
         grid-template-areas: "seminary seminary seminary seminary" "purpose purpose purpose purpose" "teachers teachers teachers teachers" "fellowship fellowship fellowship fellowship";
     }
 }
@@ -234,6 +230,7 @@
     justify-content: center;
     font-size: calc(17px + 2 * ((100vw - 320px) / 880));
     font-weight: bold;
+    margin: 7vh;
     animation: scalestretch ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
