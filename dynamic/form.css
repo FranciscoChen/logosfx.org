@@ -137,3 +137,6 @@
 input[type="file"] {
     display: none;
 }
+button{
+    font-size: var(--main-text-font-size)
+}
