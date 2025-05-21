@@ -18,9 +18,9 @@ function scrolling(){
 }
 
 function coming(ele){
-  // Given an element this function returns zero or lower if the element is still below, and a number above zero if the element is coming into sight from the bottom, centered at 4/10 of the page
+  // Given an element this function returns zero or lower if the element is still below, and a number above zero if the element is coming into sight from the bottom, centered at 1/2 of the page
   var y = window.innerHeight||document.documentElement.clientHeight||document.getElementsByTagName("body")[0].clientHeight,
-  center = 4*y/10,
+  center = y/2,
   rect = ele.getBoundingClientRect(),
   topcenter = rect.top - center;
   if ( topcenter < 0 ) return 1 ;

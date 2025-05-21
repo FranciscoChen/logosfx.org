@@ -224,10 +224,11 @@
     box-shadow: 7px 12px 6px 0 var(--cards-shadow-color), inset -1px -1px 0 0 var(--cards-border-color);
     transform: skew(0deg, 0deg);
     margin-top:0px;
+    transition: all 0.3s ease-out;
 }
 .purpose-photo-below{
-    transform: skew(3deg, -4deg);
-    margin-top:35px;
+    transform: skew(-1deg, -7deg);
+    margin-top:98px;
 }
 .more{
     grid-area:more;
