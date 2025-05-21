@@ -224,7 +224,7 @@
     box-shadow: 7px 12px 6px 0 var(--cards-shadow-color), inset -1px -1px 0 0 var(--cards-border-color);
     transform: skew(0deg, 0deg);
     margin-top:0px;
-    transition: all 0.3s ease-out;
+    transition: all 0.4s ease-out;
 }
 .purpose-photo-below{
     transform: skew(-1deg, -7deg);
@@ -352,7 +352,7 @@
     background-size: cover;
     box-shadow: 7px 12px 6px 0 var(--cards-shadow-color), inset -1px -1px 0 0 var(--cards-border-color);
     margin-top:0px;
-    transition: all 0.3s ease-out;
+    transition: all 0.4s ease-out;
 }
 .teachers-photo-below{
     margin-top:98px;
@@ -444,7 +444,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 7px 12px 6px 0 var(--cards-shadow-color), inset -1px -1px 0 0 var(--cards-border-color);
-    transition: all 0.3s ease-out;
+    transition: all 0.4s ease-out;
 }
 .fellowship1-photo-below{
     transform: rotate(-20deg);
@@ -458,7 +458,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 7px 12px 6px 0 var(--cards-shadow-color), inset -1px -1px 0 0 var(--cards-border-color);
-    transition: all 0.3s ease-out;
+    transition: all 0.4s ease-out;
 }
 .fellowship2-photo-below{
     width: 150%;
@@ -473,7 +473,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 7px 12px 6px 0 var(--cards-shadow-color), inset -1px -1px 0 0 var(--cards-border-color);
-    transition: all 0.3s ease-out;
+    transition: all 0.4s ease-out;
 }
 .fellowship3-photo-below{
     transform: rotate(7deg);
