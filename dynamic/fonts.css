@@ -58,7 +58,7 @@ input, textarea{
 footer{
   font-weight:400;
   font-family:var(--main-text-font);
-  font-size:calc(0.8*var(--main-text-font-size));
+  font-size:calc(0.75*var(--main-text-font-size));
   position:relative;
   z-index:6;
   background:var(--main-background-color);
