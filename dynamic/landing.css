@@ -115,7 +115,7 @@
     grid-area:apply;
     display: flex;
     justify-content: center;
-    font-size: 26px;
+    font-size: calc(17px + 2 * ((100vw - 320px) / 880));
     font-weight: bold;
     animation: scalestretch ease-out 3s;
     animation-iteration-count:1;
@@ -123,6 +123,25 @@
     max-height: 3em;
     animation-delay:4s;
     transform: scaleX(0.94)
+}
+
+@media(min-width: 499.3px) {
+    .apply {
+        font-size: calc(19px + 2 * ((100vw - 320px) / 880));
+    }
+
+}
+
+@media(min-width: 799.3px) {
+    .apply {
+        font-size: calc(21px + 2 * ((100vw - 320px) / 880));
+    }
+}
+
+@media(min-width: 1259.3px) {
+    .apply {
+        font-size: calc(23px + 2 * ((100vw - 320px) / 880));
+    }
 }
 .purpose{
     grid-area:purpose;
