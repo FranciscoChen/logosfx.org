@@ -112,6 +112,9 @@ nav{
   color: #fff;
   background: var(--main-highlight-color);
 }
+.backgroundless:not(.disabled):hover {
+  background:0 0;
+}
 @keyframes menustretch{
     0% {
       transform: scaleX(0.96);
