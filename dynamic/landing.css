@@ -161,8 +161,8 @@
 
 @media(min-width: 799.3px) {
     .purpose {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: "purpose-title purpose-title purpose-title" "purpose-subtitle purpose-subtitle purpose-subtitle" ". purpose-photo-wrap .";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "purpose-title purpose-title purpose-title purpose-title" "purpose-subtitle purpose-subtitle purpose-subtitle purpose-subtitle" ". purpose-photo-wrap purpose-photo-wrap .";
     }
 }
 
@@ -221,7 +221,7 @@
 }
 .purpose-photo{
     height: min(80vw,43vh);
-    width: 93%;
+    width: 84%;
     border-radius: 40px 7px;
     background:url(/images/purpose.jpg);
     background-position: center;

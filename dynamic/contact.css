@@ -9,7 +9,7 @@
     grid-area: main;
     display: grid;
     grid-template-areas: "title" "email" "phone";
-    grid-gap: 2vmin
+    grid-gap: 1vmin
 }
 
 @media(min-width: 499.3px) {
