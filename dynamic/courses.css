@@ -38,15 +38,15 @@
 }
 .title{
     grid-area:title;
-    padding:3vh;
+    padding:2vh;
 }
 .subtitle{
     grid-area:subtitle;
-    padding:3vh;
+    padding:2vh;
 }
 .description{
     grid-area:description;
-    padding:3vh;
+    padding:2vh;
 }
 .bacheloroftheology{
     grid-area:bacheloroftheology;
