@@ -23,6 +23,9 @@ window.onload = () => {
   if (typeof logouncover === 'function'){
     logouncover()
   }
+  if (typeof scrolling === 'function') {
+    scrolling();
+  }
 }
 function uncover(){
   if (document.fonts.check("12px FZKai") === true && document.getElementById('cover').classList.contains('uncover') === false && !document.getElementById('logoscreen')) {

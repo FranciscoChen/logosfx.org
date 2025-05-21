@@ -35,7 +35,7 @@
 
 @keyframes scalestretch{
     0% {
-      transform: scaleX(0.94);
+      transform: scaleX(0.91);
     }
     100% {
       transform: scaleX(1);
@@ -99,7 +99,7 @@
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:4s;
-    transform: scaleX(0.94)
+    transform: scaleX(0.91)
 }
 @media(min-width: 799.3px) {
     .call {
@@ -119,7 +119,7 @@
     animation-fill-mode:forwards;
     max-height: 3em;
     animation-delay:4s;
-    transform: scaleX(0.94)
+    transform: scaleX(0.91)
 }
 
 @media(min-width: 499.3px) {
@@ -178,7 +178,7 @@
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:4s;
-    transform: scaleX(0.94)
+    transform: scaleX(0.91)
 }
 .purpose-subtitle{
     grid-area: purpose-subtitle;
@@ -192,7 +192,7 @@
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:4s;
-    transform: scaleX(0.94)
+    transform: scaleX(0.91)
 }
 @media(min-width: 799.3px) {
     .purpose-title {
@@ -210,7 +210,7 @@
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:4s;
-    transform: scaleX(0.94);
+    transform: scaleX(0.91);
     margin-top: max(5vh,5vw);
 }
 .purpose-photo{
@@ -222,8 +222,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 7px 12px 6px 0 var(--cards-shadow-color), inset -1px -1px 0 0 var(--cards-border-color);
+    transform: skew(0deg, 0deg);
+    margin-top:0px;
 }
-
+.purpose-photo-below{
+    transform: skew(3deg, -4deg);
+    margin-top:35px;
+}
 .more{
     grid-area:more;
     display: flex;
@@ -236,7 +241,7 @@
     animation-fill-mode:forwards;
     max-height: 3em;
     animation-delay:4s;
-    transform: scaleX(0.94)
+    transform: scaleX(0.91)
 }
 
 @media(min-width: 499.3px) {
@@ -300,7 +305,7 @@
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:4s;
-    transform: scaleX(0.94)
+    transform: scaleX(0.91)
 }
 .teachers-subtitle{
     grid-area: teachers-subtitle;
@@ -314,7 +319,7 @@
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:4s;
-    transform: scaleX(0.94)
+    transform: scaleX(0.91)
 }
 @media(min-width: 799.3px) {
     .teachers-title {
@@ -332,7 +337,7 @@
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:4s;
-    transform: scaleX(0.94);
+    transform: scaleX(0.91);
     margin-top: max(5vh,5vw);
 }
 .teachers-photo{
@@ -387,7 +392,7 @@
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:4s;
-    transform: scaleX(0.94)
+    transform: scaleX(0.91)
 }
 .fellowship-subtitle{
     grid-area: fellowship-subtitle;
@@ -401,7 +406,7 @@
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:4s;
-    transform: scaleX(0.94)
+    transform: scaleX(0.91)
 }
 @media(min-width: 799.3px) {
     .fellowship-title {
@@ -419,7 +424,7 @@
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     animation-delay:4s;
-    transform: scaleX(0.94);
+    transform: scaleX(0.91);
     margin-top: max(5vh,5vw);
 }
 .fellowship1-photo{
