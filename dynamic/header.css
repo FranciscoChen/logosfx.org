@@ -473,6 +473,12 @@ nav{
     opacity:1;
   }
 }
+.menu-item-wrap{
+  display:flex;
+}
+.menu-item-link{
+  width:auto;
+}
 .menu-item-expand{
   display:block;
   height:var(--header-height);
