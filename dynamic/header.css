@@ -138,7 +138,7 @@ nav{
     top: var(--header-height);
     left: 0;
     bottom: 0;
-    height:120vh;
+    min-height:120vh;
     overflow:scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
