@@ -69,6 +69,7 @@ footer{
   margin-top: 2vh;
   margin-bottom: 2vh;
   color:var(--secondary-text-color);
+  border-top: solid 2px var(--main-grey-color);
 }
 .footer-privacy {
   display: flex;
