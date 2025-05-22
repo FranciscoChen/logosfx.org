@@ -288,7 +288,25 @@
     grid-template-areas: "teachers-title" "teachers-subtitle" "teachers-photo-wrap";
     grid-template-rows: repeat(2, fit-content(0)) auto;
     border-radius: 31% 71%/11%;
+    animation: borderanimationtwo 4s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
 }
+@keyframes borderanimationtwo {
+    0% {
+      border-radius: 31% 71%/11%;
+    }
+    40% {
+      border-radius: 31% 77%/11%;
+    }
+    70% {
+      border-radius: 70% 77%/11%;
+    }
+    100% {
+      border-radius: 31% 71%/11%;
+    }
+}
+
 
 @media(min-width: 499.3px) {
     .teachers{
