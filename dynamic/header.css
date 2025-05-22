@@ -475,12 +475,14 @@ nav{
   display:flex;
 }
 .menu-item-link{
-  width:auto;
+  width:100%;
 }
 .menu-item-expand{
   display:block;
   height:var(--header-height);
   width:var(--header-height);
+  position:fixed;
+  right:0;
 }
 .menu-item-expand::after{
   content:"^";
