@@ -26,11 +26,26 @@ window.onload = () => {
   if (typeof scrolling === 'function') {
     scrolling();
   }
+  if (typeof menuexpand === 'function') {
+    menuexpand();
+  }
 }
+
 function uncover(){
   if (document.fonts.check("12px FZKai") === true && document.getElementById('cover').classList.contains('uncover') === false && !document.getElementById('logoscreen')) {
     document.getElementById('cover').classList.add('uncover');
     clearInterval(uncoverInterval)
   }
 }
-var uncoverInterval = setInterval(uncover,200)
+var uncoverInterval = setInterval(uncover,200);
+
+function menuexpand(){
+  var eles = document.getElementsByClassName("menu-item-expand")
+  var elelen = eles.length
+  for (var i = 0; i < elelen; i++){
+    eles[i].onclick = function(evt){
+      evt.target.classList.toggle("expanded");
+      evt.target.parentElement.parentElement.nextElementSibling.classList.toggle("sub-menu-visible");
+    }
+  }
+}

@@ -518,3 +518,9 @@ nav{
     display:none;
   }
 }
+.expanded::after {
+  transform: translateY(3px) rotate(0deg);
+}
+.sub-menu-visible {
+  display:block;
+}
