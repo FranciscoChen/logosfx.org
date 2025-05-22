@@ -276,6 +276,7 @@ nav{
     position:fixed;
     top:var(--header-height);
     left:0;
+    padding:1vh 1vw;
   }
   .sub-menu-grid{
     grid-template-areas: "column1 column2 column3 column4 column5" "sub-column1 sub-column2 sub-column3 sub-column4 sub-column5";
@@ -530,8 +531,30 @@ nav{
 .column-link a{
   display:block;
   padding:29.1px 2vw;
+  color:var(--main-text-color);
+  font-weight:700;
+}
+.column-link a:hover{
+  text-decoration:underline;
 }
 .sub-column-link a{
   display:block;
-  padding:29.1px 2vw;
+  padding:1vh 2vw;
+  color:var(--secondary-text-color);
+}
+.sub-column-link a:hover{
+  text-decoration:underline;
+}
+
+@media(max-width: 799.3px) {
+  .column-link a{
+    display:block;
+    padding:29.1px 2vw;
+    padding-left:7vw;
+  }
+  .sub-column-link a{
+    display:block;
+    padding:29.1px 2vw;
+    padding-left:12vw;
+  }
 }
