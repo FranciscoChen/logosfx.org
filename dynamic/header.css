@@ -256,8 +256,6 @@ nav{
 }
 .menu-item:hover + .sub-menu{
   display:block;
-  position:fixed;
-  top:var(--header-height);
   animation: appear ease-out 0.4s;
   animation-iteration-count:1;
   animation-fill-mode:forwards;
@@ -274,6 +272,9 @@ nav{
   display:grid;
 }
 @media(min-width: 499.3px) {
+  .sub-menu{
+  
+  }
   .sub-menu-grid{
     grid-template-areas: "column1" "column2" "column3" "column4" "column5";
     grid-template-columns: repeat(1,auto);
@@ -281,6 +282,11 @@ nav{
   }
 }
 @media(min-width: 799.3px) {
+  .sub-menu{
+    position:fixed;
+    top:var(--header-height);
+    left:0;
+  }
   .sub-menu-grid{
     grid-template-areas: "column1 column2 column3 column4 column5";
     grid-template-columns: repeat(5,auto);
@@ -288,6 +294,11 @@ nav{
   }
 }
 @media(min-width: 1259.3px) {
+  .sub-menu{
+    position:fixed;
+    top:var(--header-height);
+    left:0;
+  }
   .sub-menu-grid{
     grid-template-areas: "column1 column2 column3 column4 column5";
     grid-template-columns: repeat(5,auto);
