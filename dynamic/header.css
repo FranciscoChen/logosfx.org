@@ -138,8 +138,8 @@ nav{
     top: var(--header-height);
     left: 0;
     overflow:scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  /*  -ms-overflow-style: none;
+    scrollbar-width: none;*/
     z-index: 9;
     flex-flow: column;
     width: 100%;
@@ -150,10 +150,11 @@ nav{
     background:var(--header-background-color);
     backdrop-filter:blur(4px);
   }
+  /*
   nav::-webkit-scrollbar {
     display: none;
   }
-
+*/
   .menu-display:checked~#nav{
     display: flex
   }
