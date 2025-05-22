@@ -540,3 +540,11 @@ nav{
     display:none;
   }
 }
+.column-link a{
+  display:block;
+  padding:29.1px 2vw;
+}
+.sub-column-link a{
+  display:block;
+  padding:29.1px 2vw;
+}
