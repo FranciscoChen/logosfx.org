@@ -308,36 +308,6 @@ nav{
     opacity:0.98
   }
 }
-@media(min-width: 1259.3px) {
-  .sub-menu{
-    position:fixed;
-    top:var(--header-height);
-    left:0;
-  }
-  .sub-menu-grid{
-    grid-template-areas: "column1 column2 column3 column4 column5" "sub-column1 sub-column2 sub-column3 sub-column4 sub-column5";
-    grid-template-columns: repeat(5,auto);
-    grid-template-rows: repeat(2, auto);
-  }
-  .menu-item:hover + .sub-menu{
-    display:block;
-    animation: appear ease-out 0.4s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
-  }
-  @keyframes appear{
-      0% {
-        opacity:0
-      }
-      100% {
-        opacity:0.98
-      }
-  }
-  .sub-menu:hover{
-    display:block;
-    opacity:0.98
-  }
-}
 .column1{
   grid-area:column1;
 }
