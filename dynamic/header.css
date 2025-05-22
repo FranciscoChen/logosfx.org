@@ -22,7 +22,7 @@ header{
 }
 .logo{
   font-size:30px;
-  margin: 0px 20px;
+  margin: 0px 1vw;
   display: none;
   max-height: var(--header-height);
 }
@@ -95,7 +95,7 @@ nav{
     color:var(--text-on-background);
 }
 .site-buttons .signin {
-  margin: 0 1rem;
+  margin: 0 1vw;
   transition: none;
   background: 0 0;
   box-shadow: none;
