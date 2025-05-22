@@ -45,7 +45,7 @@ nav{
 }
 .menu-item a{
   display: block;
-  padding: 29.1px 2vw;
+  padding: 29.1px 1vw;
   transition: 1s border-bottom ease-out;
 }
 .activepage {
