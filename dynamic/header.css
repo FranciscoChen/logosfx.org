@@ -311,19 +311,23 @@ nav{
 }
 .column1{
   grid-area:column1;
-  margin:15px 20px 0px 20px;
+  padding:15px 20px 0px 20px;
 }
 .sub-column1{
   grid-area:sub-column1;
   display:none;
   opacity:0;
-  margin:5px 20px;
+  padding:5px 20px;
 }
 .column1:hover + .sub-column1{
   display:block;
-  animation: fadein ease-out 0.4s;
+  animation: appear ease-out 0.4s;
   animation-iteration-count:1;
   animation-fill-mode:forwards;
+}
+.sub-column1:hover{
+  display:block;
+  opacity:0.98
 }
 @media(min-width: 499.3px) {
   .sub-column1{
@@ -347,19 +351,23 @@ nav{
 }
 .column2{
   grid-area:column2;
-  margin:15px 20px 0px 20px;
+  padding:15px 20px 0px 20px;
 }
 .sub-column2{
   grid-area:sub-column2;
   display:none;
   opacity:0;
-  margin:5px 20px;
+  padding:5px 20px;
 }
 .column2:hover + .sub-column2{
   display:block;
-  animation: fadein ease-out 0.4s;
+  animation: appear ease-out 0.4s;
   animation-iteration-count:1;
   animation-fill-mode:forwards;
+}
+.sub-column2:hover{
+  display:block;
+  opacity:0.98
 }
 @media(min-width: 499.3px) {
   .sub-column2{
@@ -383,19 +391,23 @@ nav{
 }
 .column3{
   grid-area:column3;
-  margin:15px 20px 0px 20px;
+  padding:15px 20px 0px 20px;
 }
 .sub-column3{
   grid-area:sub-column3;
   display:none;
   opacity:0;
-  margin:5px 20px;
+  padding:5px 20px;
 }
 .column3:hover + .sub-column3{
   display:block;
-  animation: fadein ease-out 0.4s;
+  animation: appear ease-out 0.4s;
   animation-iteration-count:1;
   animation-fill-mode:forwards;
+}
+.sub-column3:hover{
+  display:block;
+  opacity:0.98
 }
 @media(min-width: 499.3px) {
   .sub-column3{
@@ -419,19 +431,23 @@ nav{
 }
 .column4{
   grid-area:column4;
-  margin:15px 20px 0px 20px;
+  padding:15px 20px 0px 20px;
 }
 .sub-column4{
   grid-area:sub-column4;
   display:none;
   opacity:0;
-  margin:5px 20px;
+  padding:5px 20px;
 }
 .column4:hover + .sub-column4{
   display:block;
-  animation: fadein ease-out 0.4s;
+  animation: appear ease-out 0.4s;
   animation-iteration-count:1;
   animation-fill-mode:forwards;
+}
+.sub-column4:hover{
+  display:block;
+  opacity:0.98
 }
 @media(min-width: 499.3px) {
   .sub-column4{
@@ -455,19 +471,23 @@ nav{
 }
 .column5{
   grid-area:column5;
-  margin:15px 20px 0px 20px;
+  padding:15px 20px 0px 20px;
 }
 .sub-column5{
   grid-area:sub-column5;
   display:none;
   opacity:0;
-  margin:5px 20px;
+  padding:5px 20px;
 }
 .column5:hover + .sub-column5{
   display:block;
-  animation: fadein ease-out 0.4s;
+  animation: appear ease-out 0.4s;
   animation-iteration-count:1;
   animation-fill-mode:forwards;
+}
+.sub-column5:hover{
+  display:block;
+  opacity:0.98
 }
 @media(min-width: 499.3px) {
   .sub-column5{
