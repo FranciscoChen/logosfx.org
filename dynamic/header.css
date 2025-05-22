@@ -140,7 +140,6 @@ nav{
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     background:var(--header-background-color);
-    backdrop-filter:blur(4px);
   }
   nav::-webkit-scrollbar {
     display: none;
@@ -493,8 +492,18 @@ nav{
 @media(max-width: 799.3px) {
   .visible {
     display:block;
-    opacity:1;
     background:none;
+    animation: appear ease-in-out 0.5s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+  }
+  @keyframes appear{
+      0% {
+        opacity:0
+      }
+      100% {
+        opacity:0.98
+      }
   }
 }
 .column-link a{
