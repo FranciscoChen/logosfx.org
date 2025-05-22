@@ -530,6 +530,8 @@ nav{
 .expanded::after {
   transform: translateY(3px) rotate(0deg);
 }
-.sub-menu-visible {
+.visible {
   display:block;
+  opacity:1;
+  background:none;
 }

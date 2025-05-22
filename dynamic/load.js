@@ -27,7 +27,8 @@ window.onload = () => {
     scrolling();
   }
   if (typeof menuexpand === 'function') {
-    menuexpand();
+    menuexpand(document.getElementsByClassName("menu-item-expand"));
+    menuexpand(document.getElementsByClassName("column-expand"));
   }
 }
 
@@ -39,13 +40,12 @@ function uncover(){
 }
 var uncoverInterval = setInterval(uncover,200);
 
-function menuexpand(){
-  var eles = document.getElementsByClassName("menu-item-expand")
-  var elelen = eles.length
+function menuexpand(elements){
+  var elelen = elements.length
   for (var i = 0; i < elelen; i++){
-    eles[i].onclick = function(evt){
+    elements[i].onclick = function(evt){
       evt.target.classList.toggle("expanded");
-      evt.target.parentElement.parentElement.nextElementSibling.classList.toggle("sub-menu-visible");
+      evt.target.parentElement.parentElement.nextElementSibling.classList.toggle("visible");
     }
   }
 }
