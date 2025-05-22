@@ -54,7 +54,7 @@ nav{
 }
 .menu-item a{
   display: block;
-  padding: 29.1px;
+  padding: 29.1px 2vw;
   transition: 1s border-bottom ease-out;
 }
 .activepage {
@@ -260,24 +260,6 @@ nav{
   width:100%;
   background: var(--main-background-color)
 }
-.menu-item:hover + .sub-menu{
-  display:block;
-  animation: appear ease-out 0.4s;
-  animation-iteration-count:1;
-  animation-fill-mode:forwards;
-}
-@keyframes appear{
-    0% {
-      opacity:0
-    }
-    100% {
-      opacity:0.98
-    }
-}
-.sub-menu:hover{
-  display:block;
-  opacity:0.98
-}
 .sub-menu-grid{
   display:grid;
   grid-template-areas: "column1" "sub-column1" "column2" "sub-column2" "column3" "sub-column3" "column4" "sub-column4" "column5" "sub-column5";
@@ -302,6 +284,24 @@ nav{
     grid-template-columns: repeat(5,auto);
     grid-template-rows: repeat(2, auto);
   }
+  .menu-item:hover + .sub-menu{
+    display:block;
+    animation: appear ease-out 0.4s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+  }
+  @keyframes appear{
+      0% {
+        opacity:0
+      }
+      100% {
+        opacity:0.98
+      }
+  }
+  .sub-menu:hover{
+    display:block;
+    opacity:0.98
+  }
 }
 @media(min-width: 1259.3px) {
   .sub-menu{
@@ -314,6 +314,24 @@ nav{
     grid-template-columns: repeat(5,auto);
     grid-template-rows: repeat(2, auto);
   }
+  .menu-item:hover + .sub-menu{
+    display:block;
+    animation: appear ease-out 0.4s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+  }
+  @keyframes appear{
+      0% {
+        opacity:0
+      }
+      100% {
+        opacity:0.98
+      }
+  }
+  .sub-menu:hover{
+    display:block;
+    opacity:0.98
+  }
 }
 .column1{
   grid-area:column1;
@@ -325,16 +343,6 @@ nav{
   opacity:0;
   padding:5px 20px;
 }
-.column1:hover + .sub-column1{
-  display:block;
-  animation: appear ease-out 0.4s;
-  animation-iteration-count:1;
-  animation-fill-mode:forwards;
-}
-.sub-column1:hover{
-  display:block;
-  opacity:0.98
-}
 @media(min-width: 499.3px) {
   .sub-column1{
     display:none;
@@ -345,14 +353,12 @@ nav{
   .sub-column1{
     display:block;
     opacity:1;
-    animation: none;
   }
 }
 @media(min-width: 1259.3px) {
   .sub-column1{
     display:block;
     opacity:1;
-    animation: none;
   }
 }
 .column2{
@@ -365,16 +371,6 @@ nav{
   opacity:0;
   padding:5px 20px;
 }
-.column2:hover + .sub-column2{
-  display:block;
-  animation: appear ease-out 0.4s;
-  animation-iteration-count:1;
-  animation-fill-mode:forwards;
-}
-.sub-column2:hover{
-  display:block;
-  opacity:0.98
-}
 @media(min-width: 499.3px) {
   .sub-column2{
     display:none;
@@ -385,14 +381,12 @@ nav{
   .sub-column2{
     display:block;
     opacity:1;
-    animation: none;
   }
 }
 @media(min-width: 1259.3px) {
   .sub-column2{
     display:block;
     opacity:1;
-    animation: none;
   }
 }
 .column3{
@@ -405,16 +399,6 @@ nav{
   opacity:0;
   padding:5px 20px;
 }
-.column3:hover + .sub-column3{
-  display:block;
-  animation: appear ease-out 0.4s;
-  animation-iteration-count:1;
-  animation-fill-mode:forwards;
-}
-.sub-column3:hover{
-  display:block;
-  opacity:0.98
-}
 @media(min-width: 499.3px) {
   .sub-column3{
     display:none;
@@ -425,14 +409,12 @@ nav{
   .sub-column3{
     display:block;
     opacity:1;
-    animation: none;
   }
 }
 @media(min-width: 1259.3px) {
   .sub-column3{
     display:block;
     opacity:1;
-    animation: none;
   }
 }
 .column4{
@@ -445,16 +427,6 @@ nav{
   opacity:0;
   padding:5px 20px;
 }
-.column4:hover + .sub-column4{
-  display:block;
-  animation: appear ease-out 0.4s;
-  animation-iteration-count:1;
-  animation-fill-mode:forwards;
-}
-.sub-column4:hover{
-  display:block;
-  opacity:0.98
-}
 @media(min-width: 499.3px) {
   .sub-column4{
     display:none;
@@ -465,14 +437,12 @@ nav{
   .sub-column4{
     display:block;
     opacity:1;
-    animation: none;
   }
 }
 @media(min-width: 1259.3px) {
   .sub-column4{
     display:block;
     opacity:1;
-    animation: none;
   }
 }
 .column5{
@@ -485,16 +455,6 @@ nav{
   opacity:0;
   padding:5px 20px;
 }
-.column5:hover + .sub-column5{
-  display:block;
-  animation: appear ease-out 0.4s;
-  animation-iteration-count:1;
-  animation-fill-mode:forwards;
-}
-.sub-column5:hover{
-  display:block;
-  opacity:0.98
-}
 @media(min-width: 499.3px) {
   .sub-column5{
     display:none;
@@ -505,13 +465,49 @@ nav{
   .sub-column5{
     display:block;
     opacity:1;
-    animation: none;
   }
 }
 @media(min-width: 1259.3px) {
   .sub-column5{
     display:block;
     opacity:1;
-    animation: none;
+  }
+}
+.menu-item-expand{
+  display:block;
+  height:var(--header-height);
+  width:var(--header-height);
+}
+.menu-item-expand::after{
+  content:"^";
+  display:block;
+  background-color:var(--main-link-color);
+  width: 0px;
+  height: 3px;
+  transform:translate(0px,-6px);
+  transition: 0.25s width ease-out;
+}
+@media(min-width: 799.3px) {
+  .menu-item-expand{
+    display:none;
+  }
+}
+.column-expand{
+  display:block;
+  height:var(--header-height);
+  width:var(--header-height);
+}
+.column-expand::after{
+  content:"^";
+  display:block;
+  background-color:var(--main-link-color);
+  width: 0px;
+  height: 3px;
+  transform:translate(0px,-6px);
+  transition: 0.25s width ease-out;
+}
+@media(min-width: 799.3px) {
+  .column-expand{
+    display:none;
   }
 }
