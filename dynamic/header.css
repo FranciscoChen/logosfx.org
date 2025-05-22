@@ -285,7 +285,7 @@ nav{
   }
   .menu-item:hover + .sub-menu{
     display:block;
-    animation: appear ease-out 0.4s;
+    animation: appear ease-in-out 0.5s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
   }
