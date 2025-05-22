@@ -483,15 +483,16 @@ nav{
   width:var(--header-height);
   position:fixed;
   right:0;
+  border-left:1px solid var(--cards-shadow-color);
 }
-.menu-item-expand::after{
-  content:"^";
-  display:block;
-  background-color:var(--main-link-color);
-  width: 0px;
-  height: 3px;
-  transform:translate(0px,-6px);
-  transition: 0.25s width ease-out;
+.menu-item-expand::after {
+  content: "^";
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--header-height);
+  transform: translateY(-3px) rotate(180deg);
 }
 @media(min-width: 799.3px) {
   .menu-item-expand{
