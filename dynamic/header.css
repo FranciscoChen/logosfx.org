@@ -268,17 +268,21 @@ nav{
       opacity:0.98
     }
 }
+.sub-menu:hover{
+  display:block;
+  opacity:0.98
+}
 .sub-menu-grid{
   display:grid;
+  grid-template-areas: "column1" "sub-column1" "column2" "sub-column2" "column3" "sub-column3" "column4" "sub-column4" "column5" "sub-column5";
+  grid-template-columns: repeat(1,auto);
+  grid-template-rows: repeat(10, auto);
 }
 @media(min-width: 499.3px) {
-  .sub-menu{
-  
-  }
   .sub-menu-grid{
-    grid-template-areas: "column1" "column2" "column3" "column4" "column5";
+    grid-template-areas: "column1" "sub-column1" "column2" "sub-column2" "column3" "sub-column3" "column4" "sub-column4" "column5" "sub-column5";
     grid-template-columns: repeat(1,auto);
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(10, auto);
   }
 }
 @media(min-width: 799.3px) {
@@ -288,9 +292,9 @@ nav{
     left:0;
   }
   .sub-menu-grid{
-    grid-template-areas: "column1 column2 column3 column4 column5";
+    grid-template-areas: "column1 column2 column3 column4 column5" "sub-column1 sub-column2 sub-column3 sub-column4 sub-column5";
     grid-template-columns: repeat(5,auto);
-    grid-template-rows: repeat(1, auto);
+    grid-template-rows: repeat(2, auto);
   }
 }
 @media(min-width: 1259.3px) {
@@ -300,9 +304,9 @@ nav{
     left:0;
   }
   .sub-menu-grid{
-    grid-template-areas: "column1 column2 column3 column4 column5";
+    grid-template-areas: "column1 column2 column3 column4 column5" "sub-column1 sub-column2 sub-column3 sub-column4 sub-column5";
     grid-template-columns: repeat(5,auto);
-    grid-template-rows: repeat(1, auto);
+    grid-template-rows: repeat(2, auto);
   }
 }
 .column1{
@@ -310,6 +314,7 @@ nav{
   margin:15px 20px 0px 20px;
 }
 .sub-column1{
+  grid-area:sub-column1;
   display:none;
   opacity:0;
   margin:5px 20px;
@@ -345,6 +350,7 @@ nav{
   margin:15px 20px 0px 20px;
 }
 .sub-column2{
+  grid-area:sub-column2;
   display:none;
   opacity:0;
   margin:5px 20px;
@@ -380,6 +386,7 @@ nav{
   margin:15px 20px 0px 20px;
 }
 .sub-column3{
+  grid-area:sub-column3;
   display:none;
   opacity:0;
   margin:5px 20px;
@@ -415,6 +422,7 @@ nav{
   margin:15px 20px 0px 20px;
 }
 .sub-column4{
+  grid-area:sub-column4;
   display:none;
   opacity:0;
   margin:5px 20px;
@@ -450,6 +458,7 @@ nav{
   margin:15px 20px 0px 20px;
 }
 .sub-column5{
+  grid-area:sub-column5;
   display:none;
   opacity:0;
   margin:5px 20px;
