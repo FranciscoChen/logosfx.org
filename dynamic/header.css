@@ -474,6 +474,7 @@ nav{
   width:var(--header-height);
   position:fixed;
   right:0;
+  cursor:pointer;
   border-left:1px solid var(--cards-shadow-color);
 }
 .menu-item-expand::after {
@@ -502,6 +503,7 @@ nav{
   width:var(--header-height);
   position:fixed;
   right:0;
+  cursor:pointer;
   border-left:1px solid var(--cards-shadow-color);
 }
 .column-expand::after {
@@ -532,7 +534,6 @@ nav{
   display:block;
   padding:29.1px 2vw;
   color:var(--main-text-color);
-  font-weight:700;
 }
 .column-link a:hover{
   text-decoration:underline;
@@ -547,6 +548,10 @@ nav{
 }
 
 @media(max-width: 799.3px) {
+  .menu-item a{
+    color:var(--main-text-color);
+    font-weight:700;
+  }
   .column-link a{
     display:block;
     padding:29.1px 2vw;
