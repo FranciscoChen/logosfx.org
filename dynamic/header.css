@@ -152,7 +152,7 @@ nav{
     background:var(--header-background-color);
     backdrop-filter:blur(4px);
   }
-  .nav::-webkit-scrollbar {
+  nav::-webkit-scrollbar {
     display: none;
   }
 
