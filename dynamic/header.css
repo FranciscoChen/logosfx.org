@@ -437,7 +437,7 @@ nav{
 .column6{
   grid-area:column6;
 }
-.sub-column5{
+.sub-column6{
   grid-area:sub-column6;
   display:none;
   opacity:0;
