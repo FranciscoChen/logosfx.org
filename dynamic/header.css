@@ -131,14 +131,17 @@ nav{
       left:0;
     }
 }
-@media (max-width: 980px) {
+@media (max-width: 799.3px) {
   nav {
     display:none;
     position: fixed;
     top: var(--header-height);
     left: 0;
     bottom: 0;
-    height:150vh;
+    height:120vh;
+    overflow:scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     z-index: 9;
     flex-flow: column;
     width: 50%;
@@ -148,6 +151,9 @@ nav{
     animation-fill-mode:forwards;
     background:var(--header-background-color);
     backdrop-filter:blur(4px);
+  }
+  .nav::-webkit-scrollbar {
+    display: none;
   }
 
   .menu-display:checked~#nav{
