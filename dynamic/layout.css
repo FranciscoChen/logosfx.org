@@ -91,10 +91,6 @@ footer{
   margin-top:2vh;
   margin-left:2vw;
 }
-.footer-links:first-child{
-  color:var(--secondary-text-color);
-  font-weight:700;
-}
 .cover {
     position: fixed;
     top: -200vh;
