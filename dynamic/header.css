@@ -60,10 +60,10 @@ nav{
   content:"";
   display:flex;
   position:relative;
-  bottom:4px;
+  bottom:6px;
   background-color:var(--main-link-color);
   width: 0px;
-  height: 1px;
+  height:3px;
   transition: 0.25s width ease-out;
 }
 .menu-item:hover:after {
