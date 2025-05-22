@@ -510,6 +510,7 @@ nav{
   display:block;
   padding:29.1px 1vw;
   color:var(--main-text-color);
+  font-weight:700;
 }
 .column-link a:hover{
   text-decoration:underline;
@@ -532,6 +533,7 @@ nav{
     display:block;
     padding:29.1px 2vw;
     padding-left:7vw;
+    font-weight:400;
   }
   .sub-column-link a{
     display:block;
