@@ -57,7 +57,7 @@ nav{
   background-color:var(--main-link-color);
   width: 0px;
   height: 1px;
-  transform:translate(0px,-6px);
+  transform:translate(0px,-3px);
   transition: 0.25s width ease-out;
 }
 .menu-item:hover:after {
