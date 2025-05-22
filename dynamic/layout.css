@@ -66,8 +66,8 @@ footer{
   justify-content: center;
   align-items: center;
   grid-area:footer-copyright;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   color:var(--secondary-text-color);
   border-top: solid 2px var(--main-grey-color);
 }
