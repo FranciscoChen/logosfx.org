@@ -251,7 +251,6 @@ nav{
 .sub-menu{
   display:none;
   opacity:0;
-  width:100%;
   background: var(--main-background-color)
 }
 @media(min-width: 799.3px) {
