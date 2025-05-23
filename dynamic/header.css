@@ -269,7 +269,6 @@ nav{
   .sub-menu{
     position:fixed;
     top:var(--header-height);
-    left:0;
     padding:2vh 2vw;
   }
   .sub-menu-grid{
