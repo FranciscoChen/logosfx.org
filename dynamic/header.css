@@ -262,16 +262,9 @@ nav{
 }
 .sub-menu-grid{
   display:grid;
-  grid-template-areas: "column1" "sub-column1" "column2" "sub-column2" "column3" "sub-column3" "column4" "sub-column4" "column5" "sub-column5" "column6" "sub-column6";
+  grid-template-areas: "column1" "column2" "column3" "column4" "column5" "column6" "column7";
   grid-template-columns: repeat(1,auto);
-  grid-template-rows: repeat(12, auto);
-}
-@media(min-width: 499.3px) {
-  .sub-menu-grid{
-    grid-template-areas: "column1" "sub-column1" "column2" "sub-column2" "column3" "sub-column3" "column4" "sub-column4" "column5" "sub-column5" "column6" "sub-column6";
-    grid-template-columns: repeat(1,auto);
-    grid-template-rows: repeat(12, auto);
-  }
+  grid-template-rows: repeat(7, auto);
 }
 @media(min-width: 799.3px) {
   .sub-menu{
@@ -281,9 +274,9 @@ nav{
     padding:2vh 2vw;
   }
   .sub-menu-grid{
-    grid-template-areas: "column1 column2 column3 column4 column5 column6" "sub-column1 sub-column2 sub-column3 sub-column4 sub-column5 sub-column6";
-    grid-template-columns: repeat(6,auto);
-    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "column1" "column2" "column3" "column4" "column5" "column6" "column7";
+    grid-template-columns: repeat(1,auto);
+    grid-template-rows: repeat(7, auto);
   }
   .menu-item:hover + .sub-menu{
     display:block;
@@ -459,6 +452,9 @@ nav{
     display:block;
     opacity:1;
   }
+}
+.column7{
+  grid-area:column7;
 }
 .menu-item-wrap{
   display:flex;
