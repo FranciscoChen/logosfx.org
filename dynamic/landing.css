@@ -111,10 +111,12 @@
     justify-content: center;
     padding-bottom:3vh;
     padding-top:1vh;
+    transform: scaleX(0.91)
+}
+.stretch {
     animation: scalestretch ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
-    transform: scaleX(0.91)
 }
 @media(min-width: 799.3px) {
     .call {
@@ -129,11 +131,7 @@
     justify-content: center;
     font-size: calc(17px + 2 * ((100vw - 320px) / 880));
     font-weight: bold;
-    animation: scalestretch ease-out 3s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
     max-height: 3em;
-    transform: scaleX(0.91)
 }
 
 @media(min-width: 499.3px) {
@@ -187,9 +185,6 @@
     display: flex;
     justify-content: center;
     padding-top:max(7vh,7vw);
-    animation: scalestretch ease-out 3s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
     transform: scaleX(0.91)
 }
 .purpose-subtitle{
@@ -199,9 +194,6 @@
     display: flex;
     justify-content: center;
     padding-top:max(2vh,2vw);
-    animation: scalestretch ease-out 3s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
     transform: scaleX(0.91)
 }
 @media(min-width: 799.3px) {
@@ -216,10 +208,6 @@
     grid-area: purpose-photo-wrap;
     display: flex;
     justify-content: center;
-    animation: scalestretch ease-out 3s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
-    transform: scaleX(0.91);
     margin-top: max(5vh,5vw);
 }
 .purpose-photo{
@@ -246,11 +234,7 @@
     font-size: calc(17px + 2 * ((100vw - 320px) / 880));
     font-weight: bold;
     margin: 7vh;
-    animation: scalestretch ease-out 3s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
     max-height: 3em;
-    transform: scaleX(0.91)
 }
 
 @media(min-width: 499.3px) {
@@ -327,9 +311,6 @@
     display: flex;
     justify-content: center;
     padding-top:max(5vh,5vw);
-    animation: scalestretch ease-out 3s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
     transform: scaleX(0.91)
 }
 .teachers-subtitle{
@@ -339,9 +320,6 @@
     display: flex;
     justify-content: center;
     padding-top:max(2vh,2vw);
-    animation: scalestretch ease-out 3s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
     transform: scaleX(0.91)
 }
 @media(min-width: 799.3px) {
@@ -356,10 +334,6 @@
     grid-area: teachers-photo-wrap;
     display: flex;
     justify-content: center;
-    animation: scalestretch ease-out 3s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
-    transform: scaleX(0.91);
     margin-top: max(5vh,5vw);
 }
 .teachers-photo{
@@ -415,9 +389,6 @@
     display: flex;
     justify-content: center;
     padding-top:max(7vh,7vw);
-    animation: scalestretch ease-out 3s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
     transform: scaleX(0.91)
 }
 .fellowship-subtitle{
@@ -427,9 +398,6 @@
     display: flex;
     justify-content: center;
     padding-top:max(2vh,2vw);
-    animation: scalestretch ease-out 3s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
     transform: scaleX(0.91)
 }
 @media(min-width: 799.3px) {
@@ -444,10 +412,6 @@
     grid-area: fellowship-photo-wrap;
     display: flex;
     justify-content: center;
-    animation: scalestretch ease-out 3s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
-    transform: scaleX(0.91);
     margin-top: max(5vh,5vw);
 }
 .fellowship1-photo{

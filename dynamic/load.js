@@ -34,6 +34,7 @@ function unblurElements(elementArray){
   if (length > 0){
     for (var i = 0; i < length; i++){
       elementArray[i].classList.add('unblur');
+      elementArray[i].classList.add('stretch');
     }
   }
 }
