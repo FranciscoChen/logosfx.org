@@ -28,15 +28,15 @@ a:not(.disabled)hover{
 }
 @keyframes loadingunblur{
     0% {
-      filter: blur(12px);
+      filter: blur(7px);
     }
     100% {
-      filter: blur(7px);
+      filter: blur(4px);
     }
 }
 h1{
   font-family:var(--header-text-font);
-  filter:blur(12px);
+  filter:blur(7px);
   transition: filter 0.3s ease-out;
   animation: loadingunblur ease-in 4s;
   animation-iteration-count:1;
@@ -49,7 +49,7 @@ h1{
 }
 h2{
   font-family:var(--header-text-font);
-  filter:blur(12px);
+  filter:blur(7px);
   transition: filter 0.3s ease-out;
   animation: loadingunblur ease-in 4s;
   animation-iteration-count:1;
@@ -60,7 +60,7 @@ h2{
 }
 h3{
   font-family:var(--header-text-font);
-  filter:blur(12px);
+  filter:blur(7px);
   transition: filter 0.3s ease-out;
   animation: loadingunblur ease-in 4s;
   animation-iteration-count:1;
@@ -71,7 +71,7 @@ h3{
 }
 .headings-font{
   font-family:var(--header-text-font);
-  filter:blur(12px);
+  filter:blur(7px);
   transition: filter 0.3s ease-out;
   animation: loadingunblur ease-in 4s;
   animation-iteration-count:1;
