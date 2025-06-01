@@ -59,8 +59,8 @@ nav{
 .menu-item::after{
   content:"";
   display:flex;
-  position:relative;
-  bottom:6px;
+  position:absolute;
+  top:calc(var(--header-height) - 3px);
   background-color:var(--main-link-color);
   width: 0px;
   height:3px;
