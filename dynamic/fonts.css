@@ -78,7 +78,7 @@ h3{
   animation-fill-mode:forwards;
 }
 .unblur{
-  filter:blur(0px);
+  filter:blur(0px) !important;
 }
 p{
   margin-top:1em;
@@ -120,6 +120,7 @@ footer{
 }
 .footer-links a{
   color:var(--secondary-text-color);
+  opacity: 0.7;
 }
 .footer-links a:hover{
   text-decoration:underline;
