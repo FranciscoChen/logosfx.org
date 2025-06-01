@@ -26,10 +26,21 @@ a {
 a:not(.disabled)hover{
   color:var(--main-highlight-color);
 }
+@keyframes loadingunblur{
+    0% {
+      filter: blur(12px);
+    }
+    100% {
+      filter: blur(7px);
+    }
+}
 h1{
   font-family:var(--header-text-font);
   filter:blur(12px);
-  transition: filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-out;
+  animation: loadingunblur ease-in 3s;
+  animation-iteration-count:1;
+  animation-fill-mode:forwards;
   font-size:calc(2*var(--main-text-font-size));
   margin-top:1em;
   margin-bottom:1em;
@@ -39,7 +50,10 @@ h1{
 h2{
   font-family:var(--header-text-font);
   filter:blur(12px);
-  transition: filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-out;
+  animation: loadingunblur ease-in 3s;
+  animation-iteration-count:1;
+  animation-fill-mode:forwards;
   font-size:calc(1.5*var(--main-text-font-size));
   margin-top:1em;
   margin-bottom:1em;
@@ -47,7 +61,10 @@ h2{
 h3{
   font-family:var(--header-text-font);
   filter:blur(12px);
-  transition: filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-out;
+  animation: loadingunblur ease-in 3s;
+  animation-iteration-count:1;
+  animation-fill-mode:forwards;
   font-size:calc(1.2*var(--main-text-font-size));
   margin-top:1em;
   margin-bottom:1em;
@@ -55,7 +72,10 @@ h3{
 .headings-font{
   font-family:var(--header-text-font);
   filter:blur(12px);
-  transition: filter 0.3s ease-in-out;
+  transition: filter 0.3s ease-out;
+  animation: loadingunblur ease-in 3s;
+  animation-iteration-count:1;
+  animation-fill-mode:forwards;
 }
 .unblur{
   filter:blur(0px);
