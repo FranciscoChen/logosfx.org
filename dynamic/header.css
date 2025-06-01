@@ -276,7 +276,7 @@ nav{
     grid-template-columns: repeat(1,auto);
     grid-template-rows: repeat(7, auto);
   }
-  .menu-item:hover + .sub-menu{
+  .menu-item:hover .sub-menu{
     display:block;
     animation: appear ease-in-out 0.5s;
     animation-iteration-count:1;
