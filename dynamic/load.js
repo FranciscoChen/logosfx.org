@@ -23,6 +23,9 @@ window.onload = () => {
   if (typeof scrolling === 'function') {
     scrolling();
   }
+  if (typeof unblur === 'function') {
+    unblur();
+  }
   if (typeof menuexpand === 'function') {
     menuexpand(document.getElementsByClassName("menu-item-expand"));
     menuexpand(document.getElementsByClassName("column-expand"));
