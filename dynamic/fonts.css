@@ -38,7 +38,7 @@ h1{
   font-family:var(--header-text-font);
   filter:blur(12px);
   transition: filter 0.3s ease-out;
-  animation: loadingunblur ease-in 3s;
+  animation: loadingunblur ease-in 4s;
   animation-iteration-count:1;
   animation-fill-mode:forwards;
   font-size:calc(2*var(--main-text-font-size));
@@ -51,7 +51,7 @@ h2{
   font-family:var(--header-text-font);
   filter:blur(12px);
   transition: filter 0.3s ease-out;
-  animation: loadingunblur ease-in 3s;
+  animation: loadingunblur ease-in 4s;
   animation-iteration-count:1;
   animation-fill-mode:forwards;
   font-size:calc(1.5*var(--main-text-font-size));
@@ -62,7 +62,7 @@ h3{
   font-family:var(--header-text-font);
   filter:blur(12px);
   transition: filter 0.3s ease-out;
-  animation: loadingunblur ease-in 3s;
+  animation: loadingunblur ease-in 4s;
   animation-iteration-count:1;
   animation-fill-mode:forwards;
   font-size:calc(1.2*var(--main-text-font-size));
@@ -73,7 +73,7 @@ h3{
   font-family:var(--header-text-font);
   filter:blur(12px);
   transition: filter 0.3s ease-out;
-  animation: loadingunblur ease-in 3s;
+  animation: loadingunblur ease-in 4s;
   animation-iteration-count:1;
   animation-fill-mode:forwards;
 }

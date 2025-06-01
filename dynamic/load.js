@@ -47,7 +47,7 @@ function unblur(){
     clearInterval(unblurInterval)
   }
 }
-var unblurInterval = setInterval(unblur,200);
+var unblurInterval = setInterval(unblur,100);
 
 function menuexpand(elements){
   var elelen = elements.length
