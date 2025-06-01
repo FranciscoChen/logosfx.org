@@ -133,11 +133,11 @@ footer{
     animation: scalestretch ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
-    transform: scaleX(0.91);
+    transform: scaleX(0.94);
 }
 @keyframes scalestretch{
     0% {
-      transform: scaleX(0.91);
+      transform: scaleX(0.94);
     }
     100% {
       transform: scaleX(1);
