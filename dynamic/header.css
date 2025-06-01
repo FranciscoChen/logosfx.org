@@ -58,16 +58,27 @@ nav{
 }
 .menu-item::after{
   content:"";
-  display:flex;
-  position:absolute;
-  top:calc(var(--header-height) - 3px);
+  display:none;
   background-color:var(--main-link-color);
   width: 0px;
   height:3px;
-  transition: 0.25s width ease-out;
+}
+@keyframes loadingbar{
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 100%;
+    }
 }
 .menu-item:hover:after {
   width:100%;
+  display:flex;
+  position:absolute;
+  top:calc(var(--header-height) - 3px);
+  animation: loadingbar ease-out 0.25s;
+  animation-iteration-count:1;
+  animation-fill-mode:forwards;
 }
 .site-buttons {
   display: flex;
