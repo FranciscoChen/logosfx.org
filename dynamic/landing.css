@@ -33,15 +33,6 @@
     }
 }
 
-@keyframes scalestretch{
-    0% {
-      transform: scaleX(0.91);
-    }
-    100% {
-      transform: scaleX(1);
-    }
-}
-
 .seminary{
     grid-area:seminary;
     min-height:80vh;
@@ -111,12 +102,6 @@
     justify-content: center;
     padding-bottom:3vh;
     padding-top:1vh;
-    transform: scaleX(0.91)
-}
-.stretch {
-    animation: scalestretch ease-out 3s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
 }
 @media(min-width: 799.3px) {
     .call {
@@ -185,7 +170,6 @@
     display: flex;
     justify-content: center;
     padding-top:max(7vh,7vw);
-    transform: scaleX(0.91)
 }
 .purpose-subtitle{
     grid-area: purpose-subtitle;
@@ -194,7 +178,6 @@
     display: flex;
     justify-content: center;
     padding-top:max(2vh,2vw);
-    transform: scaleX(0.91)
 }
 @media(min-width: 799.3px) {
     .purpose-title {
@@ -311,7 +294,6 @@
     display: flex;
     justify-content: center;
     padding-top:max(5vh,5vw);
-    transform: scaleX(0.91)
 }
 .teachers-subtitle{
     grid-area: teachers-subtitle;
@@ -320,7 +302,6 @@
     display: flex;
     justify-content: center;
     padding-top:max(2vh,2vw);
-    transform: scaleX(0.91)
 }
 @media(min-width: 799.3px) {
     .teachers-title {
@@ -389,7 +370,6 @@
     display: flex;
     justify-content: center;
     padding-top:max(7vh,7vw);
-    transform: scaleX(0.91)
 }
 .fellowship-subtitle{
     grid-area: fellowship-subtitle;
@@ -398,7 +378,6 @@
     display: flex;
     justify-content: center;
     padding-top:max(2vh,2vw);
-    transform: scaleX(0.91)
 }
 @media(min-width: 799.3px) {
     .fellowship-title {
