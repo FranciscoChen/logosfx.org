@@ -54,7 +54,7 @@ function menuexpand(elements){
   for (var i = 0; i < elelen; i++){
     elements[i].onclick = function(evt){
       evt.target.classList.toggle("expanded");
-      evt.target.parentElement.parentElement.nextElementSibling.classList.toggle("visible");
+      evt.target.parentElement.nextElementSibling.classList.toggle("visible");
     }
   }
 }
