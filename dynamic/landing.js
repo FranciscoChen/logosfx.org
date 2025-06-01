@@ -1,9 +1,3 @@
-function logouncover(){
-  document.getElementById('cover-right').classList.toggle('logo-uncover-right');
-  document.getElementById('cover-left').classList.toggle('logo-uncover-left');
-  setTimeout(()=>{document.getElementById('logoscreen').remove()},3000);
-}
-
 function scrolling(){
   var purpose = document.getElementsByClassName('purpose-photo')[0];
   if (coming(purpose) > 0 ) {

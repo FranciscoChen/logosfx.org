@@ -109,7 +109,6 @@
     text-shadow: 2px 2px 4px var(--text-shadow-on-background);
     display: flex;
     justify-content: center;
-    font-family: var(--header-text-font);
     padding-bottom:3vh;
     padding-top:1vh;
     animation: scalestretch ease-out 3s;
@@ -189,7 +188,6 @@
     font-weight: bold;
     display: flex;
     justify-content: center;
-    font-family: var(--header-text-font);
     padding-top:max(7vh,7vw);
     animation: scalestretch ease-out 3s;
     animation-iteration-count:1;
@@ -203,7 +201,6 @@
     font-weight: bold;
     display: flex;
     justify-content: center;
-    font-family: var(--header-text-font);
     padding-top:max(2vh,2vw);
     animation: scalestretch ease-out 3s;
     animation-iteration-count:1;
@@ -335,7 +332,6 @@
     font-weight: bold;
     display: flex;
     justify-content: center;
-    font-family: var(--header-text-font);
     padding-top:max(5vh,5vw);
     animation: scalestretch ease-out 3s;
     animation-iteration-count:1;
@@ -349,7 +345,6 @@
     font-weight: bold;
     display: flex;
     justify-content: center;
-    font-family: var(--header-text-font);
     padding-top:max(2vh,2vw);
     animation: scalestretch ease-out 3s;
     animation-iteration-count:1;
@@ -428,7 +423,6 @@
     font-weight: bold;
     display: flex;
     justify-content: center;
-    font-family: var(--header-text-font);
     padding-top:max(7vh,7vw);
     animation: scalestretch ease-out 3s;
     animation-iteration-count:1;
@@ -442,7 +436,6 @@
     font-weight: bold;
     display: flex;
     justify-content: center;
-    font-family: var(--header-text-font);
     padding-top:max(2vh,2vw);
     animation: scalestretch ease-out 3s;
     animation-iteration-count:1;
@@ -512,54 +505,4 @@
 }
 .fellowship3-photo-below{
     transform: rotate(7deg);
-}
-
-.logoscreen{
-    width:100vw;
-    height:100vh;
-    top:0;
-    left:0;
-    position:fixed;
-    background-color:var(--main-background-color);
-    z-index:14;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.logo-cover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 16;
-    border-radius: 50%;
-    background-color: var(--main-background-color);
-    height: 320px;
-    width: 320px;
-    transform: translateY(0px);
-    transition: all 2s ease-in-out;
-}
-.logo-uncover-left {
-    transform: translate(-350px,350px);
-    border-radius: 0%;
-    width: 350px;
-    height: 350px;
-}
-.logo-uncover-right {
-    transform: translate(350px,350px);
-    border-radius: 0%;
-    width: 350px;
-    height: 350px;
-}
-.logoscreen-logo {
-    position: relative;
-    z-index: 15;
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.logoscreen-logo img {
-    height: 100%;
-    width: 100%;
 }

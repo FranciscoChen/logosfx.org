@@ -28,6 +28,8 @@ a:not(.disabled)hover{
 }
 h1{
   font-family:var(--header-text-font);
+  filter:blur(12px);
+  transition: filter 0.3s ease-in-out;
   font-size:calc(2*var(--main-text-font-size));
   margin-top:1em;
   margin-bottom:1em;
@@ -36,15 +38,27 @@ h1{
 }
 h2{
   font-family:var(--header-text-font);
+  filter:blur(12px);
+  transition: filter 0.3s ease-in-out;
   font-size:calc(1.5*var(--main-text-font-size));
   margin-top:1em;
   margin-bottom:1em;
 }
 h3{
   font-family:var(--header-text-font);
+  filter:blur(12px);
+  transition: filter 0.3s ease-in-out;
   font-size:calc(1.2*var(--main-text-font-size));
   margin-top:1em;
   margin-bottom:1em;
+}
+.headings-font{
+  font-family:var(--header-text-font);
+  filter:blur(12px);
+  transition: filter 0.3s ease-in-out;
+}
+.unblur{
+  filter:blur(0px);
 }
 p{
   margin-top:1em;

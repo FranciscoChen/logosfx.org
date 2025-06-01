@@ -92,25 +92,6 @@ footer{
   margin-top:2vh;
   margin-left:2vw;
 }
-.cover {
-    position: fixed;
-    top: -200vh;
-    left: -200vw;
-    height: 400vh;
-    width: 400vw;
-    background: var(--main-background-color);
-    z-index: 4;
-    display: block;
-    overflow: hidden;
-    transform: rotate(-29deg);
-    transition: all 1.5s cubic-bezier(1, 0.24, 0.58, 1);
-    box-shadow: 14vw 2px 7px 7px var(--cards-shadow-color), inset 0 -1px 4vw 4vw var(--cards-border-color);
-}
-.uncover {
-    width: 0;
-    height: 1200vh;
-    box-shadow: 1vw 2px 7px 7px var(--cards-shadow-color), inset 0 -1px 4vw 4vw var(--cards-border-color);
-}
 .flex-center{
     display:flex;
     justify-content:center;

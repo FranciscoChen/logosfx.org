@@ -20,9 +20,6 @@ window.onload = () => {
   if (typeof forminit === 'function'){
     forminit()
   }
-  if (typeof logouncover === 'function'){
-    logouncover()
-  }
   if (typeof scrolling === 'function') {
     scrolling();
   }
@@ -32,13 +29,16 @@ window.onload = () => {
   }
 }
 
-function uncover(){
-  if (document.fonts.check("12px FZKai") === true && document.getElementById('cover').classList.contains('uncover') === false && !document.getElementById('logoscreen')) {
-    document.getElementById('cover').classList.add('uncover');
-    clearInterval(uncoverInterval)
+function unblur(){
+  if (document.fonts.check("12px FZKai") === true) {
+    document.getElementsByTagName('h1').forEach((element) => element.classList.add('unblur'));
+    document.getElementsByTagName('h2').forEach((element) => element.classList.add('unblur'));
+    document.getElementsByTagName('h3').forEach((element) => element.classList.add('unblur'));
+    document.getElementsByClassName('headings-font').forEach((element) => element.classList.add('unblur'));
+    clearInterval(unblurInterval)
   }
 }
-var uncoverInterval = setInterval(uncover,200);
+var unblurInterval = setInterval(unblur,200);
 
 function menuexpand(elements){
   var elelen = elements.length
