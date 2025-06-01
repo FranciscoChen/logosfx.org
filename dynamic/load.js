@@ -43,7 +43,7 @@ function unblur(){
     unblurElements(document.getElementsByTagName('h2'))
     unblurElements(document.getElementsByTagName('h3'))
     unblurElements(document.getElementsByTagName('h1'))
-    unblurElements(document.getElementsByClassName('headigns-font'))
+    unblurElements(document.getElementsByClassName('headings-font'))
     clearInterval(unblurInterval)
   }
 }
