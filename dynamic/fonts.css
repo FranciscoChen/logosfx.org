@@ -130,14 +130,14 @@ footer{
   font-weight:700;
 }
 .stretch {
-    transform: scaleX(0.95);
     animation: scalestretch ease-out 3s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
+    transform: scaleX(0.91);
 }
 @keyframes scalestretch{
     0% {
-      transform: scaleX(0.95);
+      transform: scaleX(0.91);
     }
     100% {
       transform: scaleX(1);
