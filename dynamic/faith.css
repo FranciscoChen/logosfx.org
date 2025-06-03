@@ -39,18 +39,20 @@
 }
 .text{
     grid-area:text;
-    padding:3vh;
+    margin:2vmin;
 }
 .hero{
     grid-area:hero;
 }
 .hero-image{
-    background: linear-gradient(199deg, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0)) center center / cover no-repeat, url(/images/faith.jpg);
+    background: linear-gradient(199deg, rgba(0, 0, 0, 0) 7%, rgb(0, 0, 0, 0.7)) center center / cover no-repeat, url(/images/faith.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 50%;
+    height: 33vh;
+    box-shadow: 7px 12px 7px 0 var(--cards-shadow-color), inset -1px -1px 0 0 var(--cards-border-color);
+    border-radius; 40px 7px;
 }
 .hero-text {
     text-align: center;
