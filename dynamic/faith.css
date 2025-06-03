@@ -5,10 +5,10 @@
     margin-top: var(--site-header-margin);
 }
 
-.home {
+.main{
     grid-area: main;
     display: grid;
-    grid-template-areas: "news";
+    grid-template-areas: "hero" "text";
     grid-gap: 2vmin
 }
 
@@ -16,7 +16,7 @@
     .home {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto repeat(3, fit-content(0));
-        grid-template-areas: "news news";
+        grid-template-areas: "hero hero" "text text";
     }
 
 }
@@ -25,7 +25,7 @@
     .home {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: "news news news";
+        grid-template-areas: "hero hero hero" "text text text";
     }
 
 }
@@ -34,14 +34,30 @@
     .home {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: ". news news .";
+        grid-template-areas: "hero hero hero hero" ". text text .";
     }
 }
-.news{
-    grid-area:news;
+.text{
+    grid-area:text;
     padding:3vh;
 }
-.news-image{
-    width:100%;
-    height:auto;
+.hero{
+    grid-area:hero;
+}
+.hero-image{
+    background: linear-gradient(199deg, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0)) center center / cover no-repeat, url(/images/faith.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 50%;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-on-background);
+    text-shadow: 3px 3px 4px var(--text-shadow-on-background);
 }
