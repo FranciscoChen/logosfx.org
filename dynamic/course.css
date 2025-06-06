@@ -12,6 +12,7 @@
     grid-gap: 2vmin
 }
 div.main div:nth-child(5n-2){
+    background-color: var(--secondary-background-color);
     border-radius: 0 0 70% 50%/7%;
     animation: borderanimation 4s;
     animation-fill-mode:forwards;
@@ -32,6 +33,7 @@ div.main div:nth-child(5n-2){
     }
 }
 div.main div:nth-child(5n){
+    background-color: var(--secondary-background-color);
     border-radius: 31% 71%/11%;
     animation: borderanimationtwo 4s;
     animation-fill-mode:forwards;
