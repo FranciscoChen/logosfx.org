@@ -88,6 +88,14 @@ p{
   margin-top:1em;
   margin-bottom:1em;
 }
+ul{
+  margin-top:1em;
+  margin-bottom:1em;
+}
+li{
+  margin-top:1em;
+  margin-bottom:1em;
+}
 input, textarea{
   font-weight:400;
   font-family:var(--main-text-font);
