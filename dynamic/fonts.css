@@ -2,6 +2,7 @@
   --main-text-font: "Times New Roman",Georgia,"宋体",SimSun,sans-serif;
   --main-text-font-size: 16px;
   --header-text-font: "Times New Roman",Georgia,FZKai,FangSong,serif;
+  --main-text-letter-spacing: 0.7px;
 }
 @font-face{
   font-family: 'FZKai';
@@ -11,6 +12,7 @@ html{
   font-weight:400;
   font-family:var(--main-text-font);
   font-size:var(--main-text-font-size);
+  letter-spacing:var(--main-text-letter-spacing);
 }
 body {
   color:var(--main-text-color);
