@@ -46,7 +46,7 @@ h1{
   animation-iteration-count:1;
   animation-fill-mode:forwards;
   font-size:calc(2*var(--main-text-font-size));
-  margin-top:1em;
+  margin-top:2em;
   margin-bottom:1em;
   display:flex;
   justify-content:center;
@@ -59,7 +59,7 @@ h2{
   animation-iteration-count:1;
   animation-fill-mode:forwards;
   font-size:calc(1.5*var(--main-text-font-size));
-  margin-top:1em;
+  margin-top:2em;
   margin-bottom:1em;
 }
 h3{
@@ -70,7 +70,7 @@ h3{
   animation-iteration-count:1;
   animation-fill-mode:forwards;
   font-size:calc(1.2*var(--main-text-font-size));
-  margin-top:1em;
+  margin-top:2em;
   margin-bottom:1em;
 }
 .headings-font{
@@ -86,11 +86,11 @@ h3{
 }
 p{
   margin-top:1em;
-  margin-bottom:1em;
+  margin-bottom:2em;
 }
 ul{
   margin-top:1em;
-  margin-bottom:1em;
+  margin-bottom:2em;
 }
 li{
   margin-top:1em;
