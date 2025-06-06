@@ -1,6 +1,6 @@
 :root{
   --main-text-font: "Times New Roman",Georgia,"宋体",SimSun,sans-serif;
-  --main-text-font-size: 17px;
+  --main-text-font-size: 16px;
   --header-text-font: "Times New Roman",Georgia,FZKai,FangSong,serif;
 }
 @font-face{
