@@ -13,23 +13,23 @@
 }
 div.main div:nth-child(5n-2){
     background-color: var(--secondary-background-color);
-    border-radius: 0 0 70% 50%/7%;
+    border-radius: 70% 50%/7%;
     animation: borderanimation 4s;
     animation-fill-mode:forwards;
     animation-iteration-count:infinite;
 }
 @keyframes borderanimation {
     0% {
-      border-radius: 0 0 70% 50%/7%;
+      border-radius: 70% 50%/7%;
     }
     40% {
-      border-radius: 0 0 70% 54%/7%;
+      border-radius: 70% 54%/7%;
     }
     70% {
-      border-radius: 0 0 57% 54%/7%;
+      border-radius: 57% 54%/7%;
     }
     100% {
-      border-radius: 0 0 70% 50%/7%;
+      border-radius: 70% 50%/7%;
     }
 }
 div.main div:nth-child(5n){
