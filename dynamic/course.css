@@ -11,7 +11,7 @@
     grid-template-areas: "title" "purpose" "qualifications" "application" "graduation" "scope";
     grid-gap: 2vmin
 }
-.main:nth-child(5n-2){
+div.main div:nth-child(5n-2){
     border-radius: 0 0 70% 50%/7%;
     animation: borderanimation 4s;
     animation-fill-mode:forwards;
@@ -31,7 +31,7 @@
       border-radius: 0 0 70% 50%/7%;
     }
 }
-.main:nth-child(5n){
+div.main div:nth-child(5n){
     border-radius: 31% 71%/11%;
     animation: borderanimationtwo 4s;
     animation-fill-mode:forwards;
