@@ -8,7 +8,6 @@
 .login {
     grid-area: main;
     display: grid;
-    grid-template-rows: 20vh 40vh;
     grid-template-areas: "title" "form";
     grid-gap: 2vmin
 }
