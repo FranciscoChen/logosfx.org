@@ -51,8 +51,24 @@
     background-size: cover;
     position: relative;
     height: 33vmin;
-    box-shadow: 7px 12px 7px 0 var(--cards-shadow-color), inset -1px -1px 0 0 var(--cards-border-color);
-    border-radius: 40px 7px;
+    border-radius: 0 0 70% 50%/7%;
+    animation: borderanimation 4s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+}
+@keyframes borderanimation {
+    0% {
+      border-radius: 0 0 70% 50%/7%;
+    }
+    40% {
+      border-radius: 0 0 70% 54%/7%;
+    }
+    70% {
+      border-radius: 0 0 57% 54%/7%;
+    }
+    100% {
+      border-radius: 0 0 70% 50%/7%;
+    }
 }
 .hero-text {
     text-align: center;
