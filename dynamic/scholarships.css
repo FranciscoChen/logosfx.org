@@ -11,6 +11,9 @@
     grid-template-areas: "hero" "text" "text2" "text3";
     grid-gap: 2vmin
 }
+div.main div:nth-child(n){
+  padding:3vh;
+}
 div.main div:nth-child(5n-2){
     background-color: var(--secondary-background-color);
     border-radius: 70% 50%/7%;
@@ -81,15 +84,12 @@ div.main div:nth-child(5n){
 }
 .text{
     grid-area:text;
-    margin:2vmin;
 }
 .text2{
     grid-area:text2;
-    margin:2vmin;
 }
 .text3{
     grid-area:text3;
-    margin:2vmin;
 }
 .hero{
     grid-area:hero;
@@ -102,11 +102,11 @@ div.main div:nth-child(5n){
     position: relative;
     height: 33vmin;
     border-radius: 0 0 70% 50%/7%;
-    animation: borderanimation 4s;
+    animation: heroborderanimation 4s;
     animation-fill-mode:forwards;
     animation-iteration-count:infinite;
 }
-@keyframes borderanimation {
+@keyframes heroborderanimation {
     0% {
       border-radius: 0 0 70% 50%/7%;
     }
