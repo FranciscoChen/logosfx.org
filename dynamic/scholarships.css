@@ -11,7 +11,7 @@
     grid-template-areas: "hero" "text" "text2" "text3";
     grid-gap: 2vmin
 }
-div.main div:nth-child(n){
+div.main div:nth-child(n+2){
   padding:3vh;
 }
 div.main div:nth-child(5n-2){
