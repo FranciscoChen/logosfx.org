@@ -68,8 +68,8 @@ footer{
   grid-area:footer-copyright;
   padding-top: 2vh;
   padding-bottom: 2vh;
-  color:var(--main-link-color);
-  border-top: solid 2px var(--main-artistic-color);
+  color:var(--secondary-text-color);
+  border-top: solid 2px var(--main-grey-color);
 }
 .footer-privacy {
   display: flex;
