@@ -8,7 +8,7 @@
 .main{
     grid-area: main;
     display: grid;
-    grid-template-areas: "hero" "text";
+    grid-template-areas: "hero" "text" "text2";
     grid-gap: 2vmin;
 }
 div.main div:nth-child(n+2){
@@ -19,7 +19,7 @@ div.main div:nth-child(n+2){
     .main{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto repeat(3, fit-content(0));
-        grid-template-areas: "hero hero" "text text";
+        grid-template-areas: "hero hero" "text text" "text2 text2";
     }
 
 }
@@ -28,7 +28,7 @@ div.main div:nth-child(n+2){
     .main{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: "hero hero hero" "text text text";
+        grid-template-areas: "hero hero hero" "text text text" "text2 text2 text2";
     }
 
 }
@@ -37,11 +37,40 @@ div.main div:nth-child(n+2){
     .main {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: "hero hero hero hero" "text text text text";
+        grid-template-areas: "hero hero hero hero" "text text text text" "text2 text2 text2";
     }
 }
 .text{
     grid-area:text;
+}
+.text2{
+    grid-area:text2;
+    background:var(--main-artistic-color);
+    border-radius: 70% 77% 0px 0px /7%;
+    padding-bottom: 3px;
+}
+.text2-bg{
+    color:var(--main-background-color);
+    background-color:var(--contrast-background-color);
+    background: linear-gradient(199deg, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0));
+    border-radius: 70% 71% 0px 0px/11%;
+    animation: borderanimationtwo 4s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+}
+@keyframes borderanimationtwo {
+    0% {
+      border-radius: 70% 71% 0px 0px/11%;
+    }
+    40% {
+      border-radius: 70% 70% 0px 0px/11%;
+    }
+    70% {
+      border-radius: 71% 70% 0px 0px/11%;
+    }
+    100% {
+      border-radius: 71% 71% 0px 0px/11%;
+    }
 }
 .hero{
     grid-area:hero;
