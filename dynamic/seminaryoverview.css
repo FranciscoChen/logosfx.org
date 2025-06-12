@@ -91,7 +91,7 @@ div.main div:nth-child(n+2){
   margin:5vmin;
 }
 .photo-modena{
-    background:url(/images/modena.jpg);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1)), url(/images/modena.jpg);  
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
