@@ -37,7 +37,7 @@ div.main div:nth-child(n+2){
     .main {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: "hero hero hero hero" ". text text .";
+        grid-template-areas: "hero hero hero hero" "text text text text";
     }
 }
 .text{
