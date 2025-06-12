@@ -36,6 +36,14 @@
 .seminary{
     grid-area:seminary;
     min-height:80vh;
+    background:var(--main-artistic-color);
+    padding-bottom: 3px;
+    border-radius:0px 0px 42% 91% / 4%;
+}
+.seminary-grid{
+    display: grid;
+    grid-template-areas: "spacer" "call" "apply";
+    grid-template-rows: repeat(3, fit-content(0)) auto;
     background:linear-gradient(199deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1)), url(/images/ceremony.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -44,14 +52,7 @@
     animation: borderanimation 4s;
     animation-fill-mode:forwards;
     animation-iteration-count:infinite;
-}
-.seminary-grid{
-    display: grid;
-    grid-template-areas: "spacer" "call" "apply";
-    grid-template-rows: repeat(3, fit-content(0)) auto;
-    background:var(--main-artistic-color);
-    border-radius:0px 0px 42% 91% / 4%;
-    padding-bottom: 3px;
+    min-height:80vh;
 }
 @keyframes borderanimation {
     0% {
@@ -246,16 +247,17 @@
 .teachers{
     grid-area:teachers;
     min-height:max(70vh,50vw);
+    background:var(--main-artistic-color);
+    border-radius: 77% 77%/7%;
+    padding-bottom: 3px;
+}
+.teachers-grid{
     background-color: var(--main-highlight-color);
+    min-height:max(70vh,50vw);
     border-radius: 70% 71%/11%;
     animation: borderanimationtwo 4s;
     animation-fill-mode:forwards;
     animation-iteration-count:infinite;
-}
-.teachers-grid{
-    background:var(--main-artistic-color);
-    border-radius: 77% 77%/7%;
-    padding-bottom: 3px;
     display: grid;
     grid-template-areas: "teachers-title" "teachers-subtitle" "teachers-photo-wrap";
     grid-template-rows: repeat(2, fit-content(0)) auto;
