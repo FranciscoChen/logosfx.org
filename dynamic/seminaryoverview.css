@@ -94,7 +94,9 @@ div.main div:nth-child(n+2){
     background:url(/images/modena.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width:100%;
     height:100%;
+    border-radius: 20px 3px;
+    box-shadow:4px 3px 7px var(--main-artistic-color);
 }
