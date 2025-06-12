@@ -27,7 +27,7 @@ div.main div:nth-child(n+2){
 @media(min-width: 799.3px) {
     .main{
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
+        grid-template-rows: auto repeat(3, fit-content(0)) auto auto fit-content(0);
         grid-template-areas: "hero hero hero" "text text text" "text2 text2 text2";
     }
 
@@ -36,8 +36,8 @@ div.main div:nth-child(n+2){
 @media(min-width: 1259.3px) {
     .main {
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: "hero hero hero hero" "text text text text" "text2 text2 text2";
+        grid-template-rows: repeat(3, fit-content(0)) auto minmax(0, 1fr);
+        grid-template-areas: "hero hero hero hero" "text text text text" "text2 text2 text2 text2";
     }
 }
 .text{
