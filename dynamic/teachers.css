@@ -125,7 +125,7 @@ div.main div:nth-child(5n){
     grid-area:hero;
 }
 .hero-image{
-    background: linear-gradient(199deg, rgba(0, 0, 0, 0) 7%, rgb(0, 0, 0, 0.7)) center center / cover no-repeat, url(/images/bible.jpg);
+    background: linear-gradient(199deg, rgba(0, 0, 0, 0) 7%, rgb(0, 0, 0, 0.7)) center center / cover no-repeat, url(/images/herobg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
