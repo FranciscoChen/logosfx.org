@@ -37,8 +37,8 @@ footer{
   grid-template-rows: repeat(4, auto);
   max-width: 1800px;
   padding: 5px;
-  padding-top: 3vh;
-  border-top: solid 2px var(--main-artistic-color);
+  margin-top: 3vh;
+  border-top: solid 2px var(--main-grey-color);
 }
 @media(min-width: 499.3px) {
   .about{
