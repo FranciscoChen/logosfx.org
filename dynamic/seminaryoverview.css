@@ -43,34 +43,27 @@ div.main div:nth-child(n+2){
 .text{
     grid-area:text;
 }
-.text2{
-    grid-area:text2;
-    background:var(--main-artistic-color);
-    border-radius: 70% 77% 0px 0px /7%;
-    padding-bottom: 3px;
-}
-.text2-bg{
-    color:var(--main-background-color);
-    background: linear-gradient(199deg, var(--contrast-background-color), var(--contrast-background-color));
-    border-radius: 70% 71% 0px 0px/11%;
+.text2 {
+    grid-area: text2;
+    background: var(--contrast-background-color);
+    border-radius: 12% 79% 0px 0px /7%;
+    border-top: solid 4px var(--main-artistic-color);
     animation: borderanimationtwo 4s;
     animation-fill-mode:forwards;
     animation-iteration-count:infinite;
-    height:100%;
-    width:100%;
 }
 @keyframes borderanimationtwo {
     0% {
-      border-radius: 70% 71% 0px 0px/11%;
+      border-radius: 12% 79% 0px 0px /7%;
     }
     40% {
-      border-radius: 70% 70% 0px 0px/11%;
+      border-radius: 10% 77% 0px 0px /4%;
     }
     70% {
-      border-radius: 71% 70% 0px 0px/11%;
+      border-radius: 11% 78% 0px 0px /5%;
     }
     100% {
-      border-radius: 71% 71% 0px 0px/11%;
+      border-radius: 12% 79% 0px 0px /7%;
     }
 }
 .hero{
