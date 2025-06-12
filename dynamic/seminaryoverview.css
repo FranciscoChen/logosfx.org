@@ -45,6 +45,7 @@ div.main div:nth-child(n+2){
 }
 .text2 {
     grid-area: text2;
+    color:var(--main-background-color);
     background: var(--contrast-background-color);
     border-radius: 12% 79% 0px 0px /7%;
     border-top: solid 4px var(--main-artistic-color);
