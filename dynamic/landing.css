@@ -241,27 +241,27 @@
 .teachers{
     grid-area:teachers;
     min-height:max(70vh,50vw);
-    background-color: var(--secondary-background-color);
+    background-color: var(--main-highlight-color);
     display: grid;
     grid-template-areas: "teachers-title" "teachers-subtitle" "teachers-photo-wrap";
     grid-template-rows: repeat(2, fit-content(0)) auto;
-    border-radius: 31% 71%/11%;
+    border-radius: 70% 71%/11%;
     animation: borderanimationtwo 4s;
     animation-fill-mode:forwards;
     animation-iteration-count:infinite;
 }
 @keyframes borderanimationtwo {
     0% {
-      border-radius: 31% 71%/11%;
+      border-radius: 70% 71%/11%;
     }
     40% {
-      border-radius: 31% 77%/11%;
+      border-radius: 70% 70%/11%;
     }
     70% {
-      border-radius: 70% 77%/11%;
+      border-radius: 71% 70%/11%;
     }
     100% {
-      border-radius: 31% 71%/11%;
+      border-radius: 71% 71%/11%;
     }
 }
 
@@ -294,6 +294,7 @@
     display: flex;
     justify-content: center;
     padding-top:max(5vh,5vw);
+    color:var(--main-background-color);
 }
 .teachers-subtitle{
     grid-area: teachers-subtitle;
@@ -302,6 +303,7 @@
     display: flex;
     justify-content: center;
     padding-top:max(2vh,2vw);
+    color:var(--main-background-color);
 }
 @media(min-width: 799.3px) {
     .teachers-title {
@@ -326,7 +328,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 7px 12px 6px 0 var(--cards-shadow-color), inset -1px -1px 0 0 var(--cards-border-color);
+    box-shadow: 3px 4px 7px 0 var(--main-artistic-color, inset -1px -1px 0 0 var(--main-artistic-color));
     margin-top:0px;
     transition: all 0.4s ease-out;
 }
