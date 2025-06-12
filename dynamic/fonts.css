@@ -10,6 +10,11 @@
     --main-text-font-size: 16px;
   }
 }
+@media (min-width: 1259.3px) {
+  :root{
+    --main-text-font-size: 17px;
+  }
+}
 @font-face{
   font-family: 'FZKai';
   src:url('https://logosfx.org/FZKai-Z03S.woff2');
