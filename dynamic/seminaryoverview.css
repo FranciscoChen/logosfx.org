@@ -51,12 +51,13 @@ div.main div:nth-child(n+2){
 }
 .text2-bg{
     color:var(--main-background-color);
-    background-color:var(--contrast-background-color);
-    background: linear-gradient(199deg, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0));
+    background: linear-gradient(199deg, var(--contrast-background-color), var(--contrast-background-color));
     border-radius: 70% 71% 0px 0px/11%;
     animation: borderanimationtwo 4s;
     animation-fill-mode:forwards;
     animation-iteration-count:infinite;
+    height:100%;
+    width:100%;
 }
 @keyframes borderanimationtwo {
     0% {
