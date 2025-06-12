@@ -16,7 +16,7 @@
   --main-attention-color: #fe8d59;
   --main-grey-color: #303134;
   --secondary-grey-color: #4d5156;
-  --header-background-color: rgba(32,33,36,0.9);
+  --header-background-color: rgba(32,33,36,1);
   --text-on-background: #fff;
   --text-shadow-on-background: #000;
 }
