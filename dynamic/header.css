@@ -210,7 +210,7 @@ nav{
   }
 
   .menu-bars,.menu-bars::after,.menu-bars::before {
-    background-color:var(--main-text-color);
+    background-color:var(--main-link-color);
     width: 40px;
     height: 3px;
     position: absolute
@@ -547,7 +547,7 @@ nav{
 .column-link a{
   display:block;
   padding:29.1px 1vw;
-  color:var(--main-text-color);
+  color:var(--main-link-color);
   font-weight:700;
 }
 .column-link a:hover{
@@ -556,7 +556,8 @@ nav{
 .sub-column-link a{
   display:block;
   padding:1vh 1vw;
-  color:var(--secondary-text-color);
+  color:var(--main-link-color);
+  opacity:0.9;
 }
 .sub-column-link a:hover{
   text-decoration:underline;
