@@ -134,14 +134,14 @@ footer{
   }
 }
 .footer-links a{
-  color:var(--secondary-text-color);
+  color:var(--main-link-color);
   opacity: 0.7;
 }
 .footer-links a:hover{
   text-decoration:underline;
 }
 .footer-links:first-child{
-  color:var(--main-text-color);
+  color:var(--main-link-color);
   font-weight:700;
 }
 .stretch {
