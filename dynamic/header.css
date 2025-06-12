@@ -6,7 +6,7 @@ header{
   display:flex;
   justify-content:space-between;
   font-family:var(--main-text-font);
-  color:var(--main-text-color);
+  color:var(--main-link-color);
   z-index:7;
   height: var(--header-height);
   background:var(--main-background-color);
@@ -565,7 +565,7 @@ nav{
 
 @media(max-width: 799.3px) {
   .menu-item a{
-    color:var(--main-text-color);
+    color:var(--main-link-color);
     font-weight:700;
   }
   .column-link a{
