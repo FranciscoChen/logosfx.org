@@ -38,7 +38,7 @@
     min-height:80vh;
     background:var(--main-artistic-color);
     padding-bottom: 3px;
-    border-radius:0px 0px 42% 91% / 5%;
+    border-radius:0px 0px 42% 91% / 3%;
 }
 .seminary-grid{
     display: grid;
@@ -83,6 +83,9 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
         grid-template-areas: "spacer spacer spacer" "call call ." ". . apply";
+    }
+    .seminary{
+      border-radius:0px 0px 42% 91% / 5%;
     }
 }
 
