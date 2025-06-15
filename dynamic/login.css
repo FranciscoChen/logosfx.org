@@ -36,7 +36,6 @@
 }
 .hero{
     grid-area:hero;
-    padding:2vh;
 }
 .form{
     grid-area:form;
