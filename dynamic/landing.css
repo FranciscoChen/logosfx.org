@@ -38,7 +38,7 @@
     min-height:80vh;
     background:var(--main-artistic-color);
     padding-bottom: 4px;
-    border-radius:0px 0px 42% 91% / 6%;
+    border-radius:0px 0px 70% 70% / 7%;
 }
 .seminary-grid{
     display: grid;
