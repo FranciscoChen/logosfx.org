@@ -46,6 +46,7 @@
     background:var(--main-artistic-color);
     border-radius:0px 0px 42% 91% / 4%;
     padding-bottom: 3px;
+    height: 33vmin;
 }
 .hero-image{
     background: linear-gradient(199deg, rgba(0, 0, 0, 0) 7%, rgb(0, 0, 0, 0.7)) center center / cover no-repeat, url(/images/herobg.jpg);
