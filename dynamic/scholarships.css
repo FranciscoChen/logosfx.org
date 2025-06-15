@@ -14,46 +14,27 @@
 div.main div:nth-child(n+2){
   padding:3vh;
 }
-div.main div:nth-child(5n-2){
-    background-color: var(--secondary-background-color);
-    border-radius: 70% 50%/7%;
-    animation: borderanimation 4s;
-    animation-fill-mode:forwards;
-    animation-iteration-count:infinite;
-}
-@keyframes borderanimation {
-    0% {
-      border-radius: 70% 50%/7%;
-    }
-    40% {
-      border-radius: 70% 54%/7%;
-    }
-    70% {
-      border-radius: 57% 54%/7%;
-    }
-    100% {
-      border-radius: 70% 50%/7%;
-    }
-}
-div.main div:nth-child(5n){
-    background-color: var(--secondary-background-color);
-    border-radius: 31% 71%/11%;
-    animation: borderanimationtwo 4s;
-    animation-fill-mode:forwards;
-    animation-iteration-count:infinite;
+.text2 {
+  color: var(--main-background-color);
+  background: var(--contrast-background-color);
+  border-radius: 12% 79% /7%;
+  border-top: solid 4px var(--main-artistic-color);
+  animation: borderanimationtwo 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
 }
 @keyframes borderanimationtwo {
     0% {
-      border-radius: 31% 71%/11%;
+      border-radius: 12% 79% /7%;
     }
     40% {
-      border-radius: 31% 77%/11%;
+      border-radius: 10% 77% /5%;
     }
     70% {
-      border-radius: 70% 77%/11%;
+      border-radius: 11% 78% /6%;
     }
     100% {
-      border-radius: 31% 71%/11%;
+      border-radius: 12% 79% /7%;
     }
 }
 
