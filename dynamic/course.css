@@ -8,7 +8,7 @@
 .main{
     grid-area: main;
     display: grid;
-    grid-template-areas: "title" "purpose" "qualifications" "application" "graduation" "scope";
+    grid-template-areas: "hero" "purpose" "qualifications" "application" "graduation" "scope";
     grid-gap: 2vmin
 }
 div.main div:nth-child(5n-2){
@@ -58,7 +58,7 @@ div.main div:nth-child(5n){
     .main{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto repeat(3, fit-content(0));
-        grid-template-areas: "title title" "purpose purpose" "qualifications qualifications" "application application" "graduation graduation" "scope scope";
+        grid-template-areas: "hero hero" "purpose purpose" "qualifications qualifications" "application application" "graduation graduation" "scope scope";
     }
 
 }
@@ -67,7 +67,7 @@ div.main div:nth-child(5n){
     .main{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: ". title ." ". purpose ." ". qualifications ." ". application ." ". graduation ." ". scope .";
+        grid-template-areas: ". hero ." ". purpose ." ". qualifications ." ". application ." ". graduation ." ". scope .";
     }
 
 }
@@ -76,7 +76,7 @@ div.main div:nth-child(5n){
     .main{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: ". title title ." ". purpose purpose ." ". qualifications qualifications ." ". application application ." ". graduation graduation ." ". scope scope .";
+        grid-template-areas: ". hero hero ." ". purpose purpose ." ". qualifications qualifications ." ". application application ." ". graduation graduation ." ". scope scope .";
     }
 }
 .purpose{
@@ -103,7 +103,7 @@ div.main div:nth-child(5n){
     grid-area:scope;
     padding:3vh;
 }
-.title{
-    grid-area:title;
+.hero{
+    grid-area:hero;
     padding:3vh;
 }
