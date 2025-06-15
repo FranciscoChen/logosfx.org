@@ -14,10 +14,10 @@
 div.main div:nth-child(n+2){
   padding:3vh;
 }
-.text4, .text5, .text6, .text9, .text10, .text11 {
+.text4,  .text7, .text12 {
   color: var(--main-background-color);
   background: var(--contrast-background-color);
-  border-radius: 12% 79% 0px 0px /7%;
+  border-radius: 12% 79% /7%;
   border-top: solid 4px var(--main-artistic-color);
   animation: borderanimationtwo 4s;
   animation-fill-mode: forwards;
@@ -25,16 +25,16 @@ div.main div:nth-child(n+2){
 }
 @keyframes borderanimationtwo {
     0% {
-      border-radius: 12% 79% 0px 0px /7%;
+      border-radius: 12% 79% /7%;
     }
     40% {
-      border-radius: 10% 77% 0px 0px /5%;
+      border-radius: 10% 77% /5%;
     }
     70% {
-      border-radius: 11% 78% 0px 0px /6%;
+      border-radius: 11% 78% /6%;
     }
     100% {
-      border-radius: 12% 79% 0px 0px /7%;
+      border-radius: 12% 79% /7%;
     }
 }
 
