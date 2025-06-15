@@ -38,7 +38,6 @@
 }
 .hero{
     grid-area:hero;
-    padding:1vh;
 }
 .subtitle{
     grid-area:subtitle;

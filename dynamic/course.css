@@ -105,5 +105,4 @@ div.main div:nth-child(5n){
 }
 .hero{
     grid-area:hero;
-    padding:3vh;
 }
