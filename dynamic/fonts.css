@@ -151,7 +151,7 @@ footer{
   font-weight:700;
 }
 .stretch {
-    animation: scalestretch ease-out 3s;
+    animation: scalestretch ease-out 1s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
     transform: scaleX(0.95);
