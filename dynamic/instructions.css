@@ -8,7 +8,7 @@
 .main{
     grid-area: main;
     display: grid;
-    grid-template-areas: "hero" "text" "text2" "text3";
+    grid-template-areas: "hero" "text" "text2" "text3" "text4";
     grid-gap: 2vmin
 }
 div.main div:nth-child(n+2){
@@ -17,7 +17,7 @@ div.main div:nth-child(n+2){
 .text2 {
     color:var(--main-background-color);
     background: var(--contrast-background-color);
-    border-radius: 12% 79% 0px 0px /7%;
+    border-radius: 12% 79% /7%;
     border-top: solid 4px var(--main-artistic-color);
     animation: borderanimationtwo 4s;
     animation-fill-mode:forwards;
@@ -25,16 +25,16 @@ div.main div:nth-child(n+2){
 }
 @keyframes borderanimationtwo {
     0% {
-      border-radius: 12% 79% 0px 0px /7%;
+      border-radius: 12% 79% /7%;
     }
     40% {
-      border-radius: 10% 77% 0px 0px /5%;
+      border-radius: 10% 77% /5%;
     }
     70% {
-      border-radius: 11% 78% 0px 0px /6%;
+      border-radius: 11% 78% /6%;
     }
     100% {
-      border-radius: 12% 79% 0px 0px /7%;
+      border-radius: 12% 79% /7%;
     }
 }
 
@@ -42,25 +42,23 @@ div.main div:nth-child(n+2){
     .main{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto repeat(3, fit-content(0));
-        grid-template-areas: "hero hero" "text text" "text2 text2" "text3 text3";
+        grid-template-areas: "hero hero" "text text" "text2 text2" "text3 text3" "text4 text4";
     }
-
 }
 
 @media(min-width: 799.3px) {
     .main{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto repeat(2, fit-content(0)) auto auto fit-content(0);
-        grid-template-areas: "hero hero hero" "text text text" "text2 text2 text2" "text3 text3 text3";
+        grid-template-areas: "hero hero hero" "text text text" "text2 text2 text2" "text3 text3 text3" "text4 text4 text4";
     }
-
 }
 
 @media(min-width: 1259.3px) {
     .main {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: "hero hero hero hero" ". text text ." ". text2 text2 ." ". text3 text3 .";
+        grid-template-areas: "hero hero hero hero" ". text text ." ". text2 text2 ." ". text3 text3 ." ". text4 text4 .";
     }
 }
 .text{
@@ -71,6 +69,9 @@ div.main div:nth-child(n+2){
 }
 .text3{
     grid-area:text3;
+}
+.text4{
+    grid-area:text4;
 }
 .hero{
     grid-area:hero;
