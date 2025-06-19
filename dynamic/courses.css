@@ -22,9 +22,9 @@
 
 @media(min-width: 799.3px) {
     .courses {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, fit-content(0)) auto;
-        grid-template-areas: ". hero hero ." ". description description ." ". subtitle subtitle ." ". bacheloroftheology bachelorofministry ." ". churchleadershipcertificate specialstudents .";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "hero hero" "description description" "subtitle subtitle" "bacheloroftheology bachelorofministry" "churchleadershipcertificate specialstudents";
     }
 
 }
