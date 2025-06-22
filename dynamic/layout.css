@@ -139,3 +139,7 @@ footer{
     color: var(--text-on-background);
     text-shadow: 3px 3px 4px var(--text-shadow-on-background);
 }
+table{
+  padding-top:calc(2*var(--main-text-font-size));
+  padding-bottom:calc(2*var(--main-text-font-size));
+}

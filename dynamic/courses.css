@@ -42,6 +42,29 @@
 .text2{
     grid-area:text2;
 }
+.text2 {
+    color:var(--main-background-color);
+    background: var(--contrast-background-color);
+    border-radius: 12% 79% /7%;
+    border-top: solid 4px var(--main-artistic-color);
+    animation: borderanimationtwo 4s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+}
+@keyframes borderanimationtwo {
+    0% {
+      border-radius: 12% 79% /7%;
+    }
+    40% {
+      border-radius: 10% 77% /5%;
+    }
+    70% {
+      border-radius: 11% 78% /6%;
+    }
+    100% {
+      border-radius: 12% 79% /7%;
+    }
+}
 .text3{
     grid-area:text3;
 }
