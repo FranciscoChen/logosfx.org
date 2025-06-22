@@ -8,14 +8,14 @@
 .courses {
     grid-area: main;
     display: grid;
-    grid-template-areas: "hero" "description" "text1" "text2" "text3" "text4" "text5" "subtitle" "bacheloroftheology" "bachelorofministry" "churchleadershipcertificate" "specialstudents";
+    grid-template-areas: "hero" "description" "subtitle" "bacheloroftheology" "bachelorofministry" "churchleadershipcertificate" "specialstudents" "text1" "text2" "text3" "text4" "text5";
 }
 
 @media(min-width: 499.3px) {
     .courses {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
-        grid-template-areas: "hero hero" "description description" "text1 text1" "text2 text2" "text3 text3" "text4 text4" "text5 text5" "subtitle subtitle" "bacheloroftheology bachelorofministry" "churchleadershipcertificate specialstudents";
+        grid-template-areas: "hero hero" "description description" "subtitle subtitle" "bacheloroftheology bachelorofministry" "churchleadershipcertificate specialstudents" "text1 text1" "text2 text2" "text3 text3" "text4 text4" "text5 text5";
     }
 
 }
@@ -24,7 +24,7 @@
     .courses {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
-        grid-template-areas: "hero hero" "description description" "text1 text1" "text2 text2" "text3 text3" "text4 text4" "text5 text5" "subtitle subtitle" "bacheloroftheology bachelorofministry" "churchleadershipcertificate specialstudents";
+        grid-template-areas: "hero hero" "description description" "subtitle subtitle" "bacheloroftheology bachelorofministry" "churchleadershipcertificate specialstudents" "text1 text1" "text2 text2" "text3 text3" "text4 text4" "text5 text5";
     }
 
 }
@@ -33,7 +33,7 @@
     .courses {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, fit-content(0)) auto;
-        grid-template-areas: ". hero hero ." ". description description ." ". text1 text1 ." ". text2 text2 ." ". text3 text3 ." ". text4 text4 ." ". text5 text5 ." ". subtitle subtitle ." ". bacheloroftheology bachelorofministry ." ". churchleadershipcertificate specialstudents .";
+        grid-template-areas: ". hero hero ." ". description description ." ". subtitle subtitle ." ". bacheloroftheology bachelorofministry ." ". churchleadershipcertificate specialstudents ." ". text1 text1 ." ". text2 text2 ." ". text3 text3 ." ". text4 text4 ." ". text5 text5 .";
     }
 }
 .text1{
