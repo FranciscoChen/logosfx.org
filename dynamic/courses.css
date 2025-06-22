@@ -5,6 +5,9 @@
     margin-top: var(--site-header-margin);
 }
 
+div.main div:nth-child(n+2){
+  padding:3vh;
+}
 .courses {
     grid-area: main;
     display: grid;
