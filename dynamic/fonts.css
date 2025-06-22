@@ -173,3 +173,6 @@ footer{
 .double-indentation{
   text-indent:calc(4*var(--main-text-font-size));
 }
+.double-margin-indentation{
+  margin-left:calc(4*var(--main-text-font-size));
+}
