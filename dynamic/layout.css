@@ -210,6 +210,7 @@ footer{
 table{
   padding-top:calc(2*var(--main-text-font-size));
   padding-bottom:calc(2*var(--main-text-font-size));
+  border-radius: 20px 3px;
   border-spacing:0;
   border-collapse:collapse;
 }
@@ -217,8 +218,8 @@ th {
   white-space:nowrap;
 }
 th,td{
-  padding-top:calc(0.5*var(--main-text-font-size));
-  padding-bottom:calc(0.5*var(--main-text-font-size));
+  padding-top:calc(var(--main-text-font-size));
+  padding-bottom:calc(var(--main-text-font-size));
   padding-left:1vw;
   padding-right:1vw;
 }
