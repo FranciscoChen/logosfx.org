@@ -98,7 +98,6 @@ footer{
     align-items:center;
 }
 .hero{
-    grid-area:hero;
     background:var(--main-artistic-color);
     border-radius:0px 0px 42% 91% / 4%;
     padding-bottom: 3px;
@@ -139,6 +138,75 @@ footer{
     color: var(--text-on-background);
     text-shadow: 3px 3px 4px var(--text-shadow-on-background);
 }
+.contrast-background{
+    color:var(--main-background-color);
+    background: var(--contrast-background-color);
+}
+.top-border-wave{
+    border-radius: 50% 70% 0 0 /3vw;
+    border-top: solid 4px var(--main-artistic-color);
+    animation: topwave 4s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+}
+@keyframes topwave{
+    0% {
+      border-radius: 50% 70% 0 0 /3vw;
+    }
+    40% {
+      border-radius: 52% 70% 0 0 /3vw;
+    }
+    70% {
+      border-radius: 51% 71% 0 0 /2vw;
+    }
+    100% {
+      border-radius: 50% 70% 0 0 /3vw;
+    }
+}
+.bottom-border-wave{
+    border-radius: 0 0 50% 70% /3vw;
+    border-bottom: solid 4px var(--main-artistic-color);
+    animation: bottomwave 4s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+}
+@keyframes bottomwave{
+    0% {
+      border-radius: 0 0 50% 70% /3vw;
+    }
+    40% {
+      border-radius: 0 0 52% 70% /3vw;
+    }
+    70% {
+      border-radius: 0 0 51% 71% /2vw;
+    }
+    100% {
+      border-radius: 0 0 50% 70% /3vw;
+    }
+}
+.top-bottom-border-wave{
+    border-radius: 50% 70% /3vw;
+    border-top: solid 4px var(--main-artistic-color);
+    border-bottom: solid 4px var(--main-artistic-color);
+    animation: topbottomwave 4s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+}
+@keyframes topbottomwave{
+    0% {
+      border-radius: 50% 70% /3vw;
+    }
+    40% {
+      border-radius: 52% 70% /3vw;
+    }
+    70% {
+      border-radius: 51% 71% /2vw;
+    }
+    100% {
+      border-radius: 50% 70% /3vw;
+    }
+}
+
 table{
   padding-top:calc(2*var(--main-text-font-size));
   padding-bottom:calc(2*var(--main-text-font-size));
