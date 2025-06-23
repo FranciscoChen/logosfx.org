@@ -212,7 +212,7 @@ table{
   margin-bottom:calc(2*var(--main-text-font-size));
   border-radius: 20px 3px;
   border-spacing:0;
-  box-shadow: 0 2px 6px 0 var(--cards-shadow-color), inset 0 -1px 0 0 var(--cards-border-color);
+  box-shadow: 0 2px 6px 0 var(--cards-shadow-color), inset 0 -1px 0 0 var(--cards-shadow-color);
 }
 th {
   white-space:nowrap;
@@ -223,13 +223,13 @@ th,td{
   padding-left:1vw;
   padding-right:1vw;
 }
-tr:first-child{
+tr:first-child>th{
   background:var(--cards-border-color);
 }
 tr:first-child>th:first-child{
   border-radius: 20px 0 0 0;
   border: 1px solid transparent;
 }
-tr:nth-child(n+3)>td{
+tr:nth-child(n+2)>td{
   border-top: 1px solid var(--main-artistic-color);
 }
