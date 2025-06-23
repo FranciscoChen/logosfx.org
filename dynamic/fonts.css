@@ -51,7 +51,7 @@ a:not(.disabled)hover{
 h1{
   font-family:var(--header-text-font);
   filter:blur(4px);
-  transition: filter 0.3s ease-out;
+  transition: filter 0.4s ease-in;
   animation: loadingunblur ease-in 4s;
   animation-iteration-count:1;
   animation-fill-mode:forwards;
@@ -64,7 +64,7 @@ h1{
 h2{
   font-family:var(--header-text-font);
   filter:blur(4px);
-  transition: filter 0.3s ease-out;
+  transition: filter 0.4s ease-in;
   animation: loadingunblur ease-in 4s;
   animation-iteration-count:1;
   animation-fill-mode:forwards;
@@ -75,7 +75,7 @@ h2{
 h3{
   font-family:var(--header-text-font);
   filter:blur(4px);
-  transition: filter 0.3s ease-out;
+  transition: filter 0.4s ease-in;
   animation: loadingunblur ease-in 4s;
   animation-iteration-count:1;
   animation-fill-mode:forwards;
@@ -86,7 +86,7 @@ h3{
 .headings-font{
   font-family:var(--header-text-font);
   filter:blur(4px);
-  transition: filter 0.3s ease-out;
+  transition: filter 0.4s ease-in;
   animation: loadingunblur ease-in 4s;
   animation-iteration-count:1;
   animation-fill-mode:forwards;
