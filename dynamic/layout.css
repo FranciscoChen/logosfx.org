@@ -212,6 +212,7 @@ table{
   margin-bottom:calc(2*var(--main-text-font-size));
   border-radius: 20px 3px;
   border-spacing:0;
+  box-shadow: 0 2px 6px 0 var(--cards-shadow-color), inset 0 -1px 0 0 var(--cards-border-color);
 }
 th {
   white-space:nowrap;
