@@ -30,13 +30,6 @@
 
 }
 
-@media(min-width: 1259.3px) {
-    .main {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: "hero hero hero hero" ". text text .";
-    }
-}
 .text{
     grid-area:text;
     margin:2vmin;
