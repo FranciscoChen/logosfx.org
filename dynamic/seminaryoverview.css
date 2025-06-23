@@ -40,6 +40,9 @@ div.main div:nth-child(n+2){
         grid-template-areas: "hero hero hero hero" "text text text text" "text2 text2 text2 text2";
     }
 }
+.hero{
+    grid-area:hero;
+}
 .text{
     grid-area:text;
 }
