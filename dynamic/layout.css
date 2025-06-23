@@ -210,4 +210,21 @@ footer{
 table{
   padding-top:calc(2*var(--main-text-font-size));
   padding-bottom:calc(2*var(--main-text-font-size));
+  border-spacing:0;
+  border-collapse:collapse;
+}
+th {
+  white-space:nowrap;
+}
+th,td{
+  padding-top:calc(0.5*var(--main-text-font-size));
+  padding-bottom:calc(0.5*var(--main-text-font-size));
+  padding-left:1vw;
+  padding-right:1vw;
+}
+tr:first-child{
+  background:var(--cards-border-color);
+}
+tr:nth-child(n+3){
+  border-top: 1px solid var(--main-artistic-color);
 }
