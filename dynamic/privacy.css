@@ -5,7 +5,7 @@
     margin-top: var(--site-header-margin);
 }
 
-.privacy {
+.main{
     grid-area: main;
     display: grid;
     grid-template-areas: "title" "technicaldata" "personaldata" "dataprotection";
@@ -13,34 +13,15 @@
 }
 
 @media(min-width: 499.3px) {
-    .privacy {
+    .main{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         grid-template-areas: "title title" "technicaldata technicaldata" "personaldata personaldata" "dataprotection dataprotection";
     }
 
 }
-
-@media(min-width: 799.3px) {
-    .privacy {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: ". title title ." ". technicaldata technicaldata ." ". personaldata personaldata ." ". dataprotection dataprotection .";
-    }
-
-}
-
-@media(min-width: 1259.3px) {
-    .privacy {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: ". title title ." ". technicaldata technicaldata ." ". personaldata personaldata ." ". dataprotection dataprotection .";
-    }
-}
-.title{
-    grid-area:title;
-    padding: 1vh;
-    margin: 1vh;
+.hero{
+    grid-area:hero;
 }
 .technicaldata{
     grid-area:technicaldata;
