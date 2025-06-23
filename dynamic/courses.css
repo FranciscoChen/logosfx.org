@@ -32,13 +32,6 @@ div.main div:nth-child(n+2){
 
 }
 
-@media(min-width: 1259.3px) {
-    .main {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, fit-content(0)) auto;
-        grid-template-areas: ". hero hero ." ". description description ." ". subtitle subtitle ." ". bacheloroftheology bachelorofministry ." ". churchleadershipcertificate specialstudents ." ". text1 text1 ." ". text2 text2 ." ". text3 text3 ." ". text4 text4 ." ". text5 text5 .";
-    }
-}
 .text1{
     grid-area:text1;
 }
