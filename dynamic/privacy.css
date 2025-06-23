@@ -8,7 +8,7 @@
 .main{
     grid-area: main;
     display: grid;
-    grid-template-areas: "title" "technicaldata" "personaldata" "dataprotection";
+    grid-template-areas: "hero" "technicaldata" "personaldata" "dataprotection";
     grid-gap: 1vmin
 }
 
@@ -16,7 +16,7 @@
     .main{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
-        grid-template-areas: "title title" "technicaldata technicaldata" "personaldata personaldata" "dataprotection dataprotection";
+        grid-template-areas: "hero hero" "technicaldata technicaldata" "personaldata personaldata" "dataprotection dataprotection";
     }
 
 }
