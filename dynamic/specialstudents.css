@@ -30,13 +30,6 @@
 
 }
 
-@media(min-width: 1259.3px) {
-    .specialstudents {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, fit-content(0)) auto minmax(0, 1fr);
-        grid-template-areas: ". hero hero ." ". purpose purpose ." ". qualifications qualifications ." ". requirements requirements ." ". ratio ratio .";
-    }
-}
 .purpose{
     grid-area:purpose;
     padding:3vh;
