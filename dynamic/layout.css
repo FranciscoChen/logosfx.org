@@ -208,6 +208,7 @@ footer{
 }
 
 table{
+  width:100%;
   margin-top:calc(2*var(--main-text-font-size));
   margin-bottom:calc(2*var(--main-text-font-size));
   border-radius: 20px 3px;
