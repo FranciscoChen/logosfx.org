@@ -49,9 +49,20 @@ function unblur(){
     unblurElements(document.getElementsByTagName('h1'))
     unblurElements(document.getElementsByClassName('headings-font'))
     clearInterval(unblurInterval)
+    clearTimeout(unblurTimeout)
   }
 }
+function unblurnow(){
+    unblurElements(document.getElementsByTagName('h1'))
+    unblurElements(document.getElementsByTagName('h2'))
+    unblurElements(document.getElementsByTagName('h3'))
+    unblurElements(document.getElementsByTagName('h1'))
+    unblurElements(document.getElementsByClassName('headings-font'))
+    clearInterval(unblurInterval)
+    clearTimeout(unblurTimeout)
+}
 var unblurInterval = setInterval(unblur,100);
+var unblurTimeout = setTimeout(unblurnow,4000);
 
 function menuexpand(elements){
   var elelen = elements.length
