@@ -137,6 +137,7 @@ footer{
     transform: translate(-50%, -50%);
     color: var(--text-on-background);
     text-shadow: 3px 3px 4px var(--text-shadow-on-background);
+    white-space:nowrap;
 }
 .contrast-background{
     color:var(--main-background-color);
