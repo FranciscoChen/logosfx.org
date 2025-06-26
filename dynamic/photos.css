@@ -11,21 +11,29 @@
     grid-template-areas: "hero" "photos";
     grid-gap: 2vmin
 }
-div.main div:nth-child(n+2){
-  padding:3vh;
-}
-
 
 .photos{
     grid-area:photos;
 }
 .photos-grid{
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "photo1 photo2" "photo3 photo4";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "photo1" "photo2" "photo3" "photo4";
     grid-gap: 2vmin
 }
+@media(min-width: 499.3px) {
+    .photos-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "photo1 photo2" "photo3 photo4";
+    }
+}
 @media(min-width: 799.3px) {
+    .photos-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "photo1 photo2" "photo3 photo4";
+    }
+}
+@media(min-width: 1259.3px) {
     .photos-grid{
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: "photo1 photo2 photo3 photo4";
@@ -45,16 +53,14 @@ div.main div:nth-child(n+2){
 }
 .photo-wrap{
     display:flex;
-    position:relative;
     justify-content:center;
     align-items:center;
 }
 .photo-wrap img{
     position:relative;
-    left:50%;
-    top:50%;
-    min-width: 101%;
-    min-height: 101%;
+    width: 100%;
+    height: auto;
+    aspect-ratio:3/2;
 }
 .hero{
     grid-area:hero;
