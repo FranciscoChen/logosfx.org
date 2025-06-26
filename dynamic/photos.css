@@ -35,8 +35,8 @@
 }
 @media(min-width: 1259.3px) {
     .photos-grid{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: "photo1 photo2 photo3 photo4";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "photo1 photo2" "photo3 photo4";
     }
 }
 .photo1{
