@@ -4,7 +4,7 @@ function photoexpand(){
   var elelen = elements.length
   for (var i = 0; i < elelen; i++){
     elements[i].onclick = function(evt) {
-      element.getElementById('modal-photo').src = evt.target.src
+      document.getElementById('modal-photo').src = evt.target.src
       modal.style.display = "block";
     }
   }
