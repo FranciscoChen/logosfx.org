@@ -77,7 +77,7 @@
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 12; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -95,3 +95,15 @@
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
 }
+.modal-display{
+  display:block;
+}
+.modal-photo-wrap{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius: 20px 3px;
+  overflow:hidden;
+  width:100vw;
+}
+
