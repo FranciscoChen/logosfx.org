@@ -55,6 +55,7 @@
     display:flex;
     justify-content:center;
     align-items:center;
+    box-shadow: 0 2px 6px 0 var(--cards-shadow-color), inset 0 -1px 0 0 var(--cards-border-color);
 }
 .photo-wrap img{
     position:relative;
