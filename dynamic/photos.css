@@ -73,3 +73,7 @@
 .hero{
     grid-area:hero;
 }
+.expandedphoto{
+  transform none;
+  width:100vw;
+}
