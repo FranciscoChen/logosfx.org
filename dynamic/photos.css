@@ -96,7 +96,7 @@
   width: 80%; /* Could be more or less, depending on screen size */
 }
 .modal-display{
-  display:block;
+  display:flex;
 }
 .modal-photo-wrap{
   display:flex;
@@ -106,4 +106,6 @@
   overflow:hidden;
   width:100vw;
 }
-
+#modal-photo{
+  width:100%
+}
