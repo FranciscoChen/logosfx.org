@@ -26,6 +26,9 @@ window.onload = () => {
   if (typeof unblur === 'function') {
     unblur();
   }
+  if (typeof photoexpand === 'function') {
+    photoexpand();
+  }
   if (typeof menuexpand === 'function') {
     menuexpand(document.getElementsByClassName("menu-item-expand"));
     menuexpand(document.getElementsByClassName("column-expand"));
