@@ -109,3 +109,8 @@
 #modal-photo{
   width:100%
 }
+@media(min-width: 799.3px) {
+  .modal-photo-wrap{
+    width:80vw;
+  }
+}
