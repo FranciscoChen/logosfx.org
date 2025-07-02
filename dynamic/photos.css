@@ -102,6 +102,7 @@
   display:flex;
   justify-content:center;
   align-items:center;
+  margin:auto;
   border-radius: 20px 3px;
   overflow:hidden;
   width:100vw;
