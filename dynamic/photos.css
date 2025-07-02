@@ -56,12 +56,19 @@
     justify-content:center;
     align-items:center;
     box-shadow: 0 2px 6px 0 var(--cards-shadow-color), inset 0 -1px 0 0 var(--cards-border-color);
+    border-radius: 20px 3px;
+    overflow:hidden;
 }
 .photo-wrap img{
     position:relative;
     width: 100%;
     height: auto;
     aspect-ratio:3/2;
+    border-radius: 20px 3px;
+}
+.photo-wrap img:hover {
+    transform: scale(1.05);
+    transition: transform 1s ease-in-out;
 }
 .hero{
     grid-area:hero;
