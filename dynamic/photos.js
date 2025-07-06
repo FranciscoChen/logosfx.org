@@ -4,13 +4,11 @@ function photoexpand(){
   var elelen = elements.length
   modal.onclick = function() {
     modal.classList.toggle('modal-display')
-	    alert('modal hide')
   }
   for (var i = 0; i < elelen; i++){
     elements[i].onclick = function(evt) {
       document.getElementById('modal-photo').src = evt.target.src
       modal.classList.toggle('modal-display')
-	    alert('modal display')
     }
   }
 }
