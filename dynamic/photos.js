@@ -2,19 +2,21 @@ function photoexpand(){
   var modal = document.getElementById("myModal");
   const elements = document.getElementsByClassName('photo-wrap')
   var elelen = elements.length
-  modal.addEventListener('pointerdown', () => {
+  modal.onclick = function() {
     modal.classList.toggle('modal-display')
-  })
+	    alert('modal hide')
+  }
   for (var i = 0; i < elelen; i++){
-    elements[i].addEventListener('pointerdown', (evt) => {
+    elements[i].onclick = function(evt) {
       document.getElementById('modal-photo').src = evt.target.src
       modal.classList.toggle('modal-display')
-    })
+	    alert('modal display')
+    }
   }
 }
 
 function scrolling(){
-  var photos = document.getElementsByClassName('photos');
+  var photos = document.getElementsByClassName('photo');
   const photosl = photos.length
   for (var i = 0; i < photosl; i++){
     const photo = photos[i]
@@ -39,6 +41,7 @@ function coming(ele){
   if ( topcenter < 0 ) return 1 ;
   if ( (rect.bottom-center) > 0 ) return (center - topcenter ) / center ;
 }
+
 var timeout;
 window.onresize=function(){
   timeout&&window.clearTimeout(timeout),
@@ -46,6 +49,7 @@ window.onresize=function(){
     scrolling()
   },16.6)
 };
+
 window.onscroll=function(){
   timeout&&window.clearTimeout(timeout),
   timeout=window.setTimeout(function(){
