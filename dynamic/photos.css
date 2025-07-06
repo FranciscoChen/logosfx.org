@@ -96,7 +96,7 @@
 }
 .photo-display{
     display:block;
-    animation: appear ease-in-out 0.2s;
+    animation: appear ease-in-out 0.4s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
 }
