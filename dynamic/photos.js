@@ -19,12 +19,12 @@ function scrolling(){
   for (var i = 0; i < photosl; i++){
     const photo = photos[i]
     if (coming(photo) > 0) {
-      if (purpose.classList.contains('photo-below')){
-        purpose.classList.toggle('photo-below')
+      if (photo.classList.contains('photo-below')){
+        photo.classList.toggle('photo-below')
       }
     } else {
-      if (!purpose.classList.contains('photo-below')){
-        purpose.classList.toggle('photo-below')
+      if (!photo.classList.contains('photo-below')){
+        photo.classList.toggle('photo-below')
       }
     }
   }
