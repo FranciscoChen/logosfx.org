@@ -14,17 +14,17 @@ function photoexpand(){
 }
 
 function scrolling(){
-  var photos = document.getElementsByClassName('photo');
+  var photos = document.getElementsByClassName('photo-part');
   const photosl = photos.length
   for (var i = 0; i < photosl; i++){
     const photo = photos[i]
-    if (coming(photo) > 0) {
-      if (photo.classList.contains('photo-below')){
-        photo.classList.toggle('photo-below')
+    if (coming(photo) < 0) {
+      if (photo.classList.contains('photo-part-display')){
+        photo.classList.toggle('photo-part-display')
       }
     } else {
-      if (!photo.classList.contains('photo-below')){
-        photo.classList.toggle('photo-below')
+      if (!photo.classList.contains('photo-part-display')){
+        photo.classList.toggle('photo-part-display')
       }
     }
   }

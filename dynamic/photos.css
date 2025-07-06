@@ -91,12 +91,12 @@
     width:80vw;
   }
 }
-.photo{
+.photo-part-display{
     display:block;
     opacity:100%;
-    transition: all 0.4s ease-out;
 }
-.photo-below{
+.photo-part{
     display:none;
     opacity:0%;
+    transition: all 0.4s ease-out;
 }
