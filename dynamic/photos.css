@@ -51,8 +51,8 @@
     border-radius: 20px 3px;
 }
 .photo-wrap img:hover {
-    transform: scale(1.05);
-    transition: transform 1s ease-in-out;
+    transform: scale(1.04);
+    transition: transform 0.4s ease-in-out;
 }
 .hero{
     grid-area:hero;
