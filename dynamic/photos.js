@@ -13,31 +13,26 @@ function photoexpand(){
   }
 }
 
+const photopart = document.getElementsByClassName('photo-part')
+var ppart = 0
 function scrolling(){
-  var photos = document.getElementsByClassName('photo-part');
-  const photosl = photos.length
-  for (var i = 0; i < photosl; i++){
-    const photo = photos[i]
-    if (coming(photo) < 0) {
-      if (photo.classList.contains('photo-part-display')){
-        photo.classList.toggle('photo-part-display')
-      }
-    } else {
-      if (!photo.classList.contains('photo-part-display')){
+  if (atbottom > 0) {
+    ppart++
+    if (typeof photopart[ppart] !== 'undefined'){
+      if (! photopart.classList.contains('photo-part-display')){
         photo.classList.toggle('photo-part-display')
       }
     }
   }
 }
 
-function coming(ele){
-  // Given an element this function returns zero or lower if the element is still below, and a number above zero if the element is coming into sight from the bottom, centered at 45% of the page
-  var y = window.innerHeight||document.documentElement.clientHeight||document.getElementsByTagName("body")[0].clientHeight,
-  center = 4.5*y/10,
-  rect = ele.getBoundingClientRect(),
-  topcenter = rect.top - center;
-  if ( topcenter < 0 ) return 1 ;
-  if ( (rect.bottom-center) > 0 ) return (center - topcenter ) / center ;
+function atbottom(){
+  // When the user is 200 px from the bottom, fire the event.
+  if(window.scrollY + window.innerHeight + 200 > document.body.scrollHeight) {
+    return 1
+  } else {
+    return 0
+  }
 }
 
 var timeout;
