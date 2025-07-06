@@ -13,19 +13,21 @@ function photoexpand(){
   }
 }
 
-const photopart = document.getElementsByClassName('photo-part')
-var ppart = 0
+const photos = document.getElementsByClassName('photo')
+var nphoto = 0
 function scrolling(){
-  if (atbottom > 0) {
-    ppart++
-    if (typeof photopart[ppart] !== 'undefined'){
-      if (! photopart.classList.contains('photo-part-display')){
-        photo.classList.toggle('photo-part-display')
+  if (atbottom() > 0) {
+    for (var i = 0; i<12 ;i++){
+      nphoto++;
+      const photo = photos[nphoto];
+      if (typeof photo !== 'undefined'){
+        if (!photo.classList.contains('photo-display')){
+          photo.classList.toggle('photo-display')
+        }
       }
     }
   }
 }
-
 function atbottom(){
   // When the user is 200 px from the bottom, fire the event.
   if(window.scrollY + window.innerHeight + 200 > document.body.scrollHeight) {
