@@ -18,16 +18,19 @@ var nphoto = 0
 function scrolling(){
   if (atbottom() > 0) {
     for (var i = 0; i<12 ;i++){
-      nphoto++;
-      const photo = photos[nphoto];
-      if (typeof photo !== 'undefined'){
-        if (!photo.classList.contains('photo-display')){
-          photo.classList.toggle('photo-display')
+      setTimeout( ()=> {
+        nphoto++;
+        const photo = photos[nphoto];
+        if (typeof photo !== 'undefined'){
+          if (!photo.classList.contains('photo-display')){
+            photo.classList.toggle('photo-display')
+          }
         }
-      }
+      },i*200)
     }
   }
 }
+
 function atbottom(){
   // When the user is 200 px from the bottom, fire the event.
   if(window.scrollY + window.innerHeight + 200 > document.body.scrollHeight) {
